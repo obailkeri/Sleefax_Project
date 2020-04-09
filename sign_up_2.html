@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up 2</title>
+
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- CDN links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+
+body {
+    color: #fff;
+    height: 100%;
+    overflow-x: hidden;
+    background-image: linear-gradient(#4AABD2 65%, #295D73 100%);
+    background-repeat: no-repeat;
+}
+
+a {
+	color: inherit;
+    text-decoration: none !important;
+}
+
+.navbar-dark {
+    background-color: #295D73;
+}
+
+.currencyinput {
+    padding: 5px 15px !important;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    border: 1px solid #000 !important;
+    font-size: 22px !important;
+    border-radius: 50px;
+    height: 50px;
+}
+
+input {
+    border: none !important;
+    font-size: 18px;
+    width: 80% !important;
+    font-weight: bold !important;
+}
+
+input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0;
+    font-weight: 400;
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+.icon {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.page-heading {
+    font-size: 35px !important;
+}
+
+.card {
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.text-dark {
+    font-size: 21px;
+    font-weight: 400px;
+}
+
+.btn-blue {
+    background-color: #4AABDD;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50px !important;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    padding: 2px 30px;
+    font-size: 20px !important;
+}
+
+.btn-blue:hover, .btn-blue:hover {
+    background-color: #295D73;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-md navbar-dark">
+    <!-- Navbar Brand -->
+    <a href="#" class="navbar-brand">
+        <div class="row">
+            <img src="slee.jpg" class="icon mx-3">
+            <b class="mt-2">SleefaxPartner</b>
+        </div>
+    </a>
+    <!-- Toggle Icon -->
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ml-auto">
+            <a href="#" class="nav-item nav-link">About us</a>
+            <a href="#" class="nav-item nav-link">Help</a>
+            <a href="#" class="nav-item nav-link">Login</a>
+        </div>
+    </div>
+</nav>
+
+<!-- SignUp page -->
+<div class="container">
+    <form class="form-card">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <p class="mt-3 mb-4 page-heading text-center">Tell us about your pricing plans</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="card p-4 px-xs-5">
+                            <div class="form-group row">
+                                <div class="col-md-8">
+                                    <label class="text-dark">B/W PRINTOUT (SINGLE SIDE)<br><span class="text-muted">Per Page</span></label>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="currencyinput form-control">
+                                        <div class="row px-3">
+                                            <span class="fa fa-inr pt-2 pr-2"></span>
+                                            <input type="text" name="price1" class="form-control">
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-8">
+                                    <label class="text-dark">B/W PRINTOUT (BOTH SIDES)<br><span class="text-muted">Per Page</span></label>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="currencyinput form-control">
+                                        <div class="row px-3">
+                                            <span class="fa fa-inr pt-2 pr-2"></span>
+                                            <input type="text" name="price1" class="form-control">
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-8">
+                                    <label class="text-dark">COLOR PRINTOUT (SINGLE SIDE)<br><span class="text-muted">Per Page</span></label>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="currencyinput form-control">
+                                        <div class="row px-3">
+                                            <span class="fa fa-inr pt-2 pr-2"></span>
+                                            <input type="text" name="price1" class="form-control">
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-8">
+                                    <label class="text-dark">COLOR PRINTOUT (BOTH SIDES)<br><span class="text-muted">Per Page</span></label>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="currencyinput form-control">
+                                        <div class="row px-3">
+                                            <span class="fa fa-inr pt-2 pr-2"></span>
+                                            <input type="text" name="price1" class="form-control">
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4 mb-5">
+                    <button type="submit" class="btn btn-blue">Finish</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Js CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+});
+
+</script>
+
+</body>
+</html>
