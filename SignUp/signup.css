@@ -98,7 +98,7 @@ input {
 
 #smaller-border {
   height:5px;
-  width: 10vh;
+  width: 50%;
   background-color:  #296178;
   border-radius: 5px;
   z-index:1;
@@ -268,7 +268,7 @@ input.invalid {
 }
 
 .sub-btn {
-  width: 100px !important;
+  width: 97px !important;
   text-align: center;
 }
 
