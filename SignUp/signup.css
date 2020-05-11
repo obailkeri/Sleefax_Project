@@ -1,0 +1,380 @@
+@media only screen and (max-width: 768px){
+  #smaller-border{
+    display: none !important;
+  }
+  .random_im{
+    text-align: center;
+  }
+  .butal{
+    text-align: center;
+  }
+  .consignup1{
+    margin-right: 20px;
+  }
+  .consignup2{
+    margin-right: 30px;
+  }
+  .consignup3{
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 500px){
+  #applel{
+    margin-bottom: 5px;
+  }
+  .hi{
+    display: none;
+  }
+  
+  #vl {
+    display: none;
+  }
+
+  .new_s{
+    margin-top: 20px;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+  background-color: #F9F9F9;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0;
+}
+
+input {
+  border-radius: 6px;
+  border: 1px solid gray;
+  padding: 2px 5px;
+}
+
+.navbar {
+  color: #000;
+  font-size: large;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.514);
+}
+
+/* Logo For Navbar */
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.nav-item {
+  margin: auto 5px;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+.navbar ul li a {
+   color: #000 !important;
+}
+
+.navbar ul li a.active{
+    color: #296178 !important;
+    font-weight: bold !important;
+}
+
+#vl{
+  height: 200px;
+  width:1px;
+  background-color: #AEAEAE;
+}
+
+#rl{
+  height: 1px;
+  width:100%;
+  background-color: #AEAEAE;
+}
+
+#smaller-border {
+  height:5px;
+  width: 10vh;
+  background-color:  #296178;
+  border-radius: 5px;
+  z-index:1;
+  position: relative;
+  top: 2px;
+}
+
+.tab{
+  display: none;
+  position: relative;
+}
+
+.tab.show {
+  display: block;
+}
+
+.card {
+  border-radius: 15px;
+  padding: 20px 25px !important;
+  border: 1px solid gray;
+}
+
+.card-0 {
+  z-index: 0;
+  position: relative;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+/*Icon progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: #455A64;
+    padding-left: 0px;
+    margin-top: 30px;
+    width: 30%;
+} 
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+#progressbar .step0:before {
+    content: " ";
+    color: #fff;
+}
+
+#progressbar li:before {
+    width: 25px;
+    height: 25px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    background: #fff;
+    border: 1px solid #455A64;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #D7D7D7;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    z-index: -1;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: -50%;
+}
+
+#progressbar li:nth-child(2):after {
+    left: -50%;
+}
+
+#progressbar li:nth-child(3):after {
+    left: -50%;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    left: 50%;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #3F8FB0;
+    border: #3F8FB0;
+}
+
+.btn-sleefax {
+  height: 40px;
+  width: 120px;
+  padding: 5px 5px;
+  color: white;
+  font-weight: bolder;
+  background-color:#3F8FB0;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-sleefax:hover, .btn-sleefax:focus {
+  color: white;
+  font-weight: bolder;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.social-signup {
+  border-radius: 5px;
+}
+
+#signup_google:hover{
+  -webkit-box-shadow: 0 0 5px 2px #4285F4;
+  -moz-box-shadow: 0 0 5px 2px #4285F4;
+  box-shadow: 0 0 5px 2px #4285F4;
+}
+
+#signup_fb:hover{
+  -webkit-box-shadow: 0 0 5px 2px #4267B2;
+  -moz-box-shadow: 0 0 5px 2px #4267B2;
+  box-shadow: 0 0 5px 2px #4267B2;
+}
+
+.box-upload {
+  background-image: linear-gradient(#fff 75%,#DED4D4 25%);
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #828282;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.514);
+  width: 152px;
+}
+
+.upload-button {
+  max-height: min-content;
+  font-size: x-large;
+  color: white;
+  font-weight: bolder;
+  background: none !important;
+  border: none;
+}
+
+.select-day {
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.sub-btn {
+  width: 100px !important;
+  text-align: center;
+}
+
+.sub-btn:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.fo {
+  box-shadow:0 0 2px rgba(0, 0, 0, 0.514); 
+}
+
+.input-box {
+  position: relative;
+}
+
+.unit {
+  position: absolute;
+  display: block;
+  left: 10px;
+  top: 30px;
+  z-index: 9;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input.price {
+  padding: 4px 2px 4px 30px;
+}
+
+/*Blue colored checkbox*/
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: #57B1D5;
+  border: none;
+}
+
+.checkbox-lg .custom-control-label::before, 
+.checkbox-lg .custom-control-label::after {
+  top: .8rem;
+  width: 1.55rem;
+  height: 1.55rem;
+}
+
+.checkbox-lg .custom-control-label {
+  padding-top: 13px;
+  padding-left: 6px;
+}
+
+#nextBtn{
+  position: relative;
+}
+
+.addbreak{
+  padding: 5px 15px;
+  background-color: #57B1D5;
+  color: white;
+  font-size: small;
+  width: fit-content;
+  border-radius: 7px;
+  border: none;
+}
+
+.addday{
+  padding: 5px 15px;
+  background-color: #39748B;
+  color: white;
+  font-size: small;
+  width: fit-content;
+  border-radius: 7px;
+  border: none;
+}
+
+.remove{
+  padding: 5px 22px;
+  background-color: #C1C1C1;
+  color: black;
+  font-size: small;
+  width: fit-content;
+  border-radius: 7px;
+  border: none;
+}
+
+.days{
+  background-color: #fff;
+  color: #000;
+  font-size: small;
+  width: 80%;
+  border: 1px solid #39748B;
+  border-radius: 7px;
+  padding: 5px 0px;
+  margin: 10px auto;
+}
+
+.days:hover {
+  color: #57B1D5;
+  border: 1px solid #57B1D5;
+  cursor: pointer;
+}
+
+.days.selected {
+  background-color: #57B1D5;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #progressbar {
+    width: 90%;
+  }
+}
