@@ -192,12 +192,14 @@ input.invalid {
   -webkit-box-shadow: 0 0 5px 2px #4285F4;
   -moz-box-shadow: 0 0 5px 2px #4285F4;
   box-shadow: 0 0 5px 2px #4285F4;
+  cursor: pointer;
 }
 
 #signup_fb:hover{
   -webkit-box-shadow: 0 0 5px 2px #4267B2;
   -moz-box-shadow: 0 0 5px 2px #4267B2;
   box-shadow: 0 0 5px 2px #4267B2;
+  cursor: pointer;
 }
 
 .box-upload {
