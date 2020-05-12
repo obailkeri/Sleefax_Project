@@ -1,40 +1,3 @@
-@media only screen and (max-width: 768px){
-  #smaller-border{
-    display: none !important;
-  }
-  .random_im{
-    text-align: center;
-  }
-  .butal{
-    text-align: center;
-  }
-  .consignup1{
-    margin-right: 20px;
-  }
-  .consignup2{
-    margin-right: 30px;
-  }
-  .consignup3{
-    margin-right: 10px;
-  }
-}
-@media only screen and (max-width: 500px){
-  #applel{
-    margin-bottom: 5px;
-  }
-  .hi{
-    display: none;
-  }
-  
-  #vl {
-    display: none;
-  }
-
-  .new_s{
-    margin-top: 20px;
-  }
-}
-
 html, body {
   overflow-x: hidden;
   background-color: #F9F9F9;
@@ -48,19 +11,24 @@ button:focus {
   outline-width: 0;
 }
 
+a, a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
 input {
   border-radius: 6px;
   border: 1px solid gray;
   padding: 2px 5px;
 }
 
+/*----NAVBAR CSS----*/
 .navbar {
   color: #000;
   font-size: large;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.514);
 }
 
-/* Logo For Navbar */
 .logo {
   width: 45px;
   height: 45px;
@@ -84,18 +52,6 @@ input {
     font-weight: bold !important;
 }
 
-#vl{
-  height: 200px;
-  width:1px;
-  background-color: #AEAEAE;
-}
-
-#rl{
-  height: 1px;
-  width:100%;
-  background-color: #AEAEAE;
-}
-
 #smaller-border {
   height:5px;
   width: 50%;
@@ -106,6 +62,7 @@ input {
   top: 2px;
 }
 
+/*----Steps of SIGNUP----*/
 .tab{
   display: none;
   position: relative;
@@ -270,11 +227,30 @@ input.invalid {
 .sub-btn {
   width: 97px !important;
   text-align: center;
+  padding: 5px 15px;
+  font-size: small;
+  border-radius: 7px;
+  border: none;
 }
 
 .sub-btn:hover {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+.addbreak{
+  background-color: #57B1D5;
+  color: #fff;
+}
+
+.addday{
+  background-color: #39748B;
+  color: #fff;
+}
+
+.remove {
+  background-color: #C1C1C1;
+  color: #000;
 }
 
 .fo {
@@ -321,36 +297,6 @@ input.price {
   position: relative;
 }
 
-.addbreak{
-  padding: 5px 15px;
-  background-color: #57B1D5;
-  color: white;
-  font-size: small;
-  width: fit-content;
-  border-radius: 7px;
-  border: none;
-}
-
-.addday{
-  padding: 5px 15px;
-  background-color: #39748B;
-  color: white;
-  font-size: small;
-  width: fit-content;
-  border-radius: 7px;
-  border: none;
-}
-
-.remove{
-  padding: 5px 22px;
-  background-color: #C1C1C1;
-  color: black;
-  font-size: small;
-  width: fit-content;
-  border-radius: 7px;
-  border: none;
-}
-
 .days{
   background-color: #fff;
   color: #000;
@@ -373,8 +319,47 @@ input.price {
   color: #fff;
 }
 
+/*----FOOTER CSS----*/
+.page-footer {
+  background-image: linear-gradient(#277391 35%, #3497BF 100%);
+  border: none;
+}
+
+#vl{
+  height: 200px;
+  width:1px;
+  background-color: #AEAEAE;
+}
+
+#rl{
+  height: 1px;
+  width:100%;
+  background-color: #AEAEAE;
+}
+
+.social-connect img {
+  width: 25px;
+  height: 25px;
+}
+
+.social-connect img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.footer-copyright {
+  color: white;
+  background-color: #2C596B;
+  border: none;
+}
+
+/*----FOR MOBILE DEVICES----*/
 @media screen and (max-width: 768px) {
   #progressbar {
     width: 90%;
+  }
+
+  #smaller-border{
+    display: none !important;
   }
 }

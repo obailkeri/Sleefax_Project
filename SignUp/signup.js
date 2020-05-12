@@ -1,106 +1,3 @@
-// var currentTab = 0; // Current tab is set to be the first tab (0)
-// showTab(currentTab); // Display the current tab
-
-// function showTab(n) {
-//   // This function will display the specified tab of the form ...
-//   var x = document.getElementsByClassName("tab");
-//   x[n].style.display = "block";
-//   // ... and fix the Previous/Next buttons:
-//   if (n == 0) {
-//     document.getElementById("prevBtn").style.display = "none";
-//   } 
-//   else if (n == 1){
-//     document.getElementById("prevBtn").style.display = "inline";
-//   }
-//   else if (n == (x.length - 1)){
-//     document.getElementById("prevBtn").style.display = "none";
-//     document.getElementById("sm").style.display = "none";
-//     document.getElementById("sm2").style.display = "none";
-//   }
-//   else {
-//     document.getElementById("prevBtn").style.display = "inline";
-//   }
-//   if (n == (x.length - 2)) {
-//     document.getElementById("nextBtn").innerHTML = "SUBMIT";
-//   } 
-//   else if (n== (x.length - 1)){
-//     document.getElementById("nextBtn").style.display="none";
-
-//   }
-//   else {
-//     document.getElementById("nextBtn").innerHTML = "NEXT";
-//   }
- 
-
-//   // ... and run a function that displays the correct step indicator:
-//   fixStepIndicator(n)
-// }
-
-// function nextPrev(n) {
-//   // This function will figure out which tab to display
-//   var x = document.getElementsByClassName("tab");
-//   // Exit the function if any field in the current tab is invalid:
-//   // if (n == 1 && !validateForm()) return false;
-//   // Hide the current tab:
-//   x[currentTab].style.display = "none";
-//   // Increase or decrease the current tab by 1:
-//   currentTab = currentTab + n;
-//   // if you have reached the end of the form... :
-//   if (currentTab >= x.length) {
-//     //...the form gets submitted:
-//     document.getElementById("regForm").submit();
-//     return false;
-//   }
-//   // Otherwise, display the correct tab:
-//   showTab(currentTab);
-// }
-
-// function validateForm() {
-//   // This function deals with validation of the form fields
-//   var x, y, i, valid = true;
-//   x = document.getElementsByClassName("tab");
-//   y = x[currentTab].getElementsByTagName("input");
-//   // A loop that checks every input field in the current tab:
-//   for (i = 0; i < y.length; i++) {
-//     // If a field is empty...
-//     if (y[i].value == "") {
-//       // add an "invalid" class to the field:
-//       y[i].className += " invalid";
-//       // and set the current valid status to false:
-//       valid = false;
-//     }
-//   }
-//   // If the valid status is true, mark the step as finished and valid:
-//   if (valid) {
-//     document.getElementsByClassName("step")[currentTab].className += " finish";
-//   }
-//   return valid; // return the valid status
-// }
-
-// function fixStepIndicator(n) {
-//   // This function removes the "active" class of all steps...
-//   var i, x = document.getElementsByClassName("step");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].className = x[i].className.replace(" active", "");
-//   }
-//   //... and adds the "active" class to the current step:
-//   x[n].className += " active";
-// }
-/*var requiredText = '₹';
-$('.fo1').on('input', function() {
-  if (String($(this).val()).indexOf(requiredText) == -1) {
-    $(this).val(requiredText);
-  }
-});*/
-
-// $(".days").click(function(){
-//   $(this).css('background', "#57B1D5");
-//   $(this).css('color', "white");
-// });
-// $(".days").dblclick(function(){
-//   $(this).css('background', "white");
-//   $(this).css('color', "black");
-// });
 
 function validate1(val) {
     v1 = document.getElementById("name");
@@ -396,11 +293,11 @@ $(".prev").click(function(){
 });
 
 $(document).on('click', '.addbreak', function(){
-  $(this).parent().parent().parent().append('<div class="row justify-content-left mt-2"><div class="col-12 col-md-2" style="color:#57B1D5; font-weight: bold; font-size: 15px;"><div class="px-auto mt-1"> BREAK TIME</div></div><div class="col-6 col-md-3 text-muted text-sm">From : &nbsp;&nbsp;<input type="time"></div><div class="col-5 col-md-3 text-muted text-sm mt-2 my-md-0">To : &nbsp;&nbsp;<input type="time" ></div><div class="col-4 col-md-2" style="text-align: center;"><div class="sub-btn remove remove-break">Remove</div></div></div>');
+  $(this).parent().parent().parent().append('<div class="row justify-content-left mt-2"><div class="col-12 col-md-2" style="color:#57B1D5; font-weight: bold; font-size: 15px;"><div class="px-auto mt-1"> BREAK TIME</div></div><div class="col-6 col-md-3 text-muted text-sm">From : &nbsp;<input type="time"></div><div class="col-5 col-md-3 text-muted text-sm mt-2 my-md-0">To : &nbsp;<input type="time" ></div><div class="col-4 col-md-2" style="text-align: center;"><div class="sub-btn remove remove-break">Remove</div></div></div>');
 });
 
 $(document).on('click', '.addday', function(){
-  $(this).parent().parent().parent().parent().append('<div class="add-break-box mt-5"><div class="row justify-content-left mt-3"><div class="col-12 col-md-2 mb-2 ml-0"><select class="select-day"><option>Mon-Fri</option><option>Sat-Sun</option><option>Mon</option><option>Tues</option><option>Wed</option><option>Thur</option><option>Fri</option><option>Sat</option><option>Sun</option></select></div><div class="col-6 col-md-3 px-auto text-muted text-sm">From : &nbsp;&nbsp;<input type="time"></div><div class="col-5 col-md-3 px-auto text-muted text-sm mb-2 mb-md-0">To : &nbsp;&nbsp;<input type="time"></div><div class="col-4 col-md-2" style="text-align: center;"><div class="sub-btn addbreak">Add Break</div></div><div class="col-4 col-md-2" style="text-align: left;"><div class="sub-btn remove remove-day">Remove</div></div></div></div>');
+  $(this).parent().parent().parent().parent().append('<div class="add-break-box mt-5"><div class="row justify-content-left mt-3"><div class="col-12 col-md-2 mb-2 ml-0"><select class="select-day"><option>Mon-Fri</option><option>Sat-Sun</option><option>Mon</option><option>Tues</option><option>Wed</option><option>Thur</option><option>Fri</option><option>Sat</option><option>Sun</option></select></div><div class="col-6 col-md-3 px-auto text-muted text-sm">From : &nbsp;<input type="time"></div><div class="col-5 col-md-3 px-auto text-muted text-sm mb-2 mb-md-0">To : &nbsp;<input type="time"></div><div class="col-4 col-md-2" style="text-align: center;"><div class="sub-btn addbreak">Add Break</div></div><div class="col-4 col-md-2" style="text-align: left;"><div class="sub-btn remove remove-day">Remove</div></div></div></div>');
 });
 
 $(document).on('click', '.remove-break', function(){
