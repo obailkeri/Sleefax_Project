@@ -7,19 +7,29 @@ $('.btn').on('click', function() {
   },8000);
 });
 
-function displaycn(){
-  var trd = $(this).parent("tr");
-  var rowid = trd.attr("id");
-  $(rowid).children(".cwrite").hide();
-}
+$(document).ready(function() {
 
-$(document).ready(function(){
+// SHOW CONTACT
+$('.contact-text').click(function() {
+  $(this).addClass('d-none');
+  $(this).next().removeClass('d-none');
+});
 
-$('.list1 tr').hover(function()
-{
+$('.contact-icon').click(function() {
+  tmp = $(this).next().children();
+  $(tmp[0]).addClass('d-none');
+  $(tmp[1]).removeClass('d-none');
+});
+
+// HIDE CONTACT
+$('.contact-no').click(function() {
+  $(this).addClass('d-none');
+  $(this).prev().removeClass('d-none');
+});
+
+$('.list1 tr').hover(function() {
     $(this).addClass('tr-active');
-},function()
-{
+}, function() {
     $(this).removeClass('tr-active');
 });
 
