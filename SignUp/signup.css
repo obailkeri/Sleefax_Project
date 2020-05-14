@@ -54,7 +54,7 @@ input {
 
 #smaller-border {
   height:5px;
-  width: 50%;
+  width: 100%;
   background-color:  #296178;
   border-radius: 5px;
   z-index:1;

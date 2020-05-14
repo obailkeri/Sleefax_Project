@@ -84,7 +84,7 @@ a, a:hover {
 
 #smaller-border {
   height:5px;
-  width: 50%;
+  width: 100%;
   background-color:  #296178;
   border-radius: 5px;
   z-index:1;
@@ -269,14 +269,16 @@ h5.person-name {
 }
 
 .greyrow{
-  background-color: #CFCFCF; 
+  background-color: #CFCFCF;
+  position: relative;
   color: #000;
   border-radius: 10px;
   box-shadow: 0 0px 2px rgba(0, 0, 0, 0.164);
 }
 
 .bluerow{
-  background-color: #3F8FB0; 
+  background-color: #3F8FB0;
+  position: relative;
   border-radius: 10px;
   box-shadow: 0 0px 2px rgba(0, 0, 0, 0.164);
 }
@@ -285,15 +287,17 @@ h5.person-name {
 .not-paid {
   color: #fff;
   background-color: #D83737;
-  border-radius: 10px;
-  padding: 3px;
+  border-radius: 6px;
+  padding: 1px;
+  font-size: 12px;
 }
 
 .paid {
   color: #fff;
   background-color: #11771B;
-  border-radius: 10px;
-  padding: 3px 20px;
+  border-radius: 6px;
+  padding: 1px;
+  font-size: 12px;
 }
 
 .recover-btn{
