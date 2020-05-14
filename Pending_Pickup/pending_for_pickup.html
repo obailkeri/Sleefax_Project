@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>New Orders </title>
+    <title>Pending for Pickup</title>
     <!-- Linking Bootstrap and CSS -->
     <link rel="icon" href="logo0.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="new_orders.css">
+
+    <link rel="stylesheet" href="pending_for_pickup.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
@@ -68,17 +68,19 @@
 
 <!-- Search Bar -->
 <div class="row justify-content-center" style="margin-top: 100px;">
-  <input type="text" class="px-2 text-sm" placeholder="search by order id" style="max-width: 180px;">
+  <input type="text" class="search-input px-2 text-sm" placeholder="search by order id" style="max-width: 180px;">
   <button class="px-1" type="submit" id="search-btn" style="max-width: 50px; text-align: center;"><i class="fa fa-search"></i></button>
 </div>
 
 <!-- New Orders -->
 <div class="row mt-4 justify-content-center">
+
     <div class="col-12 col-md-1"></div>
+
     <div class="col-12 col-md-8 px-md-0">
         <div class="row mx-2 px-3 pb-0" style="box-shadow: none; border-width: 1px; border-style: solid; border-right:none; border-left:none; border-top:none; border-color: #296178;">
-          <a href="#" class="tab-heading active pb-2 mr-4">New Orders</a>
-          <a href="#" class="tab-heading pb-2">Pending for Pickup</a>
+          <a href="#" class="tab-heading pb-2 mr-4">New Orders</a>
+          <a href="#" class="tab-heading active pb-2">Pending for Pickup</a>
           <div class="navbar-nav ml-auto">
             <a class="btn pb-1 d-none d-md-block" id="load1" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>">
               <img src="reload-icon.png" style="height:25px;">
@@ -89,24 +91,22 @@
         <div class="table-responsive">
           <table class="table table-borderless mt-2 list1">
             <tbody>
-              <tr>
-                <td class="r1">
-                  <h5 class="person-name ml-1 ml-md-5"><span class="customer-name">Rahul Sharma</span>(1)</h5>
-                  <div class="row ml-2">
-                    <img src="call-icon-1.png" class="ml-1 ml-md-5 contact-icon" href="#" style="width: 40px; height:40px;">
-                    <p class="mt-1 d-none d-md-block" style="cursor: pointer;">
-                      <u class="contact-text" style="color:#0D506E; font-weight: bolder;">Contact</u>
-                      <u class="contact-no d-none" style="color:#0D506E; font-weight: bolder;">9876543210</u>
-                    </p>
+
+              <tr class="summary">
+                <td colspan="5">
+                  <div class="row mt-1 mx-2">
+                    <img class="callDetails ptr" src="call-icon-1.png" style="max-width: 40px; max-height:40px;">
+                    <h5 class="person-name ml-1"><span class="customer-name">Rahul Sharma</span>(1)</h5>
+                    <h6 class="ml-auto mr-1 pl-2 mt-2"><span class="text-sm text-muted">ORDER #</span> 12351256</h6>
                   </div>
-                </td>
-                <td style="vertical-align: middle;">
-                  <h5><span class="text-sm text-muted">ORDER #</span> 12351256</h5>
-                  <h6><span class="text-sm text-muted">File Size :</span> 100 kB </h6>
-                </td>
-                <td style="text-align: center;">
-                  <h5 class="mt-2 mt-3 mt-md-2 mr-md-5"><span class="rupees-sym">₹</span> 32</h5>
-                  <h6 class="mr-md-4 text-muted">April, 7:03 PM</h6>
+                  <div class="row justify-content-between mt-2 mx-2 greyrow">
+                    <div class="d-flex py-1 my-auto px-2" style="font-size: 12px;">
+                      Customer has not confirmed pickup for this order
+                    </div>
+                    <div class="d-flex">
+                      <img class="mr-2 my-auto" src="cross-icon.png" style="height:16px; width:16px; vertical-align: middle;">
+                    </div> 
+                  </div>
                 </td>
                 <td class="d-none">
                   <span class="page-size">A5</span>
@@ -117,127 +117,135 @@
                   <span class="file-size">100 kB</span>
                   <span class="pages">Custom: 1 - 5</span>
                 </td>
-                <td style="vertical-align: middle;">
-                  <img class="ptr" src="print-icon.png" style="height:40px; width:40px;">
-                </td>
-                <td style="vertical-align: middle;">
-                  <img class="ptr" src="cross-icon.png" style="height:40px; width:40px;">
-                </td>
-              </tr>
-              <tr>
-                <td class="r1">
-                  <h5 class="person-name ml-1 ml-md-5"><span class="customer-name">John Doe</span>(1)</h5>
-                  <div class="row ml-2">
-                    <img src="call-icon-1.png" class="ml-1 ml-md-5 contact-icon" href="#" style="width: 40px; height:40px;">
-                    <p class="mt-1 d-none d-md-block" style="cursor: pointer;">
-                      <u class="contact-text" style="color:#0D506E; font-weight: bolder;">Contact</u>
-                      <u class="contact-no d-none" style="color:#0D506E; font-weight: bolder;">9876543210</u>
-                    </p>
+                <td colspan="2" class="pl-md-0">
+                  <div class ="row mt-1">
+                    <div class="mx-auto text-muted mt-2" style="font-size: 15px;">April, 7:03 PM </div>   
+                  </div>
+                  <div class="mt-3">
+                    <button class="py-1 recover-btn" type="submit">Recover Documents</button>
                   </div>
                 </td>
-                <td style="vertical-align: middle;">
-                  <h5><span class="text-sm text-muted">ORDER #</span> 12351256</h5>
-                  <h6><span class="text-sm text-muted">File Size :</span> 100 kB </h6>
+                <td class="pr-md-0">
+                  <div class ="row mt-2 ml-3">
+                    <div class="pb-1" style="font-size: 20px;"><span class="rupees-sym">₹</span> 32</div> 
+                  </div>
+                  <div class="mt-2">
+                    <div class="text-sm not-paid text-center">Not Paid</div>
+                  </div>
                 </td>
-                <td style="text-align: center;">
-                  <h5 class="mt-2 mt-3 mt-md-2 mr-md-5"><span class="rupees-sym">₹</span> 32</h5>
-                  <h6 class="mr-md-4 text-muted">April, 7:03 PM</h6>
+                <td class="pt-3 text-center">
+                  <a href="#"><img class="mt-1" src="picked-up-icon.png" style="height: 75px; width: 110px"></a>
+                </td>
+                <td class="pl-md-0">
+                  <div class="d-flex flex-column mr-3 mt-4 ptr">
+                    <img src="info-icon.png" width="25px">
+                    <small class="text-info">Help</small>
+                  </div>
+                </td>
+              </tr>
+              <tr class="d-none call-info">
+                <td colspan="10">
+                  <div class="row justify-content-between mt-1 mx-2" style="position: relative; padding-top: 15px; padding-bottom: 15px;">
+                    <h5 class="person-name ml-3 mt-1" style="width: 140px">Rahul Sharma</h5>
+                    <div class="ml-5"><h6 class="px-3 py-2 mt-1" style="color: #3F8FB0; border-radius: 20px; border: 1px grey solid;">ORDER # 12351256</h6></div>
+                    <h5 class="ml-5 mt-2">+91 9876543210</h5>
+                    <button class="btn btn-blue mx-lg-5">Order Details</button>
+                    <img class="close ptr" src="close-icon.png" style="position: absolute; top: -4px; right: -2px;">
+                  </div>
+                </td>
+              </tr>
+              <tr class="d-none recover-doc">
+                <td colspan="10">
+                  <div class="row justify-content-between mt-1 mx-2" style="position: relative; padding-top: 15px; padding-bottom: 15px;">
+                    <p class="py-auto mb-0 ml-md-2">Enter OTP to recover documents for <span style="color:#397D98">&nbsp;&nbsp; ORDER   #12351256 </span></p>
+                    <input type="text" class="my-auto otp">
+                    <button class="proceed-btn mr-md-5 my-auto py-2">Proceed</button>
+                    <img class="close ptr" src="close-icon.png" style="position: absolute; top:-4px; right:-2px;"> 
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="summary">
+                <td colspan="5">
+                  <div class="row mt-1 mx-2">
+                    <img class="callDetails ptr" src="call-icon-1.png" style="max-width: 40px; max-height:40px;">
+                    <h5 class="person-name ml-1"><span class="customer-name">Lina Jose</span>(1)</h5>
+                    <h6 class="ml-auto pl-2 mt-2"><span class="text-sm text-muted">ORDER #</span> 12351257</h6>
+                  </div>         
+                  <div class="row justify-content-between mt-2 mx-2 bluerow">
+                    <div class="d-flex py-1 my-auto text-light px-2" style="font-size: 13px;">
+                      Customer has confirmed pickup for this order
+                    </div>
+                    <div class="d-flex">
+                      <img class="mr-2 my-auto" src="tick-icon.png" style="height:16px; width:16px; vertical-align: middle;">
+                    </div>
+                  </div>
                 </td>
                 <td class="d-none">
                   <span class="page-size">A4</span>
                   <span class="orient">Portrait</span>
                   <span class="color">color</span>
-                  <span class="copies">1</span>
+                  <span class="copies">2</span>
                   <span class="file-type">pdf</span>
-                  <span class="file-size">120 kB</span>
+                  <span class="file-size">160 kB</span>
                   <span class="pages">All Pages</span>
                 </td>
-                <td style="vertical-align: middle;">
-                  <img class="ptr" src="print-icon.png" style="height:40px; width:40px;">
-                </td>
-                <td style="vertical-align: middle;">
-                  <img class="ptr" src="cross-icon.png" style="height:40px; width:40px;">
-                </td>
-              </tr>
-              <tr>
-                <td class="r1">
-                  <h5 class="person-name ml-1 ml-md-5"><span class="customer-name">Lina Jose</span>(2)</h5>
-                  <div class="row ml-2">
-                    <img src="call-icon-1.png" class="ml-1 ml-md-5 contact-icon" href="#" style="width: 40px; height:40px;">
-                    <p class="mt-1 d-none d-md-block" style="cursor: pointer;">
-                      <u class="contact-text" style="color:#0D506E; font-weight: bolder;">Contact</u>
-                      <u class="contact-no d-none" style="color:#0D506E; font-weight: bolder;">9876543210</u>
-                    </p>
+                <td colspan="2" class="pl-md-0">
+                  <div class ="row mt-1">
+                    <div class="mx-auto text-muted mt-2" style="font-size: 15px;">April, 7:03 PM </div>   
+                  </div>
+                  <div class="mt-3">
+                    <button class="py-1 recover-btn" type="submit">Recover Documents</button>
                   </div>
                 </td>
-                <td style="vertical-align: middle;">
-                  <h5><span class="text-sm text-muted">ORDER #</span> 12351256</h5>
-                  <h6><span class="text-sm text-muted">File Size :</span> 100 kB </h6>
-                </td>
-                <td style="text-align: center;">
-                  <h5 class="mt-2 mt-3 mt-md-2 mr-md-5"><span class="rupees-sym">₹</span> 32</h5>
-                  <h6 class="mr-md-4 text-muted">April, 7:03 PM</h6>
-                </td>
-                <td class="d-none">
-                  <span class="page-size"></span>
-                  <span class="orient"></span>
-                  <span class="color"></span>
-                  <span class="copies"></span>
-                  <span class="file-type"></span>
-                  <span class="file-size"></span>
-                  <span class="pages">Pages</span>
-                </td>
-                <td style="vertical-align: middle;">
-                  <img class="ptr" src="multi-file-icon.png" style="height:40px; width:40px;">
-                </td>
-                <td style="vertical-align: middle;">
-                  <img class="ptr" src="cross-icon.png" style="height:40px; width:40px;">
-                </td>
-              </tr>
-              <tr>
-                <td class="r1">
-                  <h5 class="person-name ml-1 ml-md-5"><span class="customer-name">Rosey Clark</span>(1)</h5>
-                  <div class="row ml-2">
-                    <img src="call-icon-1.png" class="ml-1 ml-md-5 contact-icon" href="#" style="width: 40px; height:40px;">
-                    <p class="mt-1 d-none d-md-block" style="cursor: pointer;">
-                      <u class="contact-text" style="color:#0D506E; font-weight: bolder;">Contact</u>
-                      <u class="contact-no d-none" style="color:#0D506E; font-weight: bolder;">9876543210</u>
-                    </p>
+                <td class="pr-md-0">
+                  <div class ="row mt-2 ml-3">
+                    <div class="pb-1" style="font-size: 20px;"><span class="rupees-sym">₹</span> 32</div> 
+                  </div>
+                  <div class="mt-2">
+                    <div class="text-sm paid text-center">Paid</div>
                   </div>
                 </td>
-                <td style="vertical-align: middle;">
-                  <h5><span class="text-sm text-muted">ORDER #</span> 12351256</h5>
-                  <h6><span class="text-sm text-muted">File Size :</span> 100 kB </h6>
+                <td class="pt-3 text-center">
+                  <a href="#"><img class="mt-1" src="picked-up-icon.png" style="height:75px; width:110px"></a>
                 </td>
-                <td style="text-align: center;">
-                  <h5 class="mt-2 mt-3 mt-md-2 mr-md-5"><span class="rupees-sym">₹</span> 32</h5>
-                  <h6 class="mr-md-4 text-muted">April, 7:03 PM</h6>
+                <td class="pl-md-0">
+                  <div class="d-flex flex-column mr-3 mt-4 ptr">
+                    <img src="info-icon.png" width="25px">
+                    <small class="text-info">Help</small>
+                  </div>
                 </td>
-                <td class="d-none">
-                  <span class="page-size">A4</span>
-                  <span class="orient">Landscape</span>
-                  <span class="color">color</span>
-                  <span class="copies">1</span>
-                  <span class="file-type">pdf</span>
-                  <span class="file-size">123 kB</span>
-                  <span class="pages">All Pages</span>
+              </tr>
+              <tr class="d-none call-info">
+                <td colspan="10">
+                  <div class="row justify-content-between mt-1 mx-2" style="position: relative; padding-top: 15px; padding-bottom: 15px;">
+                    <h5 class="person-name ml-3 mt-1" style="width: 140px">Lina Jose</h5>
+                    <div class="ml-5"><h6 class="px-3 py-2 mt-1" style="color: #3F8FB0; border-radius: 20px; border: 1px grey solid;">ORDER # 12351257</h6></div>
+                    <h5 class="ml-5 mt-2">+91 9876543211</h5>
+                    <button class="btn btn-blue mx-lg-5">Order Details</button>
+                    <img class="close ptr" src="close-icon.png" style="position: absolute; top: -4px; right: -2px;">
+                  </div>
                 </td>
-                <td style="vertical-align: middle;">
-                  <img class="ptr" src="print-icon.png" style="height:40px; width:40px;">
-                </td>
-                <td style="vertical-align: middle;">
-                  <img class="ptr" src="cross-icon.png" style="height:40px; width:40px;">
+              </tr>
+              <tr class="d-none recover-doc">
+                <td colspan="10">
+                  <div class="row justify-content-between mt-1 mx-2" style="position: relative; padding-top: 15px; padding-bottom: 15px;">
+                    <p class="py-auto mb-0 ml-md-2">Enter OTP to recover documents for <span style="color:#397D98">&nbsp;&nbsp; ORDER   #12351257 </span></p>
+                    <input type="text" class="my-auto otp">
+                    <button class="proceed-btn mr-md-5 my-auto py-2">Proceed</button>
+                    <img class="close ptr" src="close-icon.png" style="position: absolute; top:-4px; right:-2px;"> 
+                  </div>
                 </td>
               </tr>
             </tbody>
           </table>
-        </div>
+        </div>    
     </div>
-  
-    <div class="col-md-1"></div>
+
+    <div class="col-12 col-md-1"></div>
 
     <div class="col-11 col-md-2 pl-md-0">
-      <div class="order-details container mr-md-1 newel pb-5 mt-2">
+      <div class="order-details container mr-md-1 pb-5 mt-2">
         <div class="title row justify-content-center pt-2 pb-2 mt-4 mx-1">Order Details</div>
         <div class="row justify-content-center mt-4">
           <h5><span id="customer">Customer Name</span></h5>
@@ -253,7 +261,7 @@
         </div>
       </div>
     </div>
-</div>
+  </div>
 
 <!-- Footer -->
 <footer class="page-footer pt-4 mt-5">
@@ -361,15 +369,32 @@
   </div>
 
 </footer>
- 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="new_orders.js"></script>
+<script src="pending_for_pickup.js"></script>
+<script>
+  
+function calldetails(){
+  $("#cdetails").show();
+}
+function rcalldetails(){
+  document.getElementById("cdetails").style.display = "none";
+}
+function seeotp(){
+  document.getElementById("otpsec").style.display = "inline";
+}
+function rseeotp(){
+  document.getElementById("otpsec").style.display = "none";
+}
+
+</script>
+
 
 </body>
+
 </html>

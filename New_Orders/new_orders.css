@@ -16,6 +16,10 @@ a, a:hover {
   cursor: pointer;
 }
 
+.ptr {
+  cursor: pointer;
+}
+
 input {
   text-align: center;
   padding: 6px;
@@ -183,6 +187,10 @@ tr:hover td:last-child{
   font-weight: bold;
   font-size: large;
   border-bottom: solid 4px #296178;
+}
+
+.contact-icon {
+  cursor: pointer;
 }
 
 h5.person-name {

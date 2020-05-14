@@ -28,9 +28,27 @@ $('.contact-no').click(function() {
 });
 
 $('.list1 tr').hover(function() {
-    $(this).addClass('tr-active');
+    $(this).attr('id', 'tr-active');
+    var d0 = $("#tr-active .customer-name").text();
+    var d1 = $("#tr-active .page-size").text();
+    var d2 = $("#tr-active .orient").text();
+    var d3 = $("#tr-active .color").text();
+    var d4 = $("#tr-active .copies").text();
+    var d5 = $("#tr-active .file-type").text();
+    var d6 = $("#tr-active .file-size").text();
+    var d7 = $("#tr-active .pages").text();
+
+    $("#customer").html(d0);
+    $("#data1").html(d1);
+    $("#data2").html(d2);
+    $("#data3").html(d3);
+    $("#data4").html(d4);
+    $("#data5").html(d5);
+    $("#data6").html(d6);
+    $("#data7").html(d7);
+
 }, function() {
-    $(this).removeClass('tr-active');
+    $(this).removeAttr('id');
 });
 
 });
