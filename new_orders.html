@@ -10,7 +10,7 @@
     <!-- Title -->
     <title>New Orders </title>
     <!-- Linking Bootstrap and CSS -->
-    <link rel="icon" href="logo0.jpeg">
+    <link rel="icon" href="Img/logo0.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,9 +27,9 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top pb-0" style="background-color: white;">
 
     <!-- Navbar Brand -->
-    <a href="index.html" class="navbar-brand">
+    <a href="new_orders.html" class="navbar-brand">
         <div class="row">
-            <img src="logo0.jpeg" alt="Sleefax" class="logo mx-2 p-1">
+            <img src="Img/logo0.jpeg" alt="Sleefax" class="logo mx-2 p-1">
             <b class="mt-2 text-dark">SleefaxPartner</b>
         </div>
     </a>
@@ -43,12 +43,21 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ml-auto mt-2">
             <ul class="navbar-nav ml-auto"  id="navbarCollapse">
-                <li class="nav-item">
-                  <a class="nav-link active mx-auto" href="#">Home</a>
+                <!-- Shop Open-Close Toggle Button -->
+                <label class="switch mt-1">
+                  <input type="checkbox" id="toggleBtn" checked>
+                  <div class="slider round">
+                    <span class="on" style="font-weight:bold; font-size:medium;">Open</span>
+                    <span class="off" style="font-weight:bold; font-size:medium">&nbsp;&nbsp;&nbsp;&nbsp;Closed</span>
+                  </div>
+                </label>
+
+                <li class="nav-item ml-md-5">
+                  <a class="nav-link active mx-auto" href="new_orders.html">Home</a>
                   <div class="mx-auto" id="smaller-border"></div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-auto" href="#">Order History</a>
+                  <a class="nav-link mx-auto" href="order_history.html">Order History</a>
                 </li>
                 <li class="nav-item text-left">
                   <div class="dropdown">
@@ -56,8 +65,8 @@
                       <i class="fa fa-caret-down"></i>
                     </a>
                     <div class="dropdown-content text-center">
-                      <a href="#" class="nav-link mt-3">Settings</a>
-                      <a href="#" class="nav-link">Logout</a>
+                      <a href="settings.html" class="nav-link mt-3">Settings</a>
+                      <a href="login.html" class="nav-link">Logout</a>
                     </div>
                   </div> 
                 </li>
@@ -77,11 +86,11 @@
     <div class="col-12 col-md-1"></div>
     <div class="col-12 col-md-8 px-md-0">
         <div class="row mx-2 px-3 pb-0" style="box-shadow: none; border-width: 1px; border-style: solid; border-right:none; border-left:none; border-top:none; border-color: #296178;">
-          <a href="#" class="tab-heading active pb-2 mr-4">New Orders</a>
-          <a href="#" class="tab-heading pb-2">Pending for Pickup</a>
+          <a href="new_orders.html" class="tab-heading active pb-2 mr-4">New Orders</a>
+          <a href="pending_for_pickup.html" class="tab-heading pb-2">Pending for Pickup</a>
           <div class="navbar-nav ml-auto">
             <a class="btn pb-1 d-none d-md-block" id="load1" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>">
-              <img src="reload-icon.png" style="height:25px;">
+              <img src="Img/reload-icon.png" style="height:25px;">
             </a>
           </div>
         </div>
@@ -93,7 +102,7 @@
                 <td class="pb-1">
                   <h5 class="person-name ml-1 ml-md-5"><span class="customer-name">Rahul Sharma</span>(1)</h5>
                   <div class="row ml-2 pl-3">
-                    <img src="call-icon-1.png" class="ml-1 ml-md-4 contact-icon" href="#" style="width: 40px; height:40px;">
+                    <img src="Img/call-icon-1.png" class="ml-1 ml-md-4 contact-icon" href="#" style="width: 40px; height:40px;">
                     <p class="mt-2 d-none d-md-block ptr">
                       <u class="contact-text" style="color:#0D506E; font-weight: bold;">Contact</u>
                       <u class="contact-no d-none" style="color:#0D506E; font-weight: bold;">9876543210</u>
@@ -118,17 +127,17 @@
                   <span class="pages">Custom: 1 - 5</span>
                 </td>
                 <td class="" style="vertical-align: middle;">
-                  <img class="ptr" src="print-icon.png" style="height:45px; width:45px;">
+                  <img class="ptr" src="Img/print-icon.png" style="height:45px; width:45px;">
                 </td>
                 <td class="" style="vertical-align: middle;">
-                  <img class="ptr" src="cross-icon.png" style="height:45px; width:45px;">
+                  <img class="ptr" src="Img/cross-icon.png" style="height:45px; width:45px;">
                 </td>
               </tr>
               <tr>
                 <td class="pb-1">
                   <h5 class="person-name ml-1 ml-md-5"><span class="customer-name">John Doe</span>(1)</h5>
                   <div class="row ml-2 pl-3">
-                    <img src="call-icon-1.png" class="ml-1 ml-md-4 contact-icon" href="#" style="width: 40px; height:40px;">
+                    <img src="Img/call-icon-1.png" class="ml-1 ml-md-4 contact-icon" href="#" style="width: 40px; height:40px;">
                     <p class="mt-2 d-none d-md-block ptr">
                       <u class="contact-text" style="color:#0D506E; font-weight: bold;">Contact</u>
                       <u class="contact-no d-none" style="color:#0D506E; font-weight: bold;">9876543210</u>
@@ -153,17 +162,17 @@
                   <span class="pages">All Pages</span>
                 </td>
                 <td style="vertical-align: middle;">
-                  <img class="ptr" src="print-icon.png" style="height:45px; width:45px;">
+                  <img class="ptr" src="Img/print-icon.png" style="height:45px; width:45px;">
                 </td>
                 <td style="vertical-align: middle;">
-                  <img class="ptr" src="cross-icon.png" style="height:45px; width:45px;">
+                  <img class="ptr" src="Img/cross-icon.png" style="height:45px; width:45px;">
                 </td>
               </tr>
               <tr>
                 <td class="pb-1">
                   <h5 class="person-name ml-1 ml-md-5"><span class="customer-name">Lina Jose</span>(2)</h5>
                   <div class="row ml-2 pl-3">
-                    <img src="call-icon-1.png" class="ml-1 ml-md-4 contact-icon" href="#" style="width: 40px; height:40px;">
+                    <img src="Img/call-icon-1.png" class="ml-1 ml-md-4 contact-icon" href="#" style="width: 40px; height:40px;">
                     <p class="mt-2 d-none d-md-block ptr">
                       <u class="contact-text" style="color:#0D506E; font-weight: bold;">Contact</u>
                       <u class="contact-no d-none" style="color:#0D506E; font-weight: bold;">9876543210</u>
@@ -188,17 +197,17 @@
                   <span class="pages">Pages</span>
                 </td>
                 <td style="vertical-align: middle;">
-                  <img class="ptr" src="multi-file-icon.png" style="height:45px; width:45px;">
+                  <img class="ptr" src="Img/multi-file-icon.png" style="height:45px; width:45px;">
                 </td>
                 <td style="vertical-align: middle;">
-                  <img class="ptr" src="cross-icon.png" style="height:45px; width:45px;">
+                  <img class="ptr" src="Img/cross-icon.png" style="height:45px; width:45px;">
                 </td>
               </tr>
               <tr>
                 <td class="pb-1">
                   <h5 class="person-name ml-1 ml-md-5"><span class="customer-name">Rosey Clark</span>(1)</h5>
                   <div class="row ml-2 pl-3">
-                    <img src="call-icon-1.png" class="ml-1 ml-md-4 contact-icon" href="#" style="width: 40px; height:40px;">
+                    <img src="Img/call-icon-1.png" class="ml-1 ml-md-4 contact-icon" href="#" style="width: 40px; height:40px;">
                     <p class="mt-2 d-none d-md-block ptr">
                       <u class="contact-text" style="color:#0D506E; font-weight: bold;">Contact</u>
                       <u class="contact-no d-none" style="color:#0D506E; font-weight: bold;">9876543210</u>
@@ -223,10 +232,10 @@
                   <span class="pages">All Pages</span>
                 </td>
                 <td style="vertical-align: middle;">
-                  <img class="ptr" src="print-icon.png" style="height:45px; width:45px;">
+                  <img class="ptr" src="Img/print-icon.png" style="height:45px; width:45px;">
                 </td>
                 <td style="vertical-align: middle;">
-                  <img class="ptr" src="cross-icon.png" style="height:45px; width:45px;">
+                  <img class="ptr" src="Img/cross-icon.png" style="height:45px; width:45px;">
                 </td>
               </tr>
             </tbody>
@@ -265,7 +274,7 @@
           <h3 class="mb-3 ml-2" style="font-weight: bold; color: #DFDFDF;">Sleefax</h3>
           <div class="row mt-4">
             <div class="col-12 col-md-2 mt-2">
-              <img src="loc-icon.png" height="30px" width="30px">
+              <img src="Img/loc-icon.png" height="30px" width="30px">
             </div>
             <div class="col-12 col-md-10 text-light" style="font-size: small;">
               5th floor, MIT TBi,<br>
@@ -275,7 +284,7 @@
           </div>
           <div class="row mt-4">
             <div class="col-12 col-md-2 mt-1" >
-              <img src="call-icon.png" height="25px" width="25px">
+              <img src="Img/call-icon.png" height="25px" width="25px">
             </div>
             <div class="col-12 col-md-10 text-light" style="font-size: small;">
               +91 1234567890<br>
@@ -284,7 +293,7 @@
           </div>
           <div class="row mt-4">
             <div class="col-12 col-md-2 mt-1" >
-              <img src="mail-icon.png" height="25px" width="25px">
+              <img src="Img/mail-icon.png" height="25px" width="25px">
             </div>
             <div class="col-12 col-md-10 mt-1 text-light" style="font-size: small;">
               incsleefax@gmail.com
@@ -331,8 +340,8 @@
           <h5 style="color:#DFDFDF; font-weight: bold;">  Get our app</h5>
           <div class="text-center">
             <div class="row mt-3 justify-content-center">
-                  <img class="m-2 mb-1" src="google-play.png" height="44px" width="125px">
-                  <img class="m-2 mt-1" src="apple-store.png" height="43px" width="125px">
+                  <img class="m-2 mb-1" src="Img/google-play.png" height="44px" width="125px">
+                  <img class="m-2 mt-1" src="Img/apple-store.png" height="43px" width="125px">
             </div>
           </div>
 
@@ -345,10 +354,10 @@
           <h5 class="mt-4" style="color:#DFDFDF; font-weight: bold;">Social</h5>
           <ul class="list-unstyled">
             <li class="mt-4 ml-3 social-connect">
-              <img class="mr-3" src="google-icon.png">
-              <img class="mr-3" src="fb-icon.png">
-              <img class="mr-3" src="insta-icon.png">
-              <img class="mr-3" src="linkedin-icon.png">
+              <img class="mr-3" src="Img/google-icon.png">
+              <img class="mr-3" src="Img/fb-icon.png">
+              <img class="mr-3" src="Img/insta-icon.png">
+              <img class="mr-3" src="Img/linkedin-icon.png">
             </li>
           </ul>
         </div>
