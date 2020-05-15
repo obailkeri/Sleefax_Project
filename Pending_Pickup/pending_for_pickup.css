@@ -268,21 +268,6 @@ h5.person-name {
   box-shadow: none;
 }
 
-.greyrow{
-  background-color: #CFCFCF;
-  position: relative;
-  color: #000;
-  border-radius: 10px;
-  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.164);
-}
-
-.bluerow{
-  background-color: #3F8FB0;
-  position: relative;
-  border-radius: 10px;
-  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.164);
-}
-
 
 .not-paid {
   color: #fff;
@@ -300,34 +285,38 @@ h5.person-name {
   font-size: 12px;
 }
 
-.recover-btn{
+.btn-recover {
   background-color: #68BB59;
   color: #fff;
-  border-radius: 40px;
+  border-radius: 10px;
   border: none;
   width: 100%;
   font-size: smaller;
-  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.164);
+  padding: 13px 3px;
+  box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.2);
 }
 
-.recover-btn:hover, .recover-btn:focus {
+.btn-recover:hover, .btn-recover:focus {
+  background-color: #68AB59;
   box-shadow: none;
+  color: #fff;
 }
 
-.ode{
-  padding: 3px 20px;
-  border: solid 1px #707070;
-  border-radius: 20px;
-}
-#odb{
-  height: 7vh;
-  width: 13vh;
-  font-size: x-small;
-  background-color: #3F8FB0;
+.btn-pickup {
+  background-color: #68BB59;
+  color: #fff;
   border-radius: 10px;
   border: none;
-  color: white;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.164);
+  width: 100%;
+  font-size: smaller;
+  padding: 8px 6px;
+  box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-pickup:hover, .btn-pickup:focus {
+  background-color: #68AB59;
+  box-shadow: none;
+  color: #fff;
 }
 
 .proceed-btn {

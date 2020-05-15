@@ -1,5 +1,5 @@
 
-$('.btn').on('click', function() {
+$('.btn-reload').on('click', function() {
     var $this = $(this);
   $this.button('loading');
     setTimeout(function() {
@@ -8,6 +8,24 @@ $('.btn').on('click', function() {
 });
 
 $(document).ready(function() {
+
+// SHOW CONTACT
+$('.contact-text').click(function() {
+  $(this).addClass('d-none');
+  $(this).next().removeClass('d-none');
+});
+
+$('.contact-icon').click(function() {
+  tmp = $(this).next().children();
+  $(tmp[0]).addClass('d-none');
+  $(tmp[1]).removeClass('d-none');
+});
+
+// HIDE CONTACT
+$('.contact-no').click(function() {
+  $(this).addClass('d-none');
+  $(this).prev().removeClass('d-none');
+});
 
 $('.list1 .summary').hover(function() {
     $(this).attr('id', 'tr-active');
@@ -34,7 +52,7 @@ $('.list1 .summary').hover(function() {
 		$('#tr-active').addClass('d-none');
 	});
 
-	$('#tr-active .recover-btn').click(function() {
+	$('#tr-active .btn-recover').click(function() {
 		$('#tr-active').next().next().removeClass('d-none');
 		$('#tr-active').addClass('d-none');
 	});
