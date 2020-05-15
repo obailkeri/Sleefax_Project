@@ -47,13 +47,8 @@ $('.list1 .summary').hover(function() {
     $("#data6").html(d6);
     $("#data7").html(d7);
 
-    $('#tr-active .callDetails').click(function() {
-		$('#tr-active').next().removeClass('d-none');
-		$('#tr-active').addClass('d-none');
-	});
-
 	$('#tr-active .btn-recover').click(function() {
-		$('#tr-active').next().next().removeClass('d-none');
+		$('#tr-active').next().removeClass('d-none');
 		$('#tr-active').addClass('d-none');
 	});
 
@@ -61,14 +56,9 @@ $('.list1 .summary').hover(function() {
     $(this).removeAttr('id');
 });
 
-$('.call-info .close').click(function() {
-	$(this).parent().parent().parent().addClass('d-none');
-	$(this).parent().parent().parent().prev().removeClass('d-none');
-});
-
 $('.recover-doc .close').click(function() {
 	$(this).parent().parent().parent().addClass('d-none');
-	$(this).parent().parent().parent().prev().prev().removeClass('d-none');
+	$(this).parent().parent().parent().prev().removeClass('d-none');
 });
 
 });
