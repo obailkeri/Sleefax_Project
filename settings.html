@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Section For SEO -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Settings</title>
+  <!-- Linking Bootstrap and CSS -->
+  <link rel="icon" href="Img/logo0.jpeg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="settings.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light fixed-top pb-0" style="background-color: white;">
+
+    <!-- Navbar Brand -->
+    <a href="new_orders.html" class="navbar-brand">
+        <div class="row">
+            <img src="Img/logo0.jpeg" alt="Sleefax" class="logo mx-2 p-1">
+            <b class="mt-2 text-dark">SleefaxPartner</b>
+        </div>
+    </a>
+
+    <!-- Toggle Icon -->
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" style="color:#296178">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ml-auto mt-2">
+            <ul class="navbar-nav ml-auto"  id="navbarCollapse">
+                <!-- Shop Open-Close Toggle Button -->
+                <label class="switch mt-1">
+                  <input type="checkbox" id="toggleBtn" checked>
+                  <div class="slider round">
+                    <span class="on pr-3" style="font-weight:bold; font-size:medium;">Open</span>
+                    <span class="off pl-4" style="font-weight:bold; font-size:medium">Closed</span>
+                  </div>
+                </label>
+
+                <li class="nav-item ml-md-5">
+                  <a class="nav-link mx-auto" href="new_orders.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-auto" href="order_history.html">Order History</a>
+                </li>
+                <li class="nav-item text-left">
+                  <div class="dropdown">
+                    <a class="dropbtn nav-link active">Profile
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="mx-auto" id="smaller-border"></div>
+                    <div class="dropdown-content text-center">
+                      <a href="settings.html" class="nav-link active mt-3">Settings</a>
+                      <a href="login.html" class="nav-link">Logout</a>
+                    </div>
+                  </div> 
+                </li>
+            </ul> 
+        </div>
+    </div>
+</nav>
+
+<div class="row" style="margin-top: 64px;">
+
+  <div class="col-12 col-md-3 sidenav">
+    <div class="row justify-content-left mt-5 ml-4" style="font-size: 32px; color:black;">
+      Settings
+    </div>
+    <div class="mx-4 mt-3 mb-2" style="height: 2px; background-color: #e0e0e0;"></div>
+    <div>
+      <table class="ml-4 mt-2" style="table-layout: fixed; width: 100%;">
+        <tbody>
+        <div class="row justify-content-center">
+          <tr class="navi">
+            <td colspan="2"><p class="tb tb-active" id="a1">Basic Information</p></td>
+          </tr>
+        </div>
+        <div class="row justify-content-center">
+          <tr class="navi">
+            <td colspan="2"><p class="tb" id="a2">Change Password</p></td>
+          </tr>
+        </div>
+        <div class="row justify-content-center">
+          <tr class="navi">
+            <td colspan="2"><p class="tb"  id="a4">Shop Timings</p></td>
+          </tr>
+        </div>
+        <div class="row justify-content-center">
+          <tr class="navi">
+            <td colspan="2"><p class="tb"  id="a3">Pricing</p></td>
+          </tr>
+        </div>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-1"></div>
+  
+  <div class="col-12 col-md-5 pt-4 pb-5 block active" id="a11">
+    <div class="container px-4">
+      <div class="row justify-content-left mt-4">
+        <small class="text-muted">Personal Details</small>
+      </div>
+      
+      <div class="row justify-content-left mt-4">
+          <h6><label>Full Name</label></h6>
+      </div>
+      <div class="row justify-content-left">
+          <input type="text" class="fo1 form-control" id="fname" value="John Doe" disabled> 
+      </div>
+      <div class="row justify-content-left mt-4">
+        <h6><label>Personal Contact Number</label></h6>
+      </div>
+      <div class="row justify-content-left">
+        <input type="text" class="fo1 form-control" id="pnum" value="9876543221" disabled> 
+      </div>
+      <div class="row justify-content-left mt-4">
+          <h6><label>Email Id</label></h6>
+      </div>
+      <div class="row justify-content-left">
+        <input type="text" class="fo1 form-control" id="eadd" value="johndoe@abc.com" disabled> 
+      </div>
+
+      <div class="row justify-content-left mt-5">
+        <small class="text-muted">Shop Details</small>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-md-5 col-lg-4 pl-0 pr-3">
+          <div class="row justify-content-center pt-4 mt-2">  
+            <div class="box-upload">
+              <div class="row justify-content-center mt-4 mb-2">
+                <img src="Img/new_shop.png" width="100px" height="80px"> 
+              </div>
+              <div class="row justify-content-center">
+                <button class="upload-button" type="none">UPLOAD</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-7">
+          <div class="row justify-content-left mt-4">
+            <h6><label>Shop Name</label></h6>
+          </div>
+          <div class="row justify-content-left">
+            <input type="text" class="fo1 form-control" id="sname" value="Krishna Xerox" disabled> 
+          </div>
+          <div class="row justify-content-left mt-4">
+            <h6><label>Shop Phone Number</label></h6>
+          </div>
+          <div class="row justify-content-left">
+            <input type="text" class="fo1 form-control" id="spnum" value="22468819" disabled> 
+          </div>
+        </div>
+      </div>
+        <div class="row justify-content-left mt-4">
+          <h6><label>Shop Location</label></h6>
+        </div>
+        <div class="row justify-content-left">
+          <input type="text" class="fo1 form-control" id="loc" value="144 cotton street" disabled> 
+        </div>
+        <div class="row justify-content-center mt-3 but_c"> 
+          <button class="btn btn-sleefax mt-5 mb-3" id="edit1" onclick="enable_input()" >Edit Details</button>
+          <button class="btn btn-sleefax mt-5 mb-3" id="save1" onclick="disable_input()" >Save details</button>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-5 block py-5" id="a21">
+    <div class="container px-4 pb-4">
+      <div class="row justify-content-left mt-5">
+        <h6><label>Current Password</label></h6>
+      </div>
+      <div class="row justify-content-left">
+        <input type="password" class="fo form-control">
+      </div>
+      <div class="row justify-content-left mt-4">
+        <h6><label>New Password</label></h6>
+      </div>
+      <div class="row justify-content-left">
+        <input type="password" class="fo form-control">
+      </div>
+      <div class="row justify-content-left mt-4">
+        <h6><label>Re-Enter New Password</label></h6>
+      </div>
+      <div class="row justify-content-left">
+        <input type="text" class="fo form-control">
+      </div>
+      <div class="row justify-content-center mt-3">
+        <button type="submit" class="btn btn-sleefax my-5">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-5 block py-5" id="a31">
+    <div class="container px-4">
+      <div class="row justify-content-between">
+          <div class="form-group col-9 col-md-7">
+            <div class="row justify-content-left">
+              <h6><label class="mt-4">B/W PRINTOUT (SINGLE SIDE)</label></h6>
+            </div>
+            <div class="row justify-content-left text-muted text-sm">
+              PER PAGE
+            </div>
+          </div>
+          <div class="form-group col-3 col-md-5">
+            <div class="input-box row justify-content-left">
+              <input autofocus="autofocus" value="2" class="fo2 form-control mt-4 price" id="price1" disabled>
+              <span class="unit">₹</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-between">
+          <div class="form-group col-9 col-md-7">
+            <div class="row justify-content-left">
+              <h6><label class="mt-4">B/W PRINTOUT (BOTH SIDES)</label></h6>
+            </div>
+            <div class="row justify-content-left text-muted text-sm">
+              PER PAGE
+            </div>
+          </div>
+          <div class="form-group col-3 col-md-5">
+            <div class="input-box row justify-content-left">
+              <input autofocus="autofocus" value="2" class="fo2 form-control mt-4 price" id="price2" disabled>
+              <span class="unit">₹</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-between">
+          <div class="form-group col-9 col-md-7">
+            <div class="row justify-content-left">
+              <h6><label class="mt-4">COLOR PRINTOUT (SINGLE SIDE)</label></h6>
+            </div>
+            <div class="row justify-content-left text-muted text-sm">
+              PER PAGE
+            </div>
+          </div>
+          <div class="form-group col-3 col-md-5">
+            <div class="input-box row justify-content-left">
+              <input autofocus="autofocus" value="2" class="fo2 form-control mt-4 price" id="price3" disabled>
+              <span class="unit">₹</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-between">
+          <div class="form-group col-9 col-md-7">
+            <div class="row justify-content-left">
+              <h6><label class="mt-4">COLOR PRINTOUT (BOTH SIDES)</label></h6>
+            </div>
+            <div class="row justify-content-left text-muted text-sm">
+              PER PAGE
+            </div>
+          </div>
+          <div class="form-group col-3 col-sm-5">
+            <div class="input-box row justify-content-left">
+              <input autofocus="autofocus" value="2" class="fo2 form-control mt-4 price" id="price4" disabled>
+              <span class="unit">₹</span>
+            </div>
+          </div>
+        </div>
+      <div class="row justify-content-center mt-3">
+        <button class="btn btn-sleefax mt-5 mb-3" id="edit2" onclick="enable_input2()" >Edit Details</button>
+        <button type="submit" class="btn btn-sleefax mt-5 mb-3" id ="save2" onclick="disable_input2()" >Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-5 block py-5" id="a41">
+    <div class="container px-4 pb-4">
+      <div class="row justify-content-between mt-4">
+        <div class="col-md-4">
+          <h5><label>Monday :</label></h5>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">09:00 - 21:30</h6>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-muted text-right mt-1"><label>Break :</label></h6>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">12:00 - 14:30</h6>
+        </div>
+      </div>
+      <div class="row justify-content-between mt-2">
+        <div class="col-md-4">
+          <h5><label>Tuesday :</label></h5>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">09:00 - 21:30</h6>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-muted text-right mt-1"><label>Break :</label></h6>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">12:00 - 14:30</h6>
+        </div>
+      </div>
+      <div class="row justify-content-between mt-2">
+        <div class="col-md-4">
+          <h5><label>Wednesday :</label></h5>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">09:00 - 21:30</h6>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-muted text-right mt-1"><label>Break :</label></h6>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">12:00 - 14:30</h6>
+        </div>
+      </div>
+      <div class="row justify-content-between mt-2">
+        <div class="col-md-4">
+          <h5><label>Thursday :</label></h5>
+        </div>
+        <div class="col-md-8">
+          <h6 class="mt-1 text-danger">CLOSED</h6>
+        </div>
+      </div>
+      <div class="row justify-content-between mt-2">
+        <div class="col-md-4">
+          <h5><label>Friday :</label></h5>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">09:00 - 21:30</h6>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-muted text-right mt-1"><label>Break :</label></h6>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">12:00 - 14:30</h6>
+        </div>
+      </div>
+      <div class="row justify-content-between mt-2">
+        <div class="col-md-4">
+          <h5><label>Saturday :</label></h5>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">09:00 - 21:30</h6>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-muted text-right mt-1"><label>Break :</label></h6>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">12:00 - 14:30</h6>
+        </div>
+      </div>
+      <div class="row justify-content-between mt-2">
+        <div class="col-md-4">
+          <h5><label>Sunday :</label></h5>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">10:00 - 22:00</h6>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-muted text-right mt-1"><label>Break :</label></h6>
+        </div>
+        <div class="col-md-3">
+          <h6 class="mt-1">12:00 - 14:30</h6>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <button type="button" data-toggle="modal" data-target="#editTime" class="btn btn-sleefax my-5">Edit Details</button>
+          <!-- Modal-->
+          <div id="editTime" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+            <div role="document" class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <h4 class="modal-title pl-3 mt-3">Shop Timings</h4>
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card border-0 p-3">
+                    <div class="row">
+                      <div class="col-6 col-md-2 text-left"> 
+                        <div class="mt-3" style="color:#39748B; font-weight:bold; font-size: 15px;">Open Hours  : </div> 
+                      </div>
+
+                      <div class="col-12 col-md-10 add-day-box">
+                        <div class="add-break-box">
+                          <div class="row justify-content-left mt-3">
+                            <div class="col-12 col-md-2 mb-2 ml-0">
+                              <select class="select-day">
+                                <option>Mon-Fri</option>
+                                <option>Sat-Sun</option>
+                                <option>Mon</option>
+                                <option>Tues</option>
+                                <option>Wed</option>
+                                <option>Thur</option>
+                                <option>Fri</option>
+                                <option>Sat</option>
+                                <option>Sun</option>
+                              </select>
+                            </div>
+
+                            <div class="col-6 col-md-3 px-auto text-muted text-sm pr-0">From :&nbsp;
+                              <input required type="time" id="from-time" onblur="validate2(4)">
+                            </div>
+                            <div class="col-5 col-md-3 px-auto text-muted text-sm mb-2 mb-md-0 pr-0">To :&nbsp;
+                              <input required type="time" id="to-time" onblur="validate2(5)">
+                            </div>
+                  
+                            <div class="col-4 col-md-2" style="text-align: center;">
+                              <div class="sub-btn addbreak">Add Break</div>
+                            </div>
+                            <div class="col-4 col-md-2" style="text-align: left;">
+                              <div class="sub-btn addday">Add Day</div>
+                            </div>
+                          </div>
+                        </div>
+                     
+                      </div>
+                    </div>
+
+                    <div class="row mt-5">
+                      <div class="col-md-2 pt-2">
+                        <div style="color:#39748B; font-weight:bolder; font-size: 15px;">Closed On : </div> 
+                      </div>
+
+                      <div class="col-md-10 radio-group pb-2">
+                        <div class="row justify-content-left text-center">
+                          <div class="col-6 col-md-3">
+                            <div class="days">Sunday</div>
+                          </div>
+                          <div class="col-6 col-md-3">
+                            <div class="days">Monday</div>
+                          </div>
+                          <div class="col-6 col-md-3">
+                            <div class="days">Tuesday</div>
+                          </div>
+                          <div class="col-6 col-md-3">
+                            <div class="days">Wednesday</div>
+                          </div>
+                        </div>
+
+                        <div class="row justify-content-left text-center">
+                          <div class="col-6 col-md-3">
+                            <div class="days">Thursday</div>
+                          </div>
+                          <div class="col-6 col-md-3">
+                            <div class="days">Friday</div>
+                          </div>
+                          <div class="col-6 col-md-3">
+                            <div class="days">Saturday</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center mb-5">
+                  <button type="button" data-dismiss="modal" class="btn btn-modalClose mr-2">Close</button>
+                  <button type="button" class="btn btn-modalSave ml-2">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-3"></div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer pt-4">
+    <div class="container-fluid text-center text-md-left pt-2 pb-5">
+      <div class="row px-2 px-lg-5">
+
+        <!-- Contact Details -->
+        <div class="col-12 col-md-3 mt-md-0 mt-3">
+          <h3 class="mb-3 ml-2" style="font-weight: bold; color: #DFDFDF;">Sleefax</h3>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-2">
+              <img src="Img/loc-icon.png" height="30px" width="30px">
+            </div>
+            <div class="col-12 col-md-10 text-light" style="font-size: small;">
+              5th floor, MIT TBi,<br>
+              Paud Rd., Kothrud,<br>
+              Pune-411038<br>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-1" >
+              <img src="Img/call-icon.png" height="25px" width="25px">
+            </div>
+            <div class="col-12 col-md-10 text-light" style="font-size: small;">
+              +91 1234567890<br>
+              +91 1234567890
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-1" >
+              <img src="Img/mail-icon.png" height="25px" width="25px">
+            </div>
+            <div class="col-12 col-md-10 mt-1 text-light" style="font-size: small;">
+              incsleefax@gmail.com
+            </div>
+          </div>
+        </div>
+    
+      <!-- Company Section -->
+      <div class="col-12 col-md-2 mb-md-0 mb-3 mt-5 mt-md-3">
+          <h5 style="color: #DFDFDF; font-weight: bold;">Company</h5>
+          <ul class="list-unstyled text-light">
+            <li class="mt-3">
+              <a href="#!">About Us</a>
+            </li>
+            <li class="mt-1">
+              <a href="#!">Contact Us</a>
+            </li>
+            <li class="mt-1">
+              <a href="#!">Help</a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- Policy Section -->
+        <div class="col-12 col-md-2 mb-3 mt-3">
+          <h5 style="color: #DFDFDF; font-weight: bold;">Policy</h5>
+          <ul class="list-unstyled text-light">
+            <li class="mt-3">
+              <a href="#!">Terms</a>
+            </li>
+            <li class="mt-1">
+              <a href="#!">Privacy Policy</a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- Vertical Line -->
+        <div class="col-12 col-md-1">
+          <div class="mt-3 d-none d-md-block" id="vl"></div>
+        </div>
+
+        <!-- Get our App -->
+        <div class="col-12 col-md-4 mb-md-0 mb-3 mt-3 text-center">
+          <h5 style="color:#DFDFDF; font-weight: bold;">  Get our app</h5>
+          <div class="text-center">
+            <div class="row mt-3 justify-content-center">
+                  <img class="m-2 mb-1" src="Img/google-play.png" height="44px" width="125px">
+                  <img class="m-2 mt-1" src="Img/apple-store.png" height="43px" width="125px">
+            </div>
+          </div>
+
+          <!-- Horizontal Line -->
+          <div class="row">
+            <div class ="mt-4 mx-5 mx-md-3" id="rl"></div>
+          </div>
+       
+          <!-- Social Connect -->
+          <h5 class="mt-4" style="color:#DFDFDF; font-weight: bold;">Social</h5>
+          <ul class="list-unstyled">
+            <li class="mt-4 ml-3 social-connect">
+              <img class="mr-3" src="Img/google-icon.png">
+              <img class="mr-3" src="Img/fb-icon.png">
+              <img class="mr-3" src="Img/insta-icon.png">
+              <img class="mr-3" src="Img/linkedin-icon.png">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-1">
+    Copyright &copy;
+  </div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="settings.js"></script>
+
+</body>
+</html>
