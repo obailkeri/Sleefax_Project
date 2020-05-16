@@ -163,7 +163,7 @@ input:checked + .slider .off {
 }
 
 .slider.round {
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .slider.round:before {
