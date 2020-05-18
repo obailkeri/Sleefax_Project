@@ -17,3 +17,9 @@ https://obailkeri.github.io/Sleefax_Project/order_history.html
 
 SETTINGS
 https://obailkeri.github.io/Sleefax_Project/settings.html
+
+ABOUT US
+https://obailkeri.github.io/Sleefax_Project/about_us.html
+
+CONTACT US
+https://obailkeri.github.io/Sleefax_Project/contact_us.html

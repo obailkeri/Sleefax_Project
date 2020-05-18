@@ -1,0 +1,129 @@
+html, body {
+  overflow-x: hidden;
+  background-color: #F9F9F9;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0;
+}
+
+a, a:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+/*----NAVBAR CSS----*/
+.navbar {
+  color: #000;
+  font-size: large;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.514);
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.nav-item {
+  margin: auto 5px;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+.navbar ul li a {
+   color: #000 !important;
+}
+
+.navbar ul li a.active{
+    color: #296178 !important;
+    font-weight: bold !important;
+}
+
+#smaller-border {
+  height:5px;
+  width: 100%;
+  background-color:  #296178;
+  border-radius: 5px;
+  z-index:1;
+  position: relative;
+  top: 2px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+/*----FOOTER CSS----*/
+.page-footer {
+  background-image: linear-gradient(#277391 35%, #3497BF 100%);
+  border: none;
+}
+
+#vl{
+  height: 200px;
+  width:1px;
+  background-color: #AEAEAE;
+}
+
+#rl{
+  height: 1px;
+  width:100%;
+  background-color: #AEAEAE;
+}
+
+.social-connect img {
+  width: 25px;
+  height: 25px;
+}
+
+.social-connect img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.footer-copyright {
+  color: white;
+  background-color: #2C596B;
+  border: none;
+}
+
+/*----FOR MOBILE DEVICES----*/
+@media screen and (max-width: 768px) {
+  #smaller-border{
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  #focus {
+    float: left !important;
+  }
+}
+
+
+#focus {
+  font-size: xxx-large;
+  color: #3F8FB0;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 500px) {
+  #focus {
+    margin-left: 23vh;
+  }
+}
+
+.heading {
+  color: #3F8FB0;
+  font-size: 36px;
+  font-weight: bolder;
+  margin-top: 100px !important;
+}

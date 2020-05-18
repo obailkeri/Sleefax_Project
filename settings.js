@@ -45,17 +45,15 @@ $('.radio-group .days').click(function(){
 });
 
 function enable_input(){
+    $("#edit1").hide();
+    $("#save1").show();
+
     var inputs = document.getElementsByClassName("fo1");
 
     for (i=0;1<inputs.length;i++){
         inputs[i].disabled = false;
-    } 
+    }
 }
-
-$(".fo1").change(function(){
-    $("#edit1").hide();
-    $("#save1").show();
-}); 
 
 function disable_input(){
     var x = document.getElementById("edit1");
@@ -69,16 +67,14 @@ function disable_input(){
 }
 
 function enable_input2(){
+    $("#edit2").hide();
+    $("#save2").show();
+
     var inputs2 = document.getElementsByClassName("fo2");
     for (i=0;1<inputs2.length;i++){
         inputs2[i].disabled = false;
     } 
 }
-
-$(".fo2").change(function(){
-    $("#edit2").hide();
-    $("#save2").show();
-});
 
 function disable_input2(){
     var x = document.getElementById("edit2");
