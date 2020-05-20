@@ -1,5 +1,10 @@
 
-$('.btn').on('click', function() {
+$(".btn-secondary").click(function() {
+  $('#toggleBtn').attr('checked');
+});
+
+
+$('.btn-refresh').on('click', function() {
   var $this1 = $(this);
   $this1.button('loading');
   setTimeout(function() {
