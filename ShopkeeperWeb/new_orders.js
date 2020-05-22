@@ -1,6 +1,19 @@
 
+// $('#toggleBtn').click(function() {
+//   if($('#toggleBtn').is(":checked")) {
+//     $('#toggleBtn').removeAttr('checked');
+//   }
+//   else {
+//     $('#toggleBtn').attr('checked', 'checked');
+//   }
+// })
+
 $(".btn-secondary").click(function() {
-  $('#toggleBtn').attr('checked');
+  $('#toggleBtn').attr('checked', 'checked');
+});
+
+$(".btn-blue").click(function() {
+  $('#toggleBtn').removeAttr('checked');
 });
 
 

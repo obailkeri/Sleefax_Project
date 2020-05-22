@@ -1,5 +1,3 @@
-# Sleefax_Project
-
 # ShopkeeperWeb
 
 SIGN UP
@@ -28,8 +26,3 @@ https://obailkeri.github.io/Sleefax_Project/ShopkeeperWeb/about_us.html
 
 CONTACT US
 https://obailkeri.github.io/Sleefax_Project/ShopkeeperWeb/contact_us.html
-
-# UserWeb
-
-HOME PAGE
-https://obailkeri.github.io/Sleefax_Project/UserWeb/home.html
