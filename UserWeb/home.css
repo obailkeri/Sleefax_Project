@@ -177,7 +177,7 @@ a, a:hover {
   box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
   border-radius: 5px;
   background-color: #fff;
-  padding: 15px 35px;
+  padding: 15px 20px;
 }
 
 .sm-circle {
@@ -191,14 +191,14 @@ a, a:hover {
 }
 
 .inner-circle {
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   position: absolute;
   background-color: #DDE9EE;
   z-index: 3;
   border-radius: 50%;
-  top: 10px;
-  left: 10px;
+  top: 7px;
+  left: 7px;
 }
 
 .active .inner-circle {
