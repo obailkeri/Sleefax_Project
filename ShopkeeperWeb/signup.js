@@ -209,6 +209,30 @@ $(document).ready(function(){
 
 var current_fs, next_fs, previous_fs;
 
+$("#signup_google").click(function(){
+    current_fs = $(this).parent().parent().parent().parent().parent();
+    next_fs = $(this).parent().parent().parent().parent().parent().next();
+
+    $(current_fs).removeClass("show");
+    $(next_fs).addClass("show");
+
+    $("#progressbar li").eq($(".tab").index(next_fs)).addClass("active");
+        
+        current_fs.animate({}, {
+            step: function() {
+
+                current_fs.css({
+                    'display': 'none',
+                    'position': 'relative'
+                });
+
+                next_fs.css({
+                    'display': 'block'
+                });
+            }
+        });
+});
+
 $(".next").click(function(){
 
     str1 = "next1";
@@ -236,7 +260,7 @@ $(".next").click(function(){
         val3 = false;
     }
 
-    if((!str1.localeCompare($(this).attr('id')) && val1 == true) || (!str2.localeCompare($(this).attr('id')) && val2 == true) || (!str3.localeCompare($(this).attr('id')) && val3 == true)) {
+    // if((!str1.localeCompare($(this).attr('id')) && val1 == true) || (!str2.localeCompare($(this).attr('id')) && val2 == true) || (!str3.localeCompare($(this).attr('id')) && val3 == true)) {
         current_fs = $(this).parent().parent().parent().parent();
         next_fs = $(this).parent().parent().parent().parent().next();
 
@@ -264,7 +288,7 @@ $(".next").click(function(){
                 });
             }
         });
-    }
+    // }
 });
 
 $(".prev").click(function(){
