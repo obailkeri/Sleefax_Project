@@ -176,18 +176,21 @@ input:checked + .slider .off {
   border-radius: 50%;
 }
 
+#back_to_orders:hover, #back_to_orders:focus {
+  color: #227093;
+}
+
 .order-details {
-    background-color:white; 
+    background-color: #F5F5F5; 
     width: 100%;
     border-radius: 15px;
     border: solid 2px #0D506E;
 }
 .order-details .title{
-    border-style:solid; 
-    border-width:1px; 
-    border-color:#0D506E; 
+    border: solid 2px #227093; 
     font-size: larger;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.514);   
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.514); 
+    background-color: #fff;  
 }
 
 table { 
@@ -291,25 +294,87 @@ h5.person-name {
 }
 
 @media (min-width: 576px) {
-    .modal-dialog {
+    .modal-dialog.print-info {
         max-width: 96% !important;
+    }
+
+    .modal-dialog.chat-bot-box {
+        max-width: 30% !important;
+        margin-left: auto;
+        margin-right: 20px;
     }
 }
 
-.modal-content {
+.shadow {
+  box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+}
+
+.modal-content.chat-bot-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+}
+
+.chat-head {
+  background-color: #227093;
+  color: #fff;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.chat-body {
+  padding: 20px 20px;
+}
+
+.user-msg {
+  border-radius: 10px;
+  background-color: #227093;
+  color: #fff;
+  text-align: left;
+  max-width: 75%;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.round-icon {
+  border-radius: 50%;
+  border: 1px solid #000;
+  color: #aaa;
+  width: 30px;
+  height: 30px;
+  padding-top: 2px;
+  text-align: center;
+  margin-top: 11px;
+}
+
+.bot-msg {
+  border-radius: 10px;
+  background-color: #D4D4D4;
+  border: 1px solid #707070;
+  color: #000;
+  text-align: left;
+  max-width: 75%;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.modal-content.print-info {
   background: none !important;
   border: none !important;
 }
 
 .modal-backdrop.show.fade {
-  background: rgba(0, 0, 0, 1);
-  opacity: 0.8;
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 1);
+  opacity: 0.70;
+  backdrop-filter: blur(8px);
 }
 
 .modal-close {
   border-radius: 50%;
   border: 2px solid #227093;
+  background-color: #227093;
+  color: #fff;
   text-align: center;
   width: 50px;
   height: 50px;
@@ -317,14 +382,21 @@ h5.person-name {
   padding-top: 10px;
 }
 
+.modal-close:hover, .modal-close:focus {
+  background-color: #fff;
+  color: #227093;
+}
+
 .block {
   background-color: #fff;
   border-radius: 10px;
   padding: 15px 20px;
+  border: 1px solid #707070;
 }
 
 .block.active {
-  border: 3px solid #227093;
+  border: 4px solid #227093;
+  color: #227093;
 }
 
 /*----FOOTER CSS----*/

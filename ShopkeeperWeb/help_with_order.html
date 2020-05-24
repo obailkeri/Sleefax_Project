@@ -76,8 +76,10 @@
 
 <!-- Help for Specific Order -->
 <div class="container" style="margin-top: 100px; position: relative;">
-  <div class="fa fa-long-arrow-left" style="position: absolute; left: -40px; font-size: 40px;"></div>
-  <h2 class="text-blue ptr"><a href="pending_for_pickup.html">Back to all orders</a></h2>
+  <a href="pending_for_pickup.html" id="back_to_orders">
+    <div class="fa fa-long-arrow-left" style="position: absolute; left: -40px; font-size: 40px;"></div>
+    <h2 class="text-blue ptr">Back to all orders</h2>
+  </a>
 </div>
 
 <div class="container-fluid">
@@ -111,17 +113,17 @@
                 </div>
 
                 <div id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
-                  <div role="document" class="modal-dialog">
-                    <div class="modal-content">
+                  <div role="document" class="modal-dialog print-info">
+                    <div class="modal-content print-info">
                       <div class="row mx-4 mt-5">
                         <div class="col-lg-9 mt-5">
-                          <div class="row justify-content-between mx-4 text-light mb-4">
-                            <h5 class="">Rahul Sharma(1)</h5>
-                            <h5>#12351256</h5>
+                          <div class="row justify-content-between mx-4 text-dark mb-4">
+                            <h5 class="font-weight-bold">Rahul Sharma(1)</h5>
+                            <h5 class="font-weight-bold">#12351256</h5>
                             <h5>27 April, 2020</h5>
                             <h5>07:30 PM</h5>
                           </div>
-                          <div class="block active mx-3 mb-1">
+                          <div class="block active mx-3 mb-0">
                             <div class="row justify-content-between mx-4">
                               <div class="col-4"><h5 class="mb-0 mt-2 file-name">ReportAnalysis.pdf</h5></div>
                               <div class="col-4 text-center"><button class="btn btn-od">Order Details</button></div>
@@ -137,7 +139,7 @@
                               <span class="pages">Custom: 1 - 5</span>
                             </div>
                           </div>
-                          <div class="block mx-3 mb-1">
+                          <div class="block mx-3 mb-0">
                             <div class="row justify-content-between mx-4">
                               <div class="col-4"><h5 class="mb-0 mt-2 file-name">NewFile.pdf</h5></div>
                               <div class="col-4 text-center"><button class="btn btn-od">Order Details</button></div>
@@ -154,24 +156,24 @@
                             </div>
                           </div>
                           <div class="row justify-content-center mt-5">
-                            <div type="button" data-dismiss="modal" class="text-blue bg-light fa fa-close modal-close"></div>
+                            <div type="button" data-dismiss="modal" class="fa fa-close modal-close"></div>
                           </div>
                         </div>
                         <div class="col-lg-3">
                           <div class="order-details container mr-md-1 pb-5 mt-2">
                             <div class="title row justify-content-center pt-2 pb-2 mt-4 mx-1">Order Details</div>
                             <div class="d-flex flex-column mt-4 text-center">
-                              <h6 class="text-blue mb-3"><b><span id="file-heading"></span></b></h6>
-                              <h5><span id="customer">Customer Name</span></h5>
+                              <h5 class="text-blue mb-5"><b><span id="file-heading"></span></b></h5>
+                              <h5><b><span id="customer">Customer Name</span></b></h5>
                             </div>
                             <div class="mt-3 text-center">
-                              <p>Page Size: <span id="data1"></span></p>
-                              <p>Orientation: <span id="data2"></span></p>
-                              <p>Colour Type: <span id="data3"></span></p>
-                              <p>Copies: <span id="data4"></span></p>
-                              <p>File type: <span id="data5"></span></p>
-                              <p>File size: <span id="data6"></span></p>
-                              <p><span id="data7">Pages</span></p>
+                              <p class="mb-2">Page Size: <span id="data1"></span></p>
+                              <p class="mb-2">Orientation: <span id="data2"></span></p>
+                              <p class="mb-2">Colour Type: <span id="data3"></span></p>
+                              <p class="mb-2">Copies: <span id="data4"></span></p>
+                              <p class="mb-2">File type: <span id="data5"></span></p>
+                              <p class="mb-2">File size: <span id="data6"></span></p>
+                              <p class="mb-2"><span id="data7">Pages</span></p>
                             </div>
                           </div>
                         </div>
@@ -195,16 +197,18 @@
           <h3 class="mb-4 ml-2">Help me with this order</h3>
           <div class="list">
             <div id="list-item1" class="text-muted queries px-4">
-              <div class="row justify-content-between">
+              <div type="button" data-toggle="collapse" data-target="#ans1" class="row justify-content-between">
                 <h6 class="mb-0">Why can't I access files I have already printed ?</h6>
-                <h6 type="button" data-toggle="collapse" data-target="#ans1" class="fa fa-angle-down mb-0 ptr" style="font-size: 28px;"></h6>
+                <h6 class="fa fa-angle-down mb-0 ptr" style="font-size: 28px;"></h6>
+              </div>
+              <div class="row">
                 <div id="ans1" class="collapse mt-3 text-dark">
                   For security reasons pertaining to the users, you can not access a file once you’ve printed it. In order to access a printed file, the user will have to share the Recovery OTP with you, which you will have to enter for the respective order in the ‘Pending for Pick Up’ section. This will open the printer panel for the file you select, so you can directly print that file again as per the user’s specifications.
 
                   <h5 class="mt-3"><b>If you have any other queries, we'd love to hear you out. Reach out to us -</b></h5>
 
                   <div class="row px-3 mt-3">
-                    <button class="btn btn-chat mr-4 mb-4">Chat with us</button>
+                    <button data-toggle="modal" data-target="#chat-bot" class="btn btn-chat mr-4 mb-4">Chat with us</button>
                     <button class="btn btn-mail mb-4">Email us</button>
                   </div>
                 </div>
@@ -241,6 +245,54 @@
               </div>
             </div>
           </div>
+
+          <div id="chat-bot" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+            <div role="document" class="modal-dialog chat-bot-box">
+              <div class="modal-content chat-bot-box">
+                <div class="chat-head">
+                  <div class="row mx-3 justify-content-end mt-3">
+                    <div class="d-flex">
+                      <div type="button" data-dismiss="modal" class="fa fa-close ml-auto"></div>
+                    </div>
+                  </div>
+                  <div class="row mx-4 my-3">
+                    <div class="d-flex flex-column">
+                      <h2>Chat with us</h2>
+                      <h4>#12351256</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-body">
+
+                  <div class="user">
+                    <div class="user-msg ml-auto">
+                      Why can't I access files I have already printed ?
+                    </div>
+                    <div class="ml-auto text-right">
+                      <div class="d-flex flex-row justify-content-end">
+                        <small class="mr-2 mt-3">06:25 PM</small>
+                        <div class="round-icon"><span class="fa fa-user"></span></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bot mt-3">
+                    <div class="bot-msg mr-auto mb-1">
+                      For security reasons pertaining to the users, you can not access a file once you’ve printed it.<br><br> In order to access a printed file, the user will have to share the Recovery OTP with you, which you will have to enter in the respective order in the ‘Pending for Pick Up’ section.<br><br> This will open the printer panel for the file you select, so you can directly print that file again as per the user’s specifications. 
+                    </div>
+                    <div class="ml-auto text-left">
+                      <div class="d-flex flex-row justify-content-start">
+                        <img class="mt-2 shadow" src="Img/logo0.jpeg" width="30px" height="30px" style="border-radius: 50%;">
+                        <small class="ml-2 mt-3">06:25 PM</small>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
     </div>
 
