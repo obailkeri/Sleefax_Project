@@ -31,7 +31,7 @@ a.no-anchor:hover {
 }
 
 .card-0 {
-  max-width: 500px;
+  width: 500px;
   position: relative;
   z-index: 0;
 }
@@ -169,11 +169,6 @@ a.no-anchor:hover {
 
 .text-blue {
   color: #227093 !important;
-}
-
-.box {
-  border: dashed 2px #aaa;
-  padding: 80px 10px
 }
 
 .btn-blue {

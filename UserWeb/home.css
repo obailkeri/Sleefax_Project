@@ -163,7 +163,7 @@ a, a:hover {
 }
 
 .box {
-  border: dashed 2px #ddd;
+  border: dashed 2px #aaa;
   padding: 60px 10px
 }
 
@@ -177,7 +177,7 @@ a, a:hover {
   box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
   border-radius: 5px;
   background-color: #fff;
-  padding: 15px 20px;
+  padding: 25px 20px;
 }
 
 .sm-circle {

@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Upload Files</title>
+  <title>Adjust Print Properties</title>
   <!-- Linking Bootstrap and CSS -->
   <link rel="icon" href="Img/logo0.jpeg">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="upload-files.css">
+  <link rel="stylesheet" href="print-properties.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
@@ -30,8 +30,8 @@
   <div class="wide-box" style="width: 100%;">
     <div class="mx-auto card-0">
       <ul class="" id="progressbar">
-        <li class="tick active text-center">UPLOAD</li>
-        <li class="tick text-center">ADJUST</li>
+        <li class="tick done text-center">UPLOAD</li>
+        <li class="tick active text-center">ADJUST</li>
         <li class="tick text-center">SELECT</li>
         <li class="tick text-center">REVIEW</li>
       </ul>
@@ -55,73 +55,52 @@
   </ul> 
 </nav>
 
-<div class="container-fluid" id="top-section" style="padding-top: 80px;">
+<div class="container-fluid" style="padding-top: 80px;">
   <div class="container pt-5 pb-4">
-    <h2>Upload Files</h2>
+    <h2>Select the file below to adjust print properties</h2>
+  </div>
+  <div class="container">
+    <div class="row justify-content-left radio-grp">
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="file-box radio-opt selected">
+          <div class="file-box-header p-3">
+            <div class="row justify-content-between px-3 mt-1">
+              <h6 class="mb-0 truncateExtra">filename.pdf</h6>
+              <small>125kB</small>
+            </div>
+          </div>
+          <div class="file-box-body">
+            <img src="Img/test-img.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="file-box radio-opt">
+          <div class="file-box-header p-3">
+            <div class="row justify-content-between px-3 mt-1">
+              <h6 class="mb-0 truncateExtra">new-filename.pdf</h6>
+              <small>134kB</small>
+            </div>
+          </div>
+          <div class="file-box-body">
+            <img src="Img/test-img.jpg">
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <div class="container" style="padding-bottom: 100px">
-    <div class="box mb-4">
-      <div class="row justify-content-center px-3">
-        <div class="d-flex flex-column text-center">
-          <img class="mx-auto" src="Img/add-file.png" width="130px" height="130px">
-          <p class="text-muted pb-2">Drag and drop files here for printing</p>
-          <h6 class="text-muted mb-4">OR</h6>
-          <button class="btn btn-blue mx-auto"><h5 class="mb-0">UPLOAD</h5></button>
-        </div>
-      </div>
-    </div>
-
+  <div class="container">
     <div class="mb-5">
-      <div class="row justify-content-end px-3">
+      <div class="row justify-content-between px-3">
         <div class="d-flex text-center">
-          <a href="print-properties.html"><button class="btn btn-warning mx-auto px-4"><h5 class="mb-0">NEXT</h5></button></a>
+          <a href="upload-files.html"><button class="btn btn-secondary mx-auto px-4"><h5 class="mb-0">PREV</h5></button></a>
         </div>
-      </div>
-    </div>
-
-    <hr style="background-color: #707070;">
-
-    <div class="my-5">
-      <div class="row px-3 mb-4">
-        <h5 class="font-weight-bold">Uploaded Files</h5>
-      </div>
-      <div class="row justify-content-left">
-
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="file-box">
-            <div class="remove-file">
-              <span class="fa fa-close"></span>
-            </div>
-            <div class="file-box-header p-3">
-              <div class="row justify-content-between px-3 mt-1">
-                <h6 class="mb-0 truncateExtra">filename.pdf</h6>
-                <small>125kB</small>
-              </div>
-            </div>
-            <div class="file-box-body">
-              <img src="Img/test-img.jpg">
-            </div>
-          </div>
+        <div class="d-flex text-center">
+          <a href="select-shop.html"><button class="btn btn-warning mx-auto px-4"><h5 class="mb-0">NEXT</h5></button></a>
         </div>
-
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="file-box">
-            <div class="remove-file">
-              <span class="fa fa-close"></span>
-            </div>
-            <div class="file-box-header p-3">
-              <div class="row justify-content-between px-3 mt-1">
-                <h6 class="mb-0 truncateExtra">new-filename.pdf</h6>
-                <small>134kB</small>
-              </div>
-            </div>
-            <div class="file-box-body">
-              <img src="Img/test-img.jpg">
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
@@ -237,7 +216,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="upload-files.js"></script>
+<script src="print-properties.js"></script>
 
 </body>
 </html>
