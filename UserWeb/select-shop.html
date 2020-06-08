@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Section For SEO -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Select Shop</title>
+  <!-- Linking Bootstrap and CSS -->
+  <link rel="icon" href="Img/logo0.jpeg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="select-shop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand fixed-top pb-0">
+
+  <a href="home.html" class="no-anchor">
+    <div class="row mx-2">
+      <div class="fa fa-times-thin fa-2x mb-2" aria-hidden="true" style="font-size: 35px; font-weight: bold;"></div>
+    </div>
+  </a>
+
+  <div class="wide-box" style="width: 100%;">
+    <div class="mx-auto card-0">
+      <ul class="" id="progressbar">
+        <li class="tick done text-center">UPLOAD</li>
+        <li class="tick done text-center">ADJUST</li>
+        <li class="tick active text-center">SELECT</li>
+        <li class="tick text-center">REVIEW</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Navbar Links -->
+  <ul class="navbar-nav ml-auto my-2">
+    <li class="nav-item ml-auto text-left mb-1">
+      <div class="dropdown">
+        <a class="dropbtn nav-link circle text-dark">JD</a>
+        <div class="dropdown-content">
+          <p class="mb-1">John Doe</p>
+          <small>+91 9876543210</small>
+          <small>johndoe@abc.xyz</small>
+          <hr>
+          <a href="logout.html" class="nav-link">Logout</a>
+        </div>
+      </div> 
+    </li>
+  </ul> 
+</nav>
+
+<div class="container-fluid" style="padding-top: 80px;">
+  <div class="container pt-5 pb-4">
+    <h2>Select Your Preferred Print shop</h2>
+  </div>
+  <div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-8">
+            <div class="container shop_details_card active mt-4 px-4 py-4">
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class="container shop_card px-4 py-4">
+                            <img src="Img/new_shop.png" class="shop_image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-5 px-2" style="text-align: center;">
+                        <div class="container" style="width: 100%;">
+                            <div class="shop_name" style="text-align: left;">
+                                Mit Print Shop
+                            </div>
+                            <div class="shop_address" style="text-align: left;">
+                                Kothrud, Pune
+                                <span class="shop_distance ml-4">
+                                    6 km
+                                </span>
+                            </div>
+                            <div class="mt-2" style="font-weight: bold; font-size: small; text-align: left; color: #77BF66;">
+                                Currently Accepting Orders
+                            </div>
+                            <div class="mt-2" style="text-align: left;">
+                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#exampleModalCenter">
+                                    View Shop <br>
+                                    Timing & Pricing
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 px-2 py-2" style="text-align: center;">
+                        <div class="container" style="width: 100%;">
+                            <div class="row mt-2">
+                                <button type="button" class="btn btn-open">Open</button>
+                            </div>
+                            <div class="row mt-3" style="color: #858585; font-size: small;">
+                                Closes at 6 PM
+                                <i class="fa fa-clock-o fa-lg ml-1 pt-1" aria-hidden="true"></i>
+                            </div>
+                            <div class="row mt-4">
+                                <a style="font-size:small; text-decoration: underline; color: #227093;">
+                                    View in Maps
+                                    <img src="Img/nav-arrow.png" style="max-width: 18px;">
+                                </a>
+                            </div>   
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            <div class="container shop_details_card mt-4 px-4 py-4">
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class="container shop_card px-4 py-4">
+                            <img src="Img/new_shop.png" class="shop_image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-5 px-2" style="text-align: center;">
+                        <div class="container" style="width: 100%;">
+                            <div class="shop_name" style="text-align: left;">
+                                Mit Print Shop
+                            </div>
+                            <div class="shop_address" style="text-align: left;">
+                                Kothrud, Pune
+                                <span class="shop_distance ml-4">
+                                    6 km
+                                </span>
+                            </div>
+                            <div class="mt-1" style="font-weight: bold; font-size: small; text-align: left; color: #C8864C;">
+                                Accepting Orders, <br>
+                                Pickup during open hours    
+                            </div>
+                            <div class="mt-2" style="text-align: left;">
+                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#exampleModalCenter">
+                                    View Shop <br>
+                                    Timing & Pricing
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 px-2 py-2" style="text-align: center;">
+                        <div class="container" style="width: 100%;">
+                            <div class="row mt-2">
+                                <button type="button" class="btn btn-partially-closed">Closed</button>
+                            </div>
+                            <div class="row mt-3" style="color: #858585; font-size: small;">
+                                Opens at 8 AM
+                                <i class="fa fa-clock-o fa-lg ml-1 pt-1" aria-hidden="true"></i>
+                            </div>
+                            <div class="row mt-4">
+                                <a style="font-size:small; text-decoration: underline; color: #227093;">
+                                    View in Maps
+                                    <img src="Img/nav-arrow.png" style="max-width: 18px;">
+                                </a>
+                            </div>   
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            <div class="container shop_details_card mt-4 px-4 py-4">
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class="container shop_card px-4 py-4">
+                            <img src="Img/new_shop.png" class="shop_image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-5 px-2" style="text-align: center;">
+                        <div class="container" style="width: 100%;">
+                            <div class="shop_name" style="text-align: left;">
+                                Mit Print Shop
+                            </div>
+                            <div class="shop_address" style="text-align: left;">
+                                Kothrud, Pune
+                                <span class="shop_distance ml-4">
+                                    6 km
+                                </span>
+                            </div>
+                            <div class="mt-2" style="font-weight: bold; font-size: small; text-align: left; color: #C44848">
+                                Not Accepting Orders 
+                            </div>
+                            <div class="mt-2" style="text-align: left;">
+                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#exampleModalCenter">
+                                    View Shop <br>
+                                    Timing & Pricing
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 px-2 py-2" style="text-align: center;">
+                        <div class="container" style="width: 100%;">
+                            <div class="row mt-2">
+                                <button type="button" class="btn btn-closed">Closed</button>
+                            </div>
+                            <div class="row mt-3" style="color: #858585; font-size: small;">
+                                Opens at 8 AM
+                                <i class="fa fa-clock-o fa-lg ml-1 pt-1" aria-hidden="true"></i>
+                            </div>
+                            <div class="row mt-4">
+                                <a style="font-size:small; text-decoration: underline; color: #227093;">
+                                    View in Maps
+                                    <img src="Img/nav-arrow.png" style="max-width: 18px;">
+                                </a>
+                            </div>   
+                        </div>               
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <!-- Search Bar -->
+            <div class="row justify-content-center mt-3">
+                <input type="text" class="px-2 pl-3 search_text" placeholder="search" style="text-align:left; max-width: 200px;">
+                <button class="px-1" type="submit" id="butn" style="max-width: 40px; text-align: center;"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="container sort_by px-4 pt-4 pb-4 mt-5" style="text-align: left;">
+                SORT BY
+                <div class="line_h mt-2"></div>
+                <div class="row justify-content-left mt-2 ml-1 custom-control custom-checkbox">
+                    <input checked id="customCheck1" type="checkbox" class="custom-control-input">
+                    <label for="customCheck1" style="font-size: x-small;" class="custom-control-label text-sm pt-3">Lowest total bill amount</label>
+                </div>   
+                <div class="row justify-content-left mt-2 ml-1 custom-control custom-checkbox">
+                    <input checked id="customCheck2" type="checkbox" class="custom-control-input">
+                    <label for="customCheck2" style="font-size: x-small;" class="custom-control-label text-sm pt-3">Nearest shop</label>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-sleefax mt-4">APPLY</button>
+                </div> 
+            </div> 
+            <div class="container filter_by px-4 pt-4 pb-4 mt-5" style="text-align: left;">
+                FILTER BY
+                <div class="line_h mt-2 mb-3"></div>
+                Shop distance within :
+                <div class="row ml-1">
+                        10 m
+                    <div style="position: relative; left: 110px;">
+                        10 km
+                    </div>
+                </div>
+                <input type="range" min="10" max="10000" value="5000" class="slider mt-2" id="myRange">
+                <br>
+                <div class="row justify-content-center mt-2">
+                    <input type="text" id="demo" style="padding:5px; max-width:60px; min-width: 25px; text-align: center;">
+                </div>
+                <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-sleefax mt-4">APPLY</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal get otp -->
+  <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="background-color: #FCFCFC;  border-radius: 20px;">
+      <div class="modal-content modal_card px-4" style=" border-radius: 20px;">
+        <div class="modal-body" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row mt-4">
+                <div class="col-12 col-md-3">
+                    <div class="container shop_card_modal px-3 py-3">
+                        <img src="Img/new_shop.png" class="shop_image_modal">
+                    </div>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="row">
+                        <span class="ml-3"><b> SHOP NAME </b></span>
+                        <div class="open ml-5">
+                            Open
+                        </div>
+                    </div>
+                    <div class="row mt-2 ml-1" style="font-size: x-small;">
+                        Shop No 5, Pinto Mansion, Sitadevi Temple Road, Mahim, Pune - 111111
+                    </div>
+                    <div class="row mt-2 ml-1" style="font-size: x-small;">
+                    Contact No. : +91 1231231231, +91 1231231231
+                    </div>
+                    <div style="text-align: right;">
+                        <a style="font-size:small; text-decoration: underline; color: #227093;">
+                            View in Maps
+                            <img src="Img/nav-arrow.png" style="max-width: 18px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-sm-6 px-3 py-3">
+                    <div class="row ml-2">
+                       <span style="color:#227093;">Pricing</span>&nbsp;<span class="ml-1 pt-1" style="color:#686868; font-size: smaller;">(per page)</span> 
+                    </div>  
+                    <hr>
+                    <div class="row ml-2" style="font-size: x-small;">
+                        BW Printout (Single Side) &nbsp; ₹ &nbsp; 1.00
+                    </div>  
+                    <div class="row ml-2 mt-1" style="font-size: x-small;">
+                        BW Printout (Single Side) &nbsp; ₹ &nbsp; 1.00
+                    </div>     
+                    <div class="row ml-2 mt-1" style="font-size: x-small;">
+                        BW Printout (Single Side) &nbsp; ₹ &nbsp; 1.00
+                    </div>     
+                    <div class="row ml-2 mt-1" style="font-size: x-small;">
+                        BW Printout (Single Side) &nbsp; ₹ &nbsp; 1.00
+                    </div>
+                    <div class="row ml-2 mt-2" style="font-size:small; font-weight: bold;">
+                        TOTAL BILL AMOUNT : ₹ 20
+                    </div>                 
+                </div>
+                <div class="col-12 col-sm-6 px-3 py-3">
+                    <div class="row ml-2">
+                       <span style="color:#227093;">Shop Timings</span>
+                    </div>
+                    <hr>
+                    <div class="row" style="font-size: x-small;">
+                        <div class="col-12 col-sm-5">
+                            &nbsp;&nbsp;Mon - Fri : 
+                        </div>
+                        <div class="col-12 col-sm-7">
+                       09:15 am  -  01:15 pm<br>
+                        03:15 pm  -  09:15 pm
+                        </div>
+                    </div>  
+                    <div class="row ml-1 mt-1" style="font-size: x-small;">
+                        Saturday : Closed
+                    </div> 
+                    <div class="row ml-1 mt-1" style="font-size: x-small;">
+                        Sunday : Closed
+                    </div> 
+                    <div class="row ml-1 mt-3" style="font-size:x-small; font-weight: bold;">
+                        Distance from your location: 0.2 km
+                    </div>                         
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mt-5">
+    <div class="mb-5">
+      <div class="row justify-content-between px-3">
+        <div class="d-flex text-center">
+          <a href="print-properties.html"><button class="btn btn-secondary mx-auto px-4"><h5 class="mb-0">PREV</h5></button></a>
+        </div>
+        <div class="d-flex text-center">
+          <a href="checkout.html"><button class="btn btn-warning mx-auto px-4"><h5 class="mb-0">NEXT</h5></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer pt-4">
+    <div class="container-fluid text-center text-md-left pt-2 pb-5">
+      <div class="row px-2 px-lg-5">
+
+        <!-- Contact Details -->
+        <div class="col-12 col-md-3 mt-md-0 mt-3">
+          <h3 class="mb-3 ml-2" style="font-weight: bold; color: #DFDFDF;">Sleefax</h3>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-2">
+              <img src="Img/loc-icon.png" height="30px" width="30px">
+            </div>
+            <div class="col-12 col-md-10 text-light" style="font-size: small;">
+              5th floor, MIT TBi,<br>
+              Paud Rd., Kothrud,<br>
+              Pune-411038<br>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-1" >
+              <img src="Img/call-icon.png" height="25px" width="25px">
+            </div>
+            <div class="col-12 col-md-10 text-light" style="font-size: small;">
+              +91 1234567890<br>
+              +91 1234567890
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-1" >
+              <img src="Img/mail-icon.png" height="25px" width="25px">
+            </div>
+            <div class="col-12 col-md-10 mt-1 text-light" style="font-size: small;">
+              incsleefax@gmail.com
+            </div>
+          </div>
+        </div>
+    
+      <!-- Company Section -->
+      <div class="col-12 col-md-2 mb-md-0 mb-3 mt-5 mt-md-3">
+          <h5 style="color: #DFDFDF; font-weight: bold;">Company</h5>
+          <ul class="list-unstyled text-light">
+            <li class="mt-3">
+              <a href="about_us.html">About Us</a>
+            </li>
+            <li class="mt-1">
+              <a href="contact_us.html">Contact Us</a>
+            </li>
+            <li class="mt-1">
+              <a href="#!">Help</a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- Policy Section -->
+        <div class="col-12 col-md-2 mb-3 mt-3">
+          <h5 style="color: #DFDFDF; font-weight: bold;">Policy</h5>
+          <ul class="list-unstyled text-light">
+            <li class="mt-3">
+              <a href="#!">Terms</a>
+            </li>
+            <li class="mt-1">
+              <a href="#!">Privacy Policy</a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- Vertical Line -->
+        <div class="col-12 col-md-1">
+          <div class="mt-3 d-none d-md-block" id="vl"></div>
+        </div>
+
+        <!-- Get our App -->
+        <div class="col-12 col-md-4 mb-md-0 mb-3 mt-3 text-center">
+          <h5 style="color:#DFDFDF; font-weight: bold;">  Get our app</h5>
+          <div class="text-center">
+            <div class="row mt-3 justify-content-center">
+                  <img class="m-2 mb-1" src="Img/google-play.png" height="44px" width="125px">
+                  <img class="m-2 mt-1" src="Img/apple-store.png" height="43px" width="125px">
+            </div>
+          </div>
+
+          <!-- Horizontal Line -->
+          <div class="row">
+            <div class ="mt-4 mx-5 mx-md-3" id="rl"></div>
+          </div>
+       
+          <!-- Social Connect -->
+          <h5 class="mt-4" style="color:#DFDFDF; font-weight: bold;">Social</h5>
+          <ul class="list-unstyled">
+            <li class="mt-4 ml-3 social-connect">
+              <img class="mr-3" src="Img/google-icon.png">
+              <img class="mr-3" src="Img/fb-icon.png">
+              <img class="mr-3" src="Img/insta-icon.png">
+              <img class="mr-3" src="Img/linkedin-icon.png">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-1">
+    Copyright &copy;
+  </div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="select-shop.js"></script>
+
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.value = slider.value;
+    
+    slider.oninput = function() {
+      output.value = this.value;
+    }
+    output.oninput = function() {
+      slider.value = this.value;
+    }
+    </script>
+    
+</body>
+</html>

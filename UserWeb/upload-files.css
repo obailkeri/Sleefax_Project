@@ -30,6 +30,10 @@ a.no-anchor:hover {
   cursor: pointer;
 }
 
+.fa-times-thin:before {
+  content: '\00d7';
+}
+
 .card-0 {
   max-width: 500px;
   position: relative;
@@ -122,6 +126,10 @@ a.no-anchor:hover {
   opacity: 1;
 }
 
+#progressbar li.done:after {
+  opacity: 1;
+}
+
 #progressbar li.active:before {
   background-color: #fff;
   color: #fff;
@@ -133,6 +141,12 @@ a.no-anchor:hover {
   background-color: #fff;
   color: #075E70;
   opacity: 1;
+}
+
+@media screen and (max-width: 640px) {
+  .card-0 {
+    width: 200px;
+  }
 }
 
 .dropdown .dropbtn {

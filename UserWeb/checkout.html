@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Adjust Print Properties</title>
+  <title>Checkout</title>
   <!-- Linking Bootstrap and CSS -->
   <link rel="icon" href="Img/logo0.jpeg">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="print-properties.css">
+  <link rel="stylesheet" href="checkout.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
@@ -31,9 +31,9 @@
     <div class="mx-auto card-0">
       <ul class="" id="progressbar">
         <li class="tick done text-center">UPLOAD</li>
-        <li class="tick active text-center">ADJUST</li>
-        <li class="tick text-center">SELECT</li>
-        <li class="tick text-center">REVIEW</li>
+        <li class="tick done text-center">ADJUST</li>
+        <li class="tick done text-center">SELECT</li>
+        <li class="tick active text-center">REVIEW</li>
       </ul>
     </div>
   </div>
@@ -57,50 +57,14 @@
 
 <div class="container-fluid" style="padding-top: 80px;">
   <div class="container pt-5 pb-4">
-    <h2>Select the file below to adjust print properties</h2>
+    <h2>Checkout</h2>
   </div>
+
   <div class="container">
-    <div class="row justify-content-left radio-grp">
-      <div class="col-sm-6 col-lg-4 col-xl-3">
-        <div class="file-box radio-opt selected">
-          <div class="file-box-header p-3">
-            <div class="row justify-content-between px-3 mt-1">
-              <h6 class="mb-0 truncateExtra">filename.pdf</h6>
-              <small>125kB</small>
-            </div>
-          </div>
-          <div class="file-box-body">
-            <img src="Img/test-img.jpg">
-            <button class="btn btn-blue btn-view">VIEW FILE</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 col-xl-3">
-        <div class="file-box radio-opt">
-          <div class="file-box-header p-3">
-            <div class="row justify-content-between px-3 mt-1">
-              <h6 class="mb-0 truncateExtra">new-filename.pdf</h6>
-              <small>134kB</small>
-            </div>
-          </div>
-          <div class="file-box-body">
-            <img src="Img/test-img.jpg">
-            <button class="btn btn-blue btn-view">VIEW FILE</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="container pt-3 pb-4">
-    <h2>Print properties</h2>
-  </div>
-  <div class="container">
-    <div class="row justify-content-left radio-grp">
-      <div class="col-12 mb-5">
-        <div class="file-prop selected">
+    <h4 class="text-muted">Review</h4>
+    <div class="row justify-content-left">
+      <div class="col-12 mb-0">
+        <div class="file-prop my-3">
           <div class="file-prop-header">
             <div class="row justify-content-start px-3 py-3">
               <h5 class="mb-0 mr-5 ml-2 ml-md-5">filename.pdf</h5>
@@ -109,53 +73,44 @@
           </div>
           <div class="file-prop-body">
             <div class="row px-3">
-              <div class="col-md-6">
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Number of copies :</h5>
-                  <input type="text" name="copies" placeholder="1">
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Number of copies :</h6>
+                  <h6>1</h6>
                 </div>
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Select page size :</h5>
-                  <select class="">
-                    <option>A4</option>
-                    <option>A3</option>
-                    <option>A2</option>
-                  </select>
-                </div>
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Page orientation :</h5>
-                  <select class="">
-                    <option>Portrait</option>
-                    <option>Landscape</option>
-                  </select>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Select page size :</h6>
+                  <h6>A4</h6>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Color format :</h5>
-                  <div class="color-format selected mr-4" id="color"><img src="Img/color.png" width="34px" height="34px"></div>
-                  <div class="color-format" id="bw"><img src="Img/b&w.png" width="34px" height="34px"></div>
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Page orientation :</h6>
+                  <h6>Portrait</h6>
                 </div>
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Print both sides :</h5>
-                  <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider pt-2"><span class="text-light mx-4">ON</span><span class="text-dark mx-3">OFF</span></span>
-                  </label>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Color format :</h6>
+                  <h6>Color</h6>
                 </div>
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Select pages :</h5>
-                  <select class="">
-                    <option>All Pages</option>
-                    <option>Custom Pages</option>
-                  </select>
+              </div>
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Print both sides :</h6>
+                  <h6>ON</h6>
+                </div>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Print pages :</h6>
+                  <h6>1 - 16</h6>
+                </div>
+                <div class="row px-2 px-md-4 justify-content-start pt-2">
+                  <a class="text-blue" style="text-decoration: underline; font-size: 18px;">Edit print properties</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="file-prop">
+        <div class="file-prop my-4">
           <div class="file-prop-header">
             <div class="row justify-content-start px-3 py-3">
               <h5 class="mb-0 mr-5 ml-2 ml-md-5">new-filename.pdf</h5>
@@ -164,63 +119,148 @@
           </div>
           <div class="file-prop-body">
             <div class="row px-3">
-              <div class="col-md-6">
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Number of copies :</h5>
-                  <input type="text" name="copies" placeholder="1">
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Number of copies :</h6>
+                  <h6>1</h6>
                 </div>
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Select page size :</h5>
-                  <select class="">
-                    <option>A4</option>
-                    <option>A3</option>
-                    <option>A2</option>
-                  </select>
-                </div>
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Page orientation :</h5>
-                  <select class="">
-                    <option>Portrait</option>
-                    <option>Landscape</option>
-                  </select>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Select page size :</h6>
+                  <h6>A4</h6>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Color format :</h5>
-                  <div class="color-format selected mr-4" id="color"><img src="Img/color.png" width="34px" height="34px"></div>
-                  <div class="color-format" id="bw"><img src="Img/b&w.png" width="34px" height="34px"></div>
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Page orientation :</h6>
+                  <h6>Portrait</h6>
                 </div>
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Print both sides :</h5>
-                  <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider pt-2"><span class="text-light mx-4">ON</span><span class="text-dark mx-3">OFF</span></span>
-                  </label>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Color format :</h6>
+                  <h6>Color</h6>
                 </div>
-                <div class="row px-md-4 justify-content-start py-3">
-                  <h5>Select pages :</h5>
-                  <select class="">
-                    <option>All Pages</option>
-                    <option>Custom Pages</option>
-                  </select>
+              </div>
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Print both sides :</h6>
+                  <h6>ON</h6>
+                </div>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Print pages :</h6>
+                  <h6>1 - 16</h6>
+                </div>
+                <div class="row px-2 px-md-4 justify-content-start pt-2">
+                  <a class="text-blue" style="text-decoration: underline; font-size: 18px;">Edit print properties</a>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="mb-4" style="background-color: #707070;">
+
+    <div class="bill-amt py-3 px-5" style="background-color: #227093; box-shadow: 2px 2px 3px rgba(0,0,0,0.2);">
+      <div class="row justify-content-between text-light">
+        <p class="mb-0">TOTAL BILL AMT <small>(with taxes)</small></p>
+        <h5 class="mb-0 ml-auto"><span class="rupees-sym">₹</span> 35.00</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="shop-card">
+          <div class="row px-2 px-md-5">
+            <div class="img-container mr-2 mr-md-5"><img src="Img/new_shop.png" height="100px" width="100px"></div>
+            <div class="d-flex flex-column pt-3">
+              <h5 class="text-blue mb-3">Shop Name</h5>
+              <p class="mb-2">Shop No 5, Pinto Mansion, Sitadevi Temple Road, Mahim, Pune - 111111</p>
+              <p class="mb-2">Contact No. : +91 1231231231, +91 1231231231</p>
+            </div>
+          </div>
+
+          <hr class="my-4 mx-4" style="background-color: #ddd;">
+
+          <div class="row px-2 px-md-5 mt-3 text-blue">
+            <div class="col-md-4 mb-2 text-md-left ptr"><u>Display Timing</u><span class="fa fa-angle-down ml-2" style="font-size: 20px;"></span></div>
+            <div class="col-md-4 mb-2 text-md-center ptr"><u>Display Pricing</u><span class="fa fa-angle-down ml-2" style="font-size: 20px;"></span></div>
+            <div class="col-md-4 mb-2 text-md-right ptr">View in Maps <span><img src="Img/nav-arrow.png"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5" style="background-color: #707070;">
+
+  </div>
+
+  <div class="container mt-5">
+    <h2 class="mb-4">How would you like to pay ?</h2>
+    <div class="py-4 px-5 mt-2" style="background-color: #fff; box-shadow: 2px 2px 3px rgba(0,0,0,0.2); border: 2px dashed #AFAFAF;">
+      <div class="row text-dark">
+        <p class="mb-0 ml-4">TOTAL BILL AMOUNT</small></p>
+        <h5 class="mb-0 ml-5"><span class="rupees-sym">₹</span> 35.00</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-4">
+    <div class="py-4 px-5 mt-2 payment-box">
+      <div class="row text-dark">
+        <h5 class="mb-0 text-blue ml-md-4">SELECT PAYMENT OPTION</h5>
+      </div>
+      <div class="row mt-4 mx-md-2">
+        <div class="d-flex mb-2">
+          <div id="pay-pickup" class="pay-opt selected text-center mr-md-5 py-3">
+            <div class="" style="height: 40px;">
+              <img src="Img/wallet-icon.png">
+            </div>
+            <h6 class="text-blue mt-2">Pay on pickup</h6>
+          </div>
+        </div>
+        <div class="d-flex mb-2">
+          <div id="pay-upi" class="pay-opt text-center mr-md-5 py-3">
+            <div class="pt-2" style="height: 40px;">
+              <img src="Img/upi-icon.png">
+            </div>
+            <h6 class="text-blue mt-2">Paytm UPI</h6>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="container d-none pay-card" id="upi-card">
+    <div class="pay-card-header">
+      <div class="row px-2">
+        <h5 class="text-blue ml-md-5 mb-0">UPI</h5>
+      </div>
+    </div>
+    <div class="pay-card-body">
+      <div class="row px-2">
+        <h6 class="text-blue ml-md-5 mb-3">Enter your UPI ID :</h6>
+      </div>
+      <div class="row px-2">
+        <input class="ml-md-5 mr-4" type="text" name="upi">
+        <button class="btn btn-blue">VERIFY</button>
+      </div>
+      <div class="row px-2 mt-2">
+        <small class="ml-md-5 text-muted">e.g. :- 1111111111@abc</small>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
-    <div class="mb-5">
+    <div class="mt-4 mb-5">
       <div class="row justify-content-between px-3">
         <div class="d-flex text-center">
-          <a href="upload-files.html"><button class="btn btn-secondary mx-auto px-4"><h5 class="mb-0">PREV</h5></button></a>
+          <a href="select-shop.html"><button class="btn btn-secondary mx-auto px-4"><h5 class="mb-0">PREV</h5></button></a>
         </div>
         <div class="d-flex text-center">
-          <a href="select-shop.html"><button class="btn btn-warning mx-auto px-4"><h5 class="mb-0">NEXT</h5></button></a>
+          <a href="checkout.html"><button class="btn btn-warning mx-auto px-4"><h5 class="mb-0">NEXT</h5></button></a>
         </div>
       </div>
     </div>
@@ -337,7 +377,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="print-properties.js"></script>
+<script src="checkout.js"></script>
 
 </body>
 </html>

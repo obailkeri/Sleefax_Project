@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Home</title>
+  <title>Orders Details</title>
   <!-- Linking Bootstrap and CSS -->
   <link rel="icon" href="Img/logo0.jpeg">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="order-details.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
@@ -39,11 +39,11 @@
         <div class="navbar-nav ml-auto mt-2">
             <ul class="navbar-nav ml-auto"  id="navbarCollapse">
                 <li class="nav-item ml-md-5">
-                  <a class="nav-link mx-auto active" href="home.html">Home</a>
-                  <div class="mx-auto" id="smaller-border"></div>
+                  <a class="nav-link mx-auto" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-auto" href="myorders.html">My Orders</a>
+                  <a class="nav-link mx-auto active" href="myorders.html">My Orders</a>
+                  <div class="mx-auto" id="smaller-border"></div>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mx-auto" href="settings.html">Settings</a>
@@ -66,7 +66,7 @@
 </nav>
 
 <div class="container-fluid" id="top-section" style="padding-top: 120px; color: #fff;">
-  <div class="container pt-5 px-2 px-md-4" style="padding-bottom: 200px;">
+  <div class="container pt-5 px-2 px-md-4" style="padding-bottom: 40px;">
     <div class="row justify-content-between px-3">
       <div class="d-flex flex-column mx-md-3">
         <h1 class="text-light"><span>Hello</span> John,</h1>
@@ -89,126 +89,185 @@
   </div>
 </div>
 
-<div class="container px-2 px-md-4" style="position: relative; padding-top: 180px;" >
-  <div class="container p-5" id="upload-box">
-    <div class="box">
-      <div class="row justify-content-center px-3">
-        <div class="d-flex flex-column text-center">
-          <p class="text-muted pb-2">Drag and drop files here for printing</p>
-          <h6 class="text-muted mb-4">OR</h6>
-          <a href="upload-files.html"><button class="btn btn-blue mx-auto"><h5 class="mb-0">Add Files</h5></button></a>
-        </div>
+
+<div class="wide-box mx-auto" style="width: 100%; margin-top: 60px;"> 
+  <div class="row justify-content-center">
+    <h4 style="color: #606060; font-weight: bold;">ORDER STATUS</h4>
+  </div>
+
+  <div class="mx-auto card-0 px-4 mt-2" style="text-align: center;">
+  <ul class="cir">
+    <li class="active"><img src="Img/order-placed-icon.png" style="width: 50px; height:50px;"></li>
+    <li><img src="Img/printing-icon.png" style="width: 50px; height:50px;"></li>
+    <li><img src="Img/files-ready-icon.png" style="width: 50px; height:50px;"></li>
+    <li><img src="Img/green-tick-icon.png" style="width: 50px; height:50px;"></li>
+  </ul>
+  <ul class="details">
+    <li class="active">Order Received</li>
+    <li>Printing files</li>
+    <li>Your files are ready</li>
+    <li>Order completed</li>
+  </ul>
+  </div>
+  <div class="row justify-content-left ml-4 mt-5" style="font-size: larger;">
+    ORDER DETAILS
+  </div>
+  <div class="mx-auto card-0 px-5 py-4 mt-3" style="font-size: 14px;">
+
+  
+    <div class="row">
+      <div class="col-2" style="opacity: 0.5;">
+        ORDER ID 
+      </div>
+      <div class="col-1" style="opacity: 0.5;">
+        :
+      </div>
+      <div class="col-3">
+        1215BJA5ER1
+      </div>
+      <div class="col-2" style="opacity: 0.5;">
+        ORDER TIME
+      </div>
+      <div class="col-1" style="opacity: 0.5;">
+        :
+      </div>
+      <div class="col-3">
+        11-04-2020   23:20
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-2" style="opacity: 0.5;">
+        TOTAL BILL
+      </div>
+      <div class="col-1" style="opacity: 0.5;">
+        :
+      </div>
+      <div class="col-3">
+        ₹ 35.00
+      </div>
+      <div class="col-2" style="opacity: 0.5;">
+        PAYMENT STATUS
+      </div>
+      <div class="col-1" style="opacity: 0.5;">
+        :
+      </div>
+      <div class="col-3">
+        PAY ON PICKUP
       </div>
     </div>
   </div>
-</div>
-
-<div class="container py-5 px-2 px-sm-0">
-  <hr style="height: 1px !important; background-color: #eee;">
-  <h5 class="mb-4 mt-4 pl-3 pl-sm-0"><b>LIVE ORDERS</b></h5>
-  <div class="row justify-content-between px-3 pt-2"> 
-    <div class="col-md-6 pl-md-0">
-      <div class="order-card mb-2">
-        <div class="row px-3 justify-content-between">
-          <div class="d-flex flex-column pl-md-3">
-            <h5 class="pb-3"><span class="text-muted">ORDER ID : </span><span>1215BJA5ER1</span></h5>
-            <h6 class=""><b>Tester Printing Shop</b></h6>
-            <small class="text-muted pb-4">Aundh, Pune</small>
-            <p><b>Total Price : <span class="rupees-sym pl-2" style="font-size: 18px; font-weight: normal;"> ₹ </span><span class="" style="font-size: 18px; font-weight: normal;"> 20</span></b></p>
-            <div class="row mt-2 px-3">
-              <a class="text-blue"><u>View Details</u></a>
-              <p class="pl-4 mb-0 text-muted text-sm">04 JULY,2020 23:20</p>
-            </div>
-          </div>
-
-          <!-- For incrementing progress addClass p38 to class progress-status and active to next step-->
-          <div class="c100 medium p13 my-lg-auto mt-4 progress-status mx-auto">
-            <div class="sm-circle step1 active"><div class="inner-circle"></div></div>
-            <div class="sm-circle step2"><div class="inner-circle"></div></div>
-            <div class="sm-circle step3"><div class="inner-circle"></div></div>
-            <div class="sm-circle step4"><div class="inner-circle"></div></div>
-            <span class="status" style="font-size: 12px;">Order<br>Recieved</span>
-            <span class="status d-none" style="font-size: 12px;">Printing<br> your files</span>
-            <span class="status d-none" style="font-size: 12px;">Ready for<br>pickup</span>
-            <span class="status d-none" style="font-size: 12px;">Order<br>Finished</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
-            </div>
-          </div>
-
+  <div class="row justify-content-left ml-4 mt-5" style="font-size: larger;">
+    SHOP DETAILS
+  </div>
+  <div class="mx-auto card-0 px-4 py-4 mt-3" style="font-size: 14px;">
+    <div class="row">
+      <div class="col-12 col-sm-4">
+        <div class="container shop_card px-3 py-3">
+            <img src="Img/new_shop.png" class="shop_image">
+        </div>
+      </div>
+      <div class="col-12 col-sm-8">
+        <div class="row shop_name mt-1" style="text-align: left;">
+          SHOP NAME
+        </div>
+        <div class="row shop_address mt-2" style="text-align: left;">
+          Shop No 5, Pinto Mansion, Sitadevi Temple Road, Mahim, Pune - 111111
+        </div>
+        <div class="row shop_address mt-2" style="text-align: left;">
+          Contact No. : +91 1231231231, +91 1231231231
         </div>
       </div>
     </div>
-    <div class="col-md-6 pr-md-0">
-      <div class="order-card">
-        <div class="row px-3 justify-content-between">
-          <div class="d-flex flex-column pl-md-3">
-            <h5 class="pb-3"><span class="text-muted">ORDER ID : </span><span>1215BJA5ER1</span></h5>
-            <h6 class=""><b>Tester Printing Shop</b></h6>
-            <small class="text-muted pb-4">Aundh, Pune</small>
-            <p><b>Total Price : <span class="rupees-sym pl-2" style="font-size: 18px; font-weight: normal;"> ₹ </span><span class="" style="font-size: 18px; font-weight: normal;"> 20</span></b></p>
-            <div class="row mt-2 px-3">
-              <a class="text-blue"><u>View Details</u></a>
-              <p class="pl-4 mb-0 text-muted text-sm">04 JULY,2020 23:20</p>
-            </div>
-          </div>
-
-          <!-- For incrementing progress addClass p38 to class progress-status and active to next step-->
-          <div class="c100 medium p13 my-lg-auto mt-4 progress-status mx-auto">
-            <div class="sm-circle step1 active"><div class="inner-circle"></div></div>
-            <div class="sm-circle step2"><div class="inner-circle"></div></div>
-            <div class="sm-circle step3"><div class="inner-circle"></div></div>
-            <div class="sm-circle step4"><div class="inner-circle"></div></div>
-            <span class="status" style="font-size: 12px;">Order<br>Recieved</span>
-            <span class="status d-none" style="font-size: 12px;">Printing<br> your files</span>
-            <span class="status d-none" style="font-size: 12px;">Ready for<br>pickup</span>
-            <span class="status d-none" style="font-size: 12px;">Order<br>Finished</span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
-            </div>
-          </div>
-        </div>
+    <div class="row justify-content-center">
+      <div class="row mt-4" style="height: 1px; background-color: #707070; width:650px;"></div>
+    </div> 
+    <div class="row justify-content-around px-5 mt-4">
+      <div class="col-12 col-sm-3">
+        <a href="#" style="color: #227093; font-size: larger;"><u>Display Pricing</u></a>
+      </div>
+      <div class="col-12 col-sm-3">
+        <a href="#" style="color: #227093; font-size: larger;"><u>Display Timing</u></a>
+      </div>
+      <div class="col-12 col-sm-3">
+        <a href="#" style="color: #227093; font-size: larger;"><u>View in maps  <img src="Img/nav-arrow.png" style="max-width: 18px;"></u></a>
+      </div>
+    </div>       
+  </div>
+  <div class="row justify-content-left ml-4 mt-5" style="font-size: larger;">
+    PRINT DETAILS
+  </div>
+  <div class="mx-auto card-1 mt-3 py-2 px-5">
+    <div class="row">
+      <span class="mr-auto">
+        filename.pdf &nbsp;&nbsp; &nbsp; &nbsp;125kb
+      </span>
+      <span class="ml-auto">
+        ₹ &nbsp;&nbsp;10.00
+      </span>
+  </div>
+  </div>
+  <div class="mx-auto card-1-1 px-5 pt-4 pb-4">
+    <div class="row" style="font-size: 15px; color:#484848;">
+      <div class="col-12 col-sm-4">
+        No. of Copies : 1
+      </div>
+      <div class="col-12 col-sm-4">
+        Page Orientation : Potrait
+      </div>
+      <div class="col-12 col-sm-4">
+        Print both sides : ON
+      </div>
+    </div>
+    <div class="row" style="font-size: 15px; color:#484848;">
+      <div class="col-12 col-sm-4">
+        Page Size: A4
+      </div>
+      <div class="col-12 col-sm-4">
+        Color Format: B/W
+      </div>
+      <div class="col-12 col-sm-4">
+        Print pages : 1-23
       </div>
     </div>
   </div>
-</div>
-
-<div class="container pb-5 px-2 px-md-0">
-  <hr style="height: 1px !important; background-color: #eee;">
-  <div class="row justify-content-between px-3 pt-5"> 
-    <div class="col-md-6 pl-md-0">
-      <div class="order-card mb-2">
-        <div class="row px-3">
-          <div class="d-flex flex-column">
-          </div>
-          <div class="d-flex flex-column pl-md-3">
-            <h6 class="my-3"><b>SleefaxPartner Website</b></h6>
-            <p class="text-sm">You can register your shop <br> on our SleefaxPartner <br> website.</p>
-            <p class="text-blue"><a href="">Visit Website <span class="fa fa-long-arrow-right pl-2" style="font-size: 22px;"></span></a></p>
-          </div>
-        </div>
+  <div class="mx-auto card-1 mt-4 py-2 px-5">
+    <div class="row">
+      <span class="mr-auto">
+        filename.pdf &nbsp;&nbsp; &nbsp; &nbsp;145kb
+      </span>
+      <span class="ml-auto">
+        ₹ &nbsp;&nbsp;25.00
+      </span>
+  </div>
+  </div>
+  <div class="mx-auto card-1-1 px-5 pt-4 pb-4">
+    <div class="row" style="font-size: 15px; color:#484848;">
+      <div class="col-12 col-sm-4">
+        No. of Copies : 1
+      </div>
+      <div class="col-12 col-sm-4">
+        Page Orientation : Potrait
+      </div>
+      <div class="col-12 col-sm-4">
+        Print both sides : ON
       </div>
     </div>
-    <div class="col-md-6 pr-md-0">
-      <div class="order-card">
-        <div class="row px-3">
-          <div class="d-flex flex-column">
-          </div>
-          <div class="d-flex flex-column pl-md-3">
-            <h6 class="my-3"><b>Download our Mobile App</b></h6>
-            <p class="text-sm">Sign in anytime, anywhere <br> at your convenience using <br> our free mobile app.</p>
-            <p class="text-blue"><a href="">Download app <span class="fa fa-long-arrow-right pl-2" style="font-size: 22px;"></span></a></p>
-          </div>
-        </div>
+    <div class="row" style="font-size: 15px; color:#484848;">
+      <div class="col-12 col-sm-4">
+        Page Size: A4
+      </div>
+      <div class="col-12 col-sm-4">
+        Color Format: B/W
+      </div>
+      <div class="col-12 col-sm-4">
+        Print pages : 1-23
       </div>
     </div>
   </div>
 </div>
 
 <!-- Footer -->
-<footer class="page-footer pt-4">
+<footer class="page-footer pt-4 mt-5">
     <div class="container-fluid text-center text-md-left pt-2 pb-5">
       <div class="row px-2 px-lg-5">
 
@@ -249,13 +308,13 @@
           <h5 style="color: #DFDFDF; font-weight: bold;">Company</h5>
           <ul class="list-unstyled text-light">
             <li class="mt-3">
-              <a href="about_us.html">About Us</a>
+              <a href="about_us.html" style="color: #fff;">About Us</a>
             </li>
             <li class="mt-1">
-              <a href="contact_us.html">Contact Us</a>
+              <a href="contact_us.html" style="color: #fff;"> Contact Us</a>
             </li>
             <li class="mt-1">
-              <a href="#!">Help</a>
+              <a href="#!" style="color: #fff;">Help</a>
             </li>
           </ul>
       </div>
@@ -265,10 +324,10 @@
           <h5 style="color: #DFDFDF; font-weight: bold;">Policy</h5>
           <ul class="list-unstyled text-light">
             <li class="mt-3">
-              <a href="#!">Terms</a>
+              <a href="#!" style="color: #fff;">Terms</a>
             </li>
             <li class="mt-1">
-              <a href="#!">Privacy Policy</a>
+              <a href="#!" style="color: #fff;">Privacy Policy</a>
             </li>
           </ul>
       </div>
@@ -283,8 +342,8 @@
           <h5 style="color:#DFDFDF; font-weight: bold;">  Get our app</h5>
           <div class="text-center">
             <div class="row mt-3 justify-content-center">
-                  <img class="m-2 mb-1" src="Img/google-play.png" height="44px" width="125px">
-                  <img class="m-2 mt-1" src="Img/apple-store.png" height="43px" width="125px">
+                  <input type="image" class="m-2 mb-1" src="Img/google-play.png" height="44px" width="125px">
+                  <input type="image" class="m-2 mt-1" src="Img/apple-store.png" height="43px" width="125px">
             </div>
           </div>
 
@@ -317,7 +376,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="home.js"></script>
+<script src="order-details.js"></script>
 
 </body>
 </html>
