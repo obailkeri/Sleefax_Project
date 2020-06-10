@@ -84,7 +84,7 @@
                                 Currently Accepting Orders
                             </div>
                             <div class="mt-2" style="text-align: left;">
-                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#exampleModalCenter">
+                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#modal-0">
                                     View Shop <br>
                                     Timing & Pricing
                                 </a>
@@ -133,7 +133,7 @@
                                 Pickup during open hours    
                             </div>
                             <div class="mt-2" style="text-align: left;">
-                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#exampleModalCenter">
+                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#modal-0">
                                     View Shop <br>
                                     Timing & Pricing
                                 </a>
@@ -181,7 +181,7 @@
                                 Not Accepting Orders 
                             </div>
                             <div class="mt-2" style="text-align: left;">
-                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#exampleModalCenter">
+                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#modal-0">
                                     View Shop <br>
                                     Timing & Pricing
                                 </a>
@@ -233,7 +233,7 @@
                 FILTER BY
                 <div class="line_h mt-2 mb-3"></div>
                 Shop distance within :
-                <div class="row ml-1">
+                <div class="row ml-1 mt-3">
                         10 m
                     <div style="position: relative; left: 110px;">
                         10 km
@@ -254,7 +254,7 @@
 </div>
 
   <!-- Modal get otp -->
-  <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal" id="modal-0" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog" role="document" style="background-color: #FCFCFC;  border-radius: 20px;">
       <div class="modal-content modal_card px-4" style=" border-radius: 20px;">
         <div class="modal-body" >
@@ -269,20 +269,17 @@
                 </div>
                 <div class="col-12 col-md-9">
                     <div class="row">
-                        <span class="ml-3"><b> SHOP NAME </b></span>
-                        <div class="open ml-5">
-                            Open
-                        </div>
+                        <h5 class="ml-3"><b> SHOP NAME </b></h5>
+                        <div class="open ml-5">Open</div>
                     </div>
-                    <div class="row mt-2 ml-1" style="font-size: x-small;">
-                        Shop No 5, Pinto Mansion, Sitadevi Temple Road, Mahim, Pune - 111111
+                    <div class="row mt-2 ml-1">
+                        <p class="mb-0">Shop No 5, Pinto Mansion, Sitadevi Temple Road, Mahim, Pune - 111111</p>
                     </div>
-                    <div class="row mt-2 ml-1" style="font-size: x-small;">
-                    Contact No. : +91 1231231231, +91 1231231231
+                    <div class="row mt-2 ml-1">
+                        <p>Contact No. : +91 1231231231, +91 1231231231</p>
                     </div>
                     <div style="text-align: right;">
-                        <a style="font-size:small; text-decoration: underline; color: #227093;">
-                            View in Maps
+                        <a class="text-blue mr-4" style="text-decoration: underline;">View in Maps
                             <img src="Img/nav-arrow.png" style="max-width: 18px;">
                         </a>
                     </div>
@@ -292,47 +289,46 @@
             <div class="row">
                 <div class="col-12 col-sm-6 px-3 py-3">
                     <div class="row ml-2">
-                       <span style="color:#227093;">Pricing</span>&nbsp;<span class="ml-1 pt-1" style="color:#686868; font-size: smaller;">(per page)</span> 
+                       <h5 class="text-blue">Pricing</h5><p class="ml-1 mb-0 text-muted">(per page)</p> 
                     </div>  
                     <hr>
-                    <div class="row ml-2" style="font-size: x-small;">
-                        BW Printout (Single Side) &nbsp; ₹ &nbsp; 1.00
+                    <div class="row ml-2 text-sm">
+                        <span style="width: 300px;">BW Printout (Single Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
                     </div>  
-                    <div class="row ml-2 mt-1" style="font-size: x-small;">
-                        BW Printout (Single Side) &nbsp; ₹ &nbsp; 1.00
+                    <div class="row ml-2 mt-1 text-sm">
+                        <span style="width: 300px;">BW Printout (Both Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
                     </div>     
-                    <div class="row ml-2 mt-1" style="font-size: x-small;">
-                        BW Printout (Single Side) &nbsp; ₹ &nbsp; 1.00
+                    <div class="row ml-2 mt-1 text-sm">
+                        <span style="width: 300px;">Color Printout (Single Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
                     </div>     
-                    <div class="row ml-2 mt-1" style="font-size: x-small;">
-                        BW Printout (Single Side) &nbsp; ₹ &nbsp; 1.00
+                    <div class="row ml-2 mt-1 text-sm">
+                        <span style="width: 300px;">Color Printout (Both Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
                     </div>
-                    <div class="row ml-2 mt-2" style="font-size:small; font-weight: bold;">
-                        TOTAL BILL AMOUNT : ₹ 20
-                    </div>                 
+                    <hr>
+                    <div class="row ml-2 mt-4" style="font-weight: bold;">
+                        TOTAL BILL AMOUNT : <span class="rupees-sym px-2"> ₹ </span> 20
+                    </div>
+                    <hr>                
                 </div>
                 <div class="col-12 col-sm-6 px-3 py-3">
                     <div class="row ml-2">
-                       <span style="color:#227093;">Shop Timings</span>
+                       <h5 style="color:#227093;">Shop Timings</h5>
                     </div>
                     <hr>
-                    <div class="row" style="font-size: x-small;">
-                        <div class="col-12 col-sm-5">
-                            &nbsp;&nbsp;Mon - Fri : 
-                        </div>
-                        <div class="col-12 col-sm-7">
-                       09:15 am  -  01:15 pm<br>
-                        03:15 pm  -  09:15 pm
+                    <div class="row ml-2 text-sm">
+                        <div class="col-5 pl-0">Mon - Fri</div> : <div class="col-5">
+                            09:15 am  -  01:15 pm<br>03:15 pm  -  09:15 pm
                         </div>
                     </div>  
-                    <div class="row ml-1 mt-1" style="font-size: x-small;">
-                        Saturday : Closed
+                    <div class="row ml-2 text-sm">
+                        <div class="col-5 pl-0">Saturday</div> : <div class="col-5">Closed</div>
                     </div> 
-                    <div class="row ml-1 mt-1" style="font-size: x-small;">
-                        Sunday : Closed
-                    </div> 
-                    <div class="row ml-1 mt-3" style="font-size:x-small; font-weight: bold;">
-                        Distance from your location: 0.2 km
+                    <div class="row ml-2 text-sm">
+                        <div class="col-5 pl-0">Sunday</div> : <div class="col-5">Closed</div>
+                    </div>
+                    <hr>
+                    <div class="row ml-2 mt-3 text-muted text-sm" style=" font-weight: bold;">
+                        Distance from your location : 0.2 km
                     </div>                         
                 </div>
             </div>

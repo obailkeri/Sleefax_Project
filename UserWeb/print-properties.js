@@ -17,4 +17,13 @@ $('.color-format').click(function(){
     $(this).addClass('selected');
 });
 
+$('.pages-opt').click(function(){
+	if($(this).val()==2) {
+		$(this).parent().next().removeClass('d-none');
+	}
+	else {
+		$(this).parent().next().addClass('d-none');
+	}
+})
+
 });

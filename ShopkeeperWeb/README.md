@@ -1,5 +1,8 @@
 # ShopkeeperWeb
 
+WELCOME PAGE
+https://obailkeri.github.io/Sleefax_Project/ShopkeeperWeb/welcome-page.html
+
 SIGN UP
 https://obailkeri.github.io/Sleefax_Project/ShopkeeperWeb/signup.html
 
