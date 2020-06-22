@@ -13,12 +13,3 @@ function myFunction() {
         document.getElementById("smaller-border").style.backgroundColor = "white";
     }
 }
-
-$(document).ready(function() {
-
-$('#shop-info').on('click', function() {
-  $('#shop-info-card').toggleClass('moveDown');
-  $('#print-details').toggleClass('move');
-});
-
-});

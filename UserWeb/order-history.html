@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Section For SEO -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Order History</title>
+  <!-- Linking Bootstrap and CSS -->
+  <link rel="icon" href="Img/logo0.jpeg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="order-history.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md fixed-top pb-0" id="navbar-id">
+
+    <!-- Navbar Brand -->
+    <a href="new_orders.html" class="navbar-brand">
+        <div class="row">
+            <img src="Img/logo0.jpeg" alt="Sleefax" class="logo mx-2 p-1">
+            <b class="mt-2">Sleefax</b>
+        </div>
+    </a>
+
+    <!-- Toggle Icon -->
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" style="color:#296178">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ml-auto mt-2">
+            <ul class="navbar-nav ml-auto"  id="navbarCollapse">
+                <li class="nav-item ml-md-5">
+                  <a class="nav-link mx-auto" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-auto active" href="live-orders.html">My Orders</a>
+                  <div class="mx-auto" id="smaller-border"></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-auto" href="settings.html">Settings</a>
+                </li>
+                <li class="nav-item text-left mb-1">
+                  <div class="dropdown">
+                    <a class="dropbtn nav-link circle text-dark">JD</a>
+                    <div class="dropdown-content">
+                      <p class="mb-1">John Doe</p>
+                      <small>+91 9876543210</small>
+                      <small>johndoe@abc.xyz</small>
+                      <hr>
+                      <a href="logout.html" class="nav-link">Logout</a>
+                    </div>
+                  </div> 
+                </li>
+            </ul> 
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid" id="top-section" style="padding-top: 120px; color: #fff;">
+  <div class="container pt-5 px-2 px-md-4" style="padding-bottom: 40px;">
+    <div class="row justify-content-between px-3">
+      <div class="d-flex flex-column mx-md-3">
+        <h1 class="text-light"><span>Hello</span> John,</h1>
+        <h6>Let's Quickly Print Your Files !</h6>
+      </div>
+      <div class="d-flex mx-md-3">
+        <div class="row px-3">
+          <div class="d-flex flex-column">
+            <h1>3</h1>
+            <small>LIVE ORDERS</small>
+          </div>
+          <div class="d-flex bg-light mx-4" style="width: 2px;"></div>
+          <div class="d-flex flex-column">
+            <h1>2</h1>
+            <small>PENDING FOR PICKUP</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="padding-top: 40px;">
+  <div class="container px-2 px-md-4">
+    <div class="row px-3">
+      <a class="no-underline" href="live-orders.html"><div class="d-flex mx-3 tab">LIVE ORDERS</div></a>
+      <a class="no-underline" href="order-history.html"><div class="d-flex mx-3 tab active">ORDER HISTORY</div></a>
+    </div>
+
+    <hr class="mx-3 mt-4 mb-1" style="background-color: #ccc;">
+
+    <div class="row px-3">
+      <div class="col-12">
+        <div class="card mt-4">
+          <div class="row mt-0 mx-md-5 mx-3 py-3">
+            <h5 class="pb-0 mb-0 my-auto"><span class="text-muted">ORDER ID : </span><span class="text-blue font-weight-bold" style="font-size: 20px;">1215BJA5ER1</span></h5>
+            <h6 class="mb-0 ml-auto"><a href=""><img src="Img/info-dark-icon.png" width="26px" height="26px"></a></h6>
+          </div>
+          <hr class="my-0">
+          <div class="row px-md-5 px-3 justify-content-between py-3">
+            <div class="d-flex flex-column pl-md-3">
+              <div class="row px-3">
+                <img class="mr-4" src="Img/shop-img.png" width="112px" height="108px">
+                <div class="d-flex flex-column" style="min-width: 190px;">
+                  <h5 class="mt-1 mb-1"><b>Jumbo Xerox</b></h5>
+                  <p class="text-muted pb-0 text-sm">Aundh, Pune</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <p class="mb-0 text-muted">Ordered on</p>
+              <h6 class="font-weight-bold mb-4"><b>10 May, 2020 at 02:15 pm</b></h6>
+              <p><span class="text-muted">Total Amount : </span><span class="rupees-sym pl-2" style="font-size: 20px; font-weight: normal;"> ₹ </span><span class="" style="font-size: 18px;"> 20</span></p>
+            </div>
+            <div class="d-flex flex-column pr-md-3">
+              <button class="btn btn-blue mt-2">Rate this order</button>
+              <small class="text-muted mt-1" style="font-size: 12px;">Received Successfully</small>
+            </div>
+          </div>
+          <hr class="my-0">
+          <div class="row mt-0 mx-md-5 mx-3 py-3">
+            <a class="text-blue"><u>Repeat Order</u></a>
+            <a class="text-blue ml-auto" style="text-decoration: underline;">View Order Details</a>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="row mt-0 mx-md-5 mx-3 py-3">
+            <h5 class="pb-0 mb-0 my-auto"><span class="text-muted">ORDER ID : </span><span class="text-blue font-weight-bold" style="font-size: 20px;">1215BJA5ER1</span></h5>
+            <h6 class="mb-0 ml-auto"><a href=""><img src="Img/info-dark-icon.png" width="26px" height="26px"></a></h6>
+          </div>
+          <hr class="my-0">
+          <div class="row px-md-5 px-3 justify-content-between py-3">
+            <div class="d-flex flex-column pl-md-3">
+              <div class="row px-3">
+                <img class="mr-4" src="Img/shop-img.png" width="112px" height="108px">
+                <div class="d-flex flex-column" style="min-width: 190px;">
+                  <h6 class="mt-1 mb-1"><b>Jumbo Xerox</b></h6>
+                  <p class="text-muted pb-0 text-sm">Aundh, Pune</p>
+                  <button class="btn btn-blue mt-auto">Rate this order</button>
+                  <small class="text-muted mt-1" style="font-size: 12px;">Received Successfully</small>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column pr-md-3">
+              <p class="mb-0 text-muted">Ordered on</p>
+              <h6 class="font-weight-bold mb-4"><b>10 May, 2020 at 02:15 pm</b></h6>
+              <p><span class="text-muted">Total Amount : </span><span class="rupees-sym pl-2" style="font-size: 20px; font-weight: normal;"> ₹ </span><span class="" style="font-size: 18px;"> 20</span></p>
+            </div>
+          </div>
+          <hr class="my-0">
+          <div class="row mt-0 mx-md-5 mx-3 py-3">
+            <a class="text-blue"><u>Repeat Order</u></a>
+            <a class="text-blue ml-auto" style="text-decoration: underline;">View Order Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer pt-4 mt-5">
+    <div class="container-fluid text-center text-md-left pt-2 pb-5">
+      <div class="row px-2 px-lg-5">
+
+        <!-- Contact Details -->
+        <div class="col-12 col-md-3 mt-md-0 mt-3">
+          <h3 class="mb-3 ml-2" style="font-weight: bold; color: #DFDFDF;">Sleefax</h3>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-2">
+              <img src="Img/loc-icon.png" height="30px" width="30px">
+            </div>
+            <div class="col-12 col-md-10 text-light" style="font-size: small;">
+              5th floor, MIT TBi,<br>
+              Paud Rd., Kothrud,<br>
+              Pune-411038<br>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-1" >
+              <img src="Img/call-icon.png" height="25px" width="25px">
+            </div>
+            <div class="col-12 col-md-10 text-light" style="font-size: small;">
+              +91 1234567890<br>
+              +91 1234567890
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-1" >
+              <img src="Img/mail-icon.png" height="25px" width="25px">
+            </div>
+            <div class="col-12 col-md-10 mt-1 text-light" style="font-size: small;">
+              incsleefax@gmail.com
+            </div>
+          </div>
+        </div>
+    
+      <!-- Company Section -->
+      <div class="col-12 col-md-2 mb-md-0 mb-3 mt-5 mt-md-3">
+          <h5 style="color: #DFDFDF; font-weight: bold;">Company</h5>
+          <ul class="list-unstyled text-light">
+            <li class="mt-3">
+              <a href="about_us.html" style="color: #fff;">About Us</a>
+            </li>
+            <li class="mt-1">
+              <a href="contact_us.html" style="color: #fff;"> Contact Us</a>
+            </li>
+            <li class="mt-1">
+              <a href="#!" style="color: #fff;">Help</a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- Policy Section -->
+        <div class="col-12 col-md-2 mb-3 mt-3">
+          <h5 style="color: #DFDFDF; font-weight: bold;">Policy</h5>
+          <ul class="list-unstyled text-light">
+            <li class="mt-3">
+              <a href="#!" style="color: #fff;">Terms</a>
+            </li>
+            <li class="mt-1">
+              <a href="#!" style="color: #fff;">Privacy Policy</a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- Vertical Line -->
+        <div class="col-12 col-md-1">
+          <div class="mt-3 d-none d-md-block" id="vl"></div>
+        </div>
+
+        <!-- Get our App -->
+        <div class="col-12 col-md-4 mb-md-0 mb-3 mt-3 text-center">
+          <h5 style="color:#DFDFDF; font-weight: bold;">  Get our app</h5>
+          <div class="text-center">
+            <div class="row mt-3 justify-content-center">
+                  <input type="image" class="m-2 mb-1" src="Img/google-play.png" height="44px" width="125px">
+                  <input type="image" class="m-2 mt-1" src="Img/apple-store.png" height="43px" width="125px">
+            </div>
+          </div>
+
+          <!-- Horizontal Line -->
+          <div class="row">
+            <div class ="mt-4 mx-5 mx-md-3" id="rl"></div>
+          </div>
+       
+          <!-- Social Connect -->
+          <h5 class="mt-4" style="color:#DFDFDF; font-weight: bold;">Social</h5>
+          <ul class="list-unstyled">
+            <li class="mt-4 ml-3 social-connect">
+              <img class="mr-3" src="Img/google-icon.png">
+              <img class="mr-3" src="Img/fb-icon.png">
+              <img class="mr-3" src="Img/insta-icon.png">
+              <img class="mr-3" src="Img/linkedin-icon.png">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-1">
+    Copyright &copy;
+  </div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="order-history.js"></script>
+
+</body>
+</html>

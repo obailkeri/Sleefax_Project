@@ -61,15 +61,15 @@
   </div>
   <div class="container">
     <div class="row justify-content-between">
-        <div class="col-sm-8">
-            <div class="container shop_details_card active mt-4 px-4 py-4">
-                <div class="row">
-                    <div class="col-12 col-sm-4">
-                        <div class="container shop_card px-4 py-4">
-                            <img src="Img/new_shop.png" class="shop_image">
+        <div class="col-sm-8" id="shop-list">
+            <div class="container shop_details_card mt-4 px-0 py-3">
+                <div class="row px-4">
+                    <div class="col-12 col-sm-3">
+                        <div class="container shop_card px-0 mx-auto">
+                            <img src="Img/shop-img.png" class="shop_image">
                         </div>
                     </div>
-                    <div class="col-12 col-sm-5 px-2" style="text-align: center;">
+                    <div class="col-12 col-sm-6 px-2" style="text-align: center;">
                         <div class="container" style="width: 100%;">
                             <div class="shop_name" style="text-align: left;">
                                 Mit Print Shop
@@ -80,44 +80,46 @@
                                     6 km
                                 </span>
                             </div>
-                            <div class="mt-2" style="font-weight: bold; font-size: small; text-align: left; color: #77BF66;">
+                            <div class="mt-3" style="font-weight: bold; font-size: 15px; text-align: left;">
                                 Currently Accepting Orders
-                            </div>
-                            <div class="mt-2" style="text-align: left;">
-                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#modal-0">
-                                    View Shop <br>
-                                    Timing & Pricing
-                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-3 px-2 py-2" style="text-align: center;">
                         <div class="container" style="width: 100%;">
-                            <div class="row mt-2">
-                                <button type="button" class="btn btn-open">Open</button>
+                            <div class="row px-3">
+                                <div class="shop-open">Open</div>
                             </div>
-                            <div class="row mt-3" style="color: #858585; font-size: small;">
+                            <div class="row mt-2 px-3" style="color: #858585; font-size: small;">
                                 Closes at 6 PM
                                 <i class="fa fa-clock-o fa-lg ml-1 pt-1" aria-hidden="true"></i>
-                            </div>
-                            <div class="row mt-4">
-                                <a style="font-size:small; text-decoration: underline; color: #227093;">
-                                    View in Maps
-                                    <img src="Img/nav-arrow.png" style="max-width: 18px;">
-                                </a>
-                            </div>   
+                            </div> 
                         </div>               
                     </div>
                 </div>
-            </div>
-            <div class="container shop_details_card mt-4 px-4 py-4">
-                <div class="row">
-                    <div class="col-12 col-sm-4">
-                        <div class="container shop_card px-4 py-4">
-                            <img src="Img/new_shop.png" class="shop_image">
+                <hr class="mt-4 mb-1" style="background-color: #ddd;">
+                <div class="row justify-content-between px-4 mx-1">
+                    <div class="col-sm-9 mt-2" style="text-align: left;">
+                        <a style="font-size: 15px; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#modal-0">View Shop Timing & Pricing</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="row mt-2 px-3">
+                            <a style="font-size: 15px; text-decoration: underline; color: #227093;">
+                                View in Maps
+                                <img src="Img/nav-arrow.png" style="max-width: 22px;">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-5 px-2" style="text-align: center;">
+                </div>
+            </div>
+            <div class="container shop_details_card px-0 mt-4 py-3">
+                <div class="row px-4">
+                    <div class="col-12 col-sm-3">
+                        <div class="container shop_card px-0 mx-auto">
+                            <img src="Img/shop-img.png" class="shop_image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 px-2" style="text-align: center;">
                         <div class="container" style="width: 100%;">
                             <div class="shop_name" style="text-align: left;">
                                 Mit Print Shop
@@ -128,45 +130,47 @@
                                     6 km
                                 </span>
                             </div>
-                            <div class="mt-1" style="font-weight: bold; font-size: small; text-align: left; color: #C8864C;">
+                            <div class="mt-3" style="font-weight: bold; font-size: 15px; text-align: left; color: #C8864C;">
                                 Accepting Orders, <br>
                                 Pickup during open hours    
                             </div>
-                            <div class="mt-2" style="text-align: left;">
-                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#modal-0">
-                                    View Shop <br>
-                                    Timing & Pricing
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-3 px-2 py-2" style="text-align: center;">
                         <div class="container" style="width: 100%;">
-                            <div class="row mt-2">
-                                <button type="button" class="btn btn-partially-closed">Closed</button>
+                            <div class="row px-3 mt-2">
+                                <div class="shop-partially-closed">Closed</div>
                             </div>
-                            <div class="row mt-3" style="color: #858585; font-size: small;">
+                            <div class="row px-3 mt-2" style="color: #858585; font-size: small;">
                                 Opens at 8 AM
                                 <i class="fa fa-clock-o fa-lg ml-1 pt-1" aria-hidden="true"></i>
-                            </div>
-                            <div class="row mt-4">
-                                <a style="font-size:small; text-decoration: underline; color: #227093;">
-                                    View in Maps
-                                    <img src="Img/nav-arrow.png" style="max-width: 18px;">
-                                </a>
-                            </div>   
+                            </div> 
                         </div>               
                     </div>
                 </div>
-            </div>
-            <div class="container shop_details_card mt-4 px-4 py-4">
-                <div class="row">
-                    <div class="col-12 col-sm-4">
-                        <div class="container shop_card px-4 py-4">
-                            <img src="Img/new_shop.png" class="shop_image">
+                <hr class="mt-4 mb-1" style="background-color: #ddd;">
+                <div class="row justify-content-between px-4 mx-1">
+                    <div class="col-sm-9 mt-2" style="text-align: left;">
+                        <a style="font-size: 15px; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#modal-0">View Shop Timing & Pricing</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="row mt-2 px-3">
+                            <a style="font-size: 15px; text-decoration: underline; color: #227093;">
+                                View in Maps
+                                <img src="Img/nav-arrow.png" style="max-width: 22px;">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-5 px-2" style="text-align: center;">
+                </div>
+            </div>
+            <div class="container shop_details_card mt-4 px-0 py-3">
+                <div class="row px-4">
+                    <div class="col-12 col-sm-3">
+                        <div class="container shop_card px-0 mx-auto">
+                            <img src="Img/shop-img.png" class="shop_image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 px-2" style="text-align: center;">
                         <div class="container" style="width: 100%;">
                             <div class="shop_name" style="text-align: left;">
                                 Mit Print Shop
@@ -177,33 +181,35 @@
                                     6 km
                                 </span>
                             </div>
-                            <div class="mt-2" style="font-weight: bold; font-size: small; text-align: left; color: #C44848">
+                            <div class="mt-3" style="font-weight: bold; font-size: 15px; text-align: left; color: #C44848">
                                 Not Accepting Orders 
-                            </div>
-                            <div class="mt-2" style="text-align: left;">
-                                <a style="font-size:small; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#modal-0">
-                                    View Shop <br>
-                                    Timing & Pricing
-                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-3 px-2 py-2" style="text-align: center;">
                         <div class="container" style="width: 100%;">
-                            <div class="row mt-2">
-                                <button type="button" class="btn btn-closed">Closed</button>
+                            <div class="row px-3 mt-2">
+                                <div class="shop-closed">Closed</div>
                             </div>
-                            <div class="row mt-3" style="color: #858585; font-size: small;">
+                            <div class="row px-3 mt-2" style="color: #858585; font-size: small;">
                                 Opens at 8 AM
                                 <i class="fa fa-clock-o fa-lg ml-1 pt-1" aria-hidden="true"></i>
-                            </div>
-                            <div class="row mt-4">
-                                <a style="font-size:small; text-decoration: underline; color: #227093;">
-                                    View in Maps
-                                    <img src="Img/nav-arrow.png" style="max-width: 18px;">
-                                </a>
-                            </div>   
+                            </div> 
                         </div>               
+                    </div>
+                </div>
+                <hr class="mt-4 mb-1" style="background-color: #ddd;">
+                <div class="row justify-content-between px-4 mx-1">
+                    <div class="col-sm-9 mt-2" style="text-align: left;">
+                        <a style="font-size: 15px; text-decoration: underline; color: #227093;" data-toggle="modal" data-target="#modal-0">View Shop Timing & Pricing</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="row mt-2 px-3">
+                            <a style="font-size: 15px; text-decoration: underline; color: #227093;">
+                                View in Maps
+                                <img src="Img/nav-arrow.png" style="max-width: 22px;">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,25 +245,36 @@
                         10 km
                     </div>
                 </div>
-                <input type="range" min="10" max="10000" value="5000" class="slider mt-2" id="myRange">
+                <input type="range" min="10" max="10000" value="5000" class="mt-2 px-0" id="myInput" style="width: 100%;">
                 <br>
-                <div class="row justify-content-center mt-2">
-                    <input type="text" id="demo" style="padding:5px; max-width:60px; min-width: 25px; text-align: center;">
+                <div class="row justify-content-center mt-0">
+                    <input disabled="" type="text" id="demo"><small class="mb-0 pt-1 mt-1">m</small>
                 </div>
                 <div class="row justify-content-center">
                     <button type="submit" class="btn btn-sleefax mt-4">APPLY</button>
-                </div> 
+                </div>
             </div>
         </div>
+    </div>
+    <hr class="mt-5" style="background-color: #ccc;">
+    <div class="row justify-content-center">
+        <a href="" class="text-muted mr-4 mt-1"><u>Previous</u></a>
+        <div class="pg-box active">1</div>
+        <div class="pg-box">2</div>
+        <div class="pg-box">3</div>
+        <div class="pg-box">4</div>
+        <div class="text-muted mt-2">- - - - - - -</div>
+        <div class="pg-box">10</div>
+        <a href="" class="text-blue ml-4 mt-1"><u>Next</u></a>
     </div>
   </div>
 </div>
 
-  <!-- Modal get otp -->
-  <div class="modal" id="modal-0" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- Shop Details Modal -->
+<div class="modal" id="modal-0" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog" role="document" style="background-color: #FCFCFC;  border-radius: 20px;">
       <div class="modal-content modal_card px-4" style=" border-radius: 20px;">
-        <div class="modal-body" >
+        <div class="modal-body pb-4">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -273,7 +290,7 @@
                         <div class="open ml-5">Open</div>
                     </div>
                     <div class="row mt-2 ml-1">
-                        <p class="mb-0">Shop No 5, Pinto Mansion, Sitadevi Temple Road, Mahim, Pune - 111111</p>
+                        <p class="mb-0">Shop No 5, Pinto Mansion, Sitadevi Temple Road, Mahim,<br>Pune - 411111</p>
                     </div>
                     <div class="row mt-2 ml-1">
                         <p>Contact No. : +91 1231231231, +91 1231231231</p>
@@ -287,68 +304,69 @@
             </div>
             <hr>
             <div class="row">
-                <div class="col-12 col-sm-6 px-3 py-3">
+                <div class="col-12 col-sm-6 px-4 py-3">
                     <div class="row ml-2">
                        <h5 class="text-blue">Pricing</h5><p class="ml-1 mb-0 text-muted">(per page)</p> 
                     </div>  
-                    <hr>
+                    <hr class="mt-0">
                     <div class="row ml-2 text-sm">
-                        <span style="width: 300px;">BW Printout (Single Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+                        <span style="width: 220px;">BW Printout (Single Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
                     </div>  
                     <div class="row ml-2 mt-1 text-sm">
-                        <span style="width: 300px;">BW Printout (Both Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+                        <span style="width: 220px;">BW Printout (Both Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
                     </div>     
                     <div class="row ml-2 mt-1 text-sm">
-                        <span style="width: 300px;">Color Printout (Single Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+                        <span style="width: 220px;">Color Printout (Single Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
                     </div>     
                     <div class="row ml-2 mt-1 text-sm">
-                        <span style="width: 300px;">Color Printout (Both Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+                        <span style="width: 220px;">Color Printout (Both Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
                     </div>
-                    <hr>
+                    
                     <div class="row ml-2 mt-4" style="font-weight: bold;">
                         TOTAL BILL AMOUNT : <span class="rupees-sym px-2"> ₹ </span> 20
                     </div>
-                    <hr>                
+                                   
                 </div>
-                <div class="col-12 col-sm-6 px-3 py-3">
+                <div class="col-12 col-sm-6 px-4 py-3" style="border-left: 1px solid #eee;">
                     <div class="row ml-2">
                        <h5 style="color:#227093;">Shop Timings</h5>
                     </div>
-                    <hr>
+                    <hr class="mt-0">
                     <div class="row ml-2 text-sm">
-                        <div class="col-5 pl-0">Mon - Fri</div> : <div class="col-5">
+                        <div class="col-4 pl-0">Mon - Fri</div> : <div class="col-7">
                             09:15 am  -  01:15 pm<br>03:15 pm  -  09:15 pm
                         </div>
                     </div>  
                     <div class="row ml-2 text-sm">
-                        <div class="col-5 pl-0">Saturday</div> : <div class="col-5">Closed</div>
+                        <div class="col-4 pl-0">Saturday</div> : <div class="col-7 text-danger">Closed</div>
                     </div> 
                     <div class="row ml-2 text-sm">
-                        <div class="col-5 pl-0">Sunday</div> : <div class="col-5">Closed</div>
+                        <div class="col-4 pl-0">Sunday</div> : <div class="col-7 text-danger">Closed</div>
                     </div>
-                    <hr>
-                    <div class="row ml-2 mt-3 text-muted text-sm" style=" font-weight: bold;">
-                        Distance from your location : 0.2 km
+                    
+                    <div class="row ml-2 mt-4 pt-2 text-muted" style="font-size: 16px;">
+                        Distance from your location : <b class="pl-2 text-dark">0.2 km</b>
                     </div>                         
                 </div>
             </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <div class="container mt-5">
+</div>
+
+<div class="container mt-5">
     <div class="mb-5">
       <div class="row justify-content-between px-3">
-        <div class="d-flex text-center">
-          <a href="print-properties.html"><button class="btn btn-secondary mx-auto px-4"><h5 class="mb-0">PREV</h5></button></a>
+        <div class="d-flex text-center" style="position: relative;">
+          <a href="print-properties.html" class="float-btn d-none" style="position: fixed; bottom: 10vh; left: 120.5px; z-index: 2;"><button class="btn btn-secondary mx-auto px-4"><h5 class="mb-0">PREV</h5></button></a>
+          <a href="print-properties.html" class=""><button class="btn btn-secondary mx-auto px-4"><h5 class="mb-0">PREV</h5></button></a>
         </div>
-        <div class="d-flex text-center">
-          <a href="checkout.html"><button class="btn btn-warning mx-auto px-4"><h5 class="mb-0">NEXT</h5></button></a>
+        <div class="d-flex text-center" style="position: relative;">
+          <a href="checkout.html" class="float-btn d-none" style="position: fixed; bottom: 10vh; right: 120.5px; z-index: 2;"><button class="btn btn-warning mx-auto px-4"><h5 class="mb-0">NEXT</h5></button></a>
+          <a href="checkout.html" class=""><button class="btn btn-warning mx-auto px-4"><h5 class="mb-0">NEXT</h5></button></a>
         </div>
       </div>
     </div>
-  </div>
 </div>
 
 <!-- Footer -->
@@ -464,15 +482,12 @@
 <script src="select-shop.js"></script>
 
 <script>
-    var slider = document.getElementById("myRange");
+    var slider = document.getElementById("myInput");
     var output = document.getElementById("demo");
     output.value = slider.value;
     
     slider.oninput = function() {
       output.value = this.value;
-    }
-    output.oninput = function() {
-      slider.value = this.value;
     }
     </script>
     

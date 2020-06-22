@@ -2,6 +2,7 @@ html, body {
   overflow-x: hidden;
   background-color: #F9F9F9;
   font-family: 'Poppins', sans-serif;
+  padding-right: 0px !important;
 }
 
 input, select {
@@ -216,6 +217,7 @@ a.no-anchor:hover {
   width: 100%;
   transition: 0.6s;
   box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+  padding-right: 16px !important;
 }
 
 .nav-item {
@@ -256,18 +258,23 @@ a.no-anchor:hover {
 }
 
 .file-prop {
+  border-radius: 8px;
   box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
 }
 
 .file-prop-header {
   background-color: #F1F1F1;
   border: 1px solid #707070;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .file-prop-body {
   background-color: #fff;
   border: 1px solid #B9B9B9;
   padding: 25px 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .file-prop-body h6.text-muted {
@@ -279,22 +286,43 @@ a.no-anchor:hover {
   font-weight: normal;
 }
 
+.info-card {
+  background-color: #fff;
+  border: 1px solid #B9B9B9;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.15);
+  padding: 40px 0px 10px 0px;
+}
+
+.moveDown {
+  transform: translateY(210px);
+  transition: 0.8s;
+}
+
+.move {
+  margin-top: 250px !important;
+  transition: 0.8s;
+}
+
 .shop-card {
   background-color: #fff;
   border: 1px solid #B9B9B9;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
-  padding: 35px 25px 20px 25px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.15);
+  padding: 25px 0px 10px 0px;
 }
 
 .img-container {
   background-color: #fff;
-  border-radius: 45px;
+  border-radius: 25px;
   border: 1px solid #707070;
   padding: 20px;
+  box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
 }
 
 .payment-box {
   border: 1px solid #B9B9B9;
+  border-radius: 8px;
   background-color: #fff;
   z-index: 4;
   box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
@@ -317,11 +345,119 @@ a.no-anchor:hover {
   padding: 18px 20px;
   border: 1px solid #BABABA;
   background-color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .pay-card-body {
   border: 1px solid #BABABA;
   padding: 30px 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 75% !important;
+  }
+}
+
+.preview {
+  border: 1px solid #000;
+  min-height: 525px;
+}
+
+.preview, .preview-header {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.preview-header {
+  background-color: #227093;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.print-prop input, .print-prop select {
+  width: 145px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.print-prop h6 {
+  width: 200px;
+}
+
+.color-format {
+  border: 1px solid #707070;
+  border-radius: 6px;
+  opacity: 0.5;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.color-format.selected {
+  opacity: 1;
+  border: 3px solid #227093;
+  padding: 2px;
+}
+
+.color-format img {
+  border-radius: 6px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 38px;
+  width: 68px;
+  left: 1px;
+  bottom: 1px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #227093;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #227093;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(70px);
+  -ms-transform: translateX(70px);
+  transform: translateX(70px);
 }
 
 /*----FOOTER CSS----*/

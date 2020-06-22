@@ -324,21 +324,19 @@
   border: 2px solid #227093;
 }
   .shop_image{
-      max-width: 100px;
-      max-height: 100px;
-      min-height: 60px;
-      min-width: 60px;
+      width: 120px;
+      height: 120px;
   }
   .shop_card{
       background-color: #F8F8F8;
       border-radius: 7px;
-      width: 148px;
+      width: 120px;
       margin-left: 0px;
       box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.164);
   }
   .shop_name{
       color: #227093;
-      font-size: large;
+      font-size: 20px;
       font-weight: bold;
   }
   .shop_address{
@@ -351,48 +349,57 @@
       font-size: small;
       font-weight: bold;
   }
-  .btn-open {
-      padding: 3px 6px;
-      min-width: 90px;
-      color: white;
-      background-color: #77BF66;
-      border-radius: 7px;
-      font-size: small;
-    }
-    .btn-open:hover, .btn-open:focus {
-      color: white;
-      font-weight: bolder;
-      box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
-    }
-    .btn-partially-closed {
-      min-width: 90px;
-      padding: 3px 6px;
-      color: white;
-      background-color: #C8864C;
-      border-radius: 7px;
-      font-size: small;
-    }
-    .btn-partially-closed:hover, .btn-partially-closed:focus {
-      color: white;
-      font-weight: bolder;
-      box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
-    }
-    .btn-closed {
-      min-width: 90px;
-      padding: 3px 6px;
-      color: white;
-      background-color: #C44848;
-      border-radius: 7px;
-      font-size: small;
-    }
-    .btn-closed:hover, .btn-closed:focus {
-      color: white;
-      font-weight: bolder;
-      box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
-    }
-    .fa-clock-o{
-        color: #858585;
-    }
+
+.shop-open {
+  padding: 5px 6px;
+  min-width: 110px;
+  color: white;
+  background-color: #77BF66;
+  border-radius: 7px;
+  font-size: 15px;
+  border: none;
+}
+
+.shop-partially-closed {
+  min-width: 110px;
+  padding: 5px 6px;
+  color: white;
+  background-color: #C8864C;
+  border-radius: 7px;
+  font-size: 15px;
+  border: none;
+}
+
+.shop-closed {
+  min-width: 110px;
+  padding: 5px 6px;
+  color: white;
+  background-color: #C44848;
+  border-radius: 7px;
+  font-size: 15px;
+  border: none;
+}
+
+.fa-clock-o{
+  color: #858585;
+}
+
+.pg-box {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 3px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  margin-left: 6px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.pg-box.active {
+  background-color: #bbb;
+}
+
   .search_text{
       text-align: center;
       height: 32px;
@@ -427,41 +434,33 @@
     #butn:hover {
       background: #ccc;
     }
-    
-  /*----FOOTER CSS----*/
-  .page-footer {
-    background-image: linear-gradient(#277391 35%, #3497BF 100%);
-    border: none;
-  }
-  
-  #vl{
-    height: 200px;
-    width:1px;
-    background-color: #AEAEAE;
-  }
-  
-  #rl{
-    height: 1px;
-    width:100%;
-    background-color: #AEAEAE;
-  }
-  
-  .social-connect img {
-    width: 25px;
-    height: 25px;
-  }
-  
-  .social-connect img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-  
-  .footer-copyright {
-    color: white;
-    background-color: #2C596B;
-    border: none;
-  }
-  
+
+input[type='range']::-webkit-slider-thumb {
+  cursor: pointer;
+  background: linear-gradient(to right, #227093 0%, #227093 50%, #fff 50%, #fff 100%) !important;
+  border: solid 2px #227093 !important;
+}
+
+input#demo {
+  padding: 5px;
+  max-width: 60px;
+  min-width: 25px;
+  text-align: center;
+  color: #227093 !important;
+  border: none;
+}
+
+#myinput {
+  background: linear-gradient(to right, #227093 0%, #227093 50%, #fff 50%, #fff 100%) !important;
+  border: solid 1px #82CFD0;
+  border-radius: 8px;
+  height: 7px;
+  width: 356px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
   .slider {
     -webkit-appearance: none;
     width:100%;
@@ -701,7 +700,7 @@
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 80% !important;
+    max-width: 60% !important;
   }
 }
 

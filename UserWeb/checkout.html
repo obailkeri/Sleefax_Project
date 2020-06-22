@@ -103,7 +103,7 @@
                   <h6>1 - 16</h6>
                 </div>
                 <div class="row px-2 px-md-4 justify-content-start pt-2">
-                  <a class="text-blue" style="text-decoration: underline; font-size: 18px;">Edit print properties</a>
+                  <a class="text-blue" style="text-decoration: underline; font-size: 18px;" data-toggle="modal" data-target="#modal-0">Edit print properties</a>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@
                   <h6>1 - 16</h6>
                 </div>
                 <div class="row px-2 px-md-4 justify-content-start pt-2">
-                  <a class="text-blue" style="text-decoration: underline; font-size: 18px;">Edit print properties</a>
+                  <a class="text-blue" style="text-decoration: underline; font-size: 18px;" data-toggle="modal" data-target="#modal-0">Edit print properties</a>
                 </div>
               </div>
             </div>
@@ -159,9 +159,91 @@
       </div>
     </div>
 
+    <div class="modal" id="modal-0" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document" style="background-color: #FCFCFC;  border-radius: 20px;">
+        <div class="modal-content modal_card px-4" style=" border-radius: 20px;">
+          <div class="modal-body pb-4">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="row mt-4 justify-content-center">
+                <h4 class="text-center">PREVIEW</h4>
+              </div>
+              <div class="row mt-4">
+                  <div class="col-md-6">
+                    <div class="preview">
+                      <div class="preview-header text-center">
+                        <h5 class="mb-0">filename.pdf</h5>
+                      </div>
+                    </div>
+                    <div class="row mx-1 justify-content-end">
+                      <small class="text-muted mt-2">1 - 24</small>
+                    </div>
+                    <div class="row mx-1 mt-2">
+                      <h6 class="mr-3 mt-1">Page No. : </h6>
+                      <input type="text" name="page-num" placeholder="1" style="width: 60px; text-align: center;">
+                    </div>
+                  </div>
+                  <div class="col-md-6 print-prop">
+                    <div class="row px-md-4 justify-content-start pt-3">
+                      <h5><b>PRINT SETTINGS</b></h5>
+                    </div>
+                    <hr class="my-2">
+                    <div class="row px-md-4 justify-content-start py-3">
+                      <h6>Number of copies :</h6>
+                      <input type="text" name="copies" placeholder="1">
+                    </div>
+                    <div class="row px-md-4 justify-content-start py-3">
+                      <h6>Select page size :</h6>
+                      <select class="">
+                        <option>A4</option>
+                        <option>A3</option>
+                        <option>A2</option>
+                      </select>
+                    </div>
+                    <div class="row px-md-4 justify-content-start py-3">
+                      <h6>Page orientation :</h6>
+                      <select class="">
+                        <option>Portrait</option>
+                        <option>Landscape</option>
+                      </select>
+                    </div>
+                    <div class="row px-md-4 justify-content-start py-3">
+                      <h6>Color format :</h6>
+                      <div class="color-format selected mr-4" id="color"><img src="Img/color.png" width="34px" height="34px"></div>
+                      <div class="color-format" id="bw"><img src="Img/b&w.png" width="34px" height="34px"></div>
+                    </div>
+                    <div class="row px-md-4 justify-content-start py-3">
+                      <h6>Print both sides :</h6>
+                      <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider pt-2"><span class="text-light mx-4">ON</span><span class="text-dark mx-3">OFF</span></span>
+                      </label>
+                    </div>
+                    <div class="row px-md-4 justify-content-start py-3">
+                      <h6>Select pages :</h6>
+                      <select class="pages-opt">
+                        <option value="1">All Pages</option>
+                        <option value="2">Custom Pages</option>
+                      </select>
+                    </div>
+                    <div class="row px-md-4 justify-content-start pb-3 pt-0 page-input d-none">
+                      <h6>Pages :</h6>
+                      <input type="text" name="pages" placeholder="1 - 15">
+                    </div>
+                    <div class="row px-md-4 justify-content-center py-3">
+                      <button class="btn btn-blue mr-4">SAVE CHANGES</button>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <hr class="mb-4" style="background-color: #707070;">
 
-    <div class="bill-amt py-3 px-5" style="background-color: #227093; box-shadow: 2px 2px 3px rgba(0,0,0,0.2);">
+    <div class="bill-amt py-3 px-5" style="background-color: #227093; box-shadow: 2px 2px 3px rgba(0,0,0,0.2); border-radius: 8px;">
       <div class="row justify-content-between text-light">
         <p class="mb-0">TOTAL BILL AMT <small>(with taxes)</small></p>
         <h5 class="mb-0 ml-auto"><span class="rupees-sym">₹</span> 35.00</h5>
@@ -170,10 +252,11 @@
   </div>
 
   <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-12">
+    <h5 class="mb-4">Shop Details</h5>
+    <div class="row justify-content-center" style="position: relative; ">
+      <div class="col-12" style="z-index: 2;">
         <div class="shop-card">
-          <div class="row px-2 px-md-5">
+          <div class="row px-2 px-md-5 mx-1">
             <div class="img-container mr-2 mr-md-5"><img src="Img/new_shop.png" height="100px" width="100px"></div>
             <div class="d-flex flex-column pt-3">
               <h5 class="text-blue mb-3">Shop Name</h5>
@@ -182,19 +265,59 @@
             </div>
           </div>
 
-          <hr class="my-4 mx-4" style="background-color: #ddd;">
+          <hr class="mt-4 mb-2 mx-0" style="background-color: #ddd;">
 
-          <div class="row px-2 px-md-5 mt-3 text-blue">
-            <div class="col-md-4 mb-2 text-md-left ptr"><u>Display Timing</u><span class="fa fa-angle-down ml-2" style="font-size: 20px;"></span></div>
-            <div class="col-md-4 mb-2 text-md-center ptr"><u>Display Pricing</u><span class="fa fa-angle-down ml-2" style="font-size: 20px;"></span></div>
-            <div class="col-md-4 mb-2 text-md-right ptr">View in Maps <span><img src="Img/nav-arrow.png"></span></div>
+          <div class="row px-2 px-md-5 mt-3 text-blue mx-1">
+            <div type="button" id="shop-info" class="col-md-6 mb-0 text-md-left ptr"><u>Display Shop Timing & Pricing</u><span class="fa fa-angle-down ml-2" style="font-size: 20px;"></span></div>
+            <div class="col-md-6 mb-0 text-md-right ptr">View in Maps <span><img src="Img/nav-arrow.png"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="shop-info-card" class="col-12" style="position: absolute; bottom: 0; left: 0; transition: 0.8s;">
+        <div class="info-card">
+          <div class="row px-2 px-md-5">
+            <div class="col-12 col-sm-6 px-4 py-3">
+              <div class="row ml-2">
+                <h5 class="text-blue">Pricing</h5><p class="ml-1 mb-0 text-muted">(per page)</p> 
+              </div>  
+              <hr style="background-color: #ddd;" class="mt-0">
+              <div class="row ml-2 text-sm">
+                <span style="width: 220px;">BW Printout (Single Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+              </div>  
+              <div class="row ml-2 mt-1 text-sm">
+                <span style="width: 220px;">BW Printout (Both Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+              </div>     
+              <div class="row ml-2 mt-1 text-sm">
+                <span style="width: 220px;">Color Printout (Single Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+              </div>     
+              <div class="row ml-2 mt-1 text-sm">
+                <span style="width: 220px;">Color Printout (Both Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 px-4 py-3" style="border-left: 1px solid #ddd;">
+              <div class="row ml-2">
+                <h5 style="color:#227093;">Shop Timings</h5>
+              </div>
+              <hr style="background-color: #ddd;" class="mt-0">
+              <div class="row ml-2 text-sm">
+                <div class="col-4 pl-0">Mon - Fri</div> : <div class="col-7">
+                  09:15 am  -  01:15 pm<br>03:15 pm  -  09:15 pm
+                </div>
+              </div>  
+              <div class="row ml-2 text-sm">
+                <div class="col-4 pl-0">Saturday</div> : <div class="col-7 text-danger">Closed</div>
+              </div> 
+              <div class="row ml-2 text-sm">
+                <div class="col-4 pl-0">Sunday</div> : <div class="col-7 text-danger">Closed</div>
+              </div>                        
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <hr class="my-5" style="background-color: #707070;">
-
+    <hr id="print-details" class="my-5" style="background-color: #707070; transition: 0.8s;">
   </div>
 
   <div class="container mt-5">
@@ -260,7 +383,7 @@
           <a href="select-shop.html"><button class="btn btn-secondary mx-auto px-4"><h5 class="mb-0">PREV</h5></button></a>
         </div>
         <div class="d-flex text-center">
-          <a href="checkout.html"><button class="btn btn-warning mx-auto px-4"><h5 class="mb-0">NEXT</h5></button></a>
+          <a href="order-placed.html"><button class="btn btn-warning mx-auto px-4"><h5 class="mb-0">NEXT</h5></button></a>
         </div>
       </div>
     </div>
