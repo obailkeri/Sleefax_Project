@@ -245,8 +245,13 @@ a.no-anchor:hover {
   cursor: pointer;
 }
 
-.file-box-header {
+.selected .file-box-header {
   background-color: #227093;
+  color: #fff;
+}
+
+.file-box-header {
+  background-color: #777;
   color: #fff;
 }
 

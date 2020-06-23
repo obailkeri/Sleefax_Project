@@ -446,11 +446,11 @@ input#demo {
   max-width: 60px;
   min-width: 25px;
   text-align: center;
-  color: #227093 !important;
+  color: #000 !important;
   border: none;
 }
 
-#myinput {
+/*#myInput {
   background: linear-gradient(to right, #227093 0%, #227093 50%, #fff 50%, #fff 100%) !important;
   border: solid 1px #82CFD0;
   border-radius: 8px;
@@ -459,7 +459,7 @@ input#demo {
   outline: none;
   transition: background 450ms ease-in;
   -webkit-appearance: none;
-}
+}*/
 
   .slider {
     -webkit-appearance: none;

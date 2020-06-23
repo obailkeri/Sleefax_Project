@@ -33,6 +33,10 @@ html, body {
     display: block;
   }
   
+.ptr {
+  cursor: pointer;
+}
+
   .text-sm {
     font-size: 14px !important;
   }
