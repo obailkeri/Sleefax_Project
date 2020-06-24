@@ -234,26 +234,35 @@ a, a:hover {
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.214);
   }
   
-   /* Form inputs */
-   .fo{
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.214);
-  }
-    .edit_profile{
-        max-width: 600px;
-        min-width: 250px;
-    }
-    .change_password{
-      max-width: 600px;
-      min-width: 250px;
-  }
-  .report_issue{
-    max-width: 730px;
-    min-width: 275px;
+/* Form inputs */
+.fo {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.214);
 }
-  .provide_feedback{
-    max-width: 600x;
-    min-width: 275px;
+
+.form-1 {
+  width: calc(100% - 55px) !important;
 }
+
+.edit_profile{
+    max-width: 500px;
+    min-width: 250px;
+}
+
+.change_password{
+  max-width: 500px;
+  min-width: 250px;
+}
+
+.report_issue{
+  max-width: 730px;
+  min-width: 275px;
+}
+
+.provide_feedback{
+  max-width: 600x;
+  min-width: 275px;
+}
+
 .submit_feedback{
   height: 50px;
   width: 175px;

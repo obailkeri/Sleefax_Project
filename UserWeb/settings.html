@@ -119,89 +119,67 @@
   <!-- Edit Profile -->
   <div class="container edit_profile" id="tab1">
     <div class="text-center" style="font-size: x-large;">Edit Profile</div>
-    <div class="row mt-3">
-      <div class="col-3 pt-3 pl-md-4 pl-2">Full Name</div>
-      <div class="col-1 pt-3">:</div>
-      <div class="col-6 px-2">
-        <div class="row justify-content-center pt-2">
-          <input type="text" id="input1_1" value="John Doe" class="fo form-control" disabled>
+
+    <div class="container px-4 pb-4">
+        <div class="row mt-4">
+          <h6><label>Full Name :</label></h6>
         </div>
-      </div>
-      <div class="col-2">
-        <div class="row justify-content-center">
-          <button type="submit" class="btn btn-success"  id="edit1_1" style="border:none; background-color: white;" onclick="enable_input1_1()">
-            <i class="fa fa-pencil-square-o fa-3x" style="color: #227093;-webkit-text-stroke: 1px white;"></i>
+        <div class="row justify-content-between">
+          <input type="text" id="input1_1" value="John Doe" class="fo form-control form-1" disabled>
+          <button type="submit" id="edit1_1" style="border:none; background-color: white;" onclick="enable_input1_1()">
+            <i class="fa fa-edit" style="color: #227093; font-size: 35px; vertical-align: middle;"></i>
           </button>
         </div>
-      </div>
-    </div>
-    <div class="row mt-2">
-      <div class="col-3 pt-3 pl-md-4 pl-2">Email Id</div>
-      <div class="col-1 pt-3">:</div>
-      <div class="col-6 px-2">
-        <div class="row justify-content-center pt-2">
-          <input type="text" id="input1_2" value="john.doe@abc.com" class="fo form-control" disabled>
+        <div class="row mt-4">
+          <h6><label>Email Id :</label></h6>
         </div>
-      </div>
-      <div class="col-2 px-2">
-        <div class="row justify-content-center">
-          <button type="submit" class="btn btn-success"  id="edit1_2" style="border:none; background-color: white;" onclick="enable_input1_2()">
-            <i class="fa fa-pencil-square-o fa-3x" style="color: #227093;-webkit-text-stroke: 1px white;"></i>
+        <div class="row justify-content-between">
+          <input type="email" id="input1_2" value="john.doe@abc.com" class="fo form-control form-1" disabled>
+          <button type="submit" id="edit1_2" style="border:none; background-color: white;" onclick="enable_input1_2()">
+            <i class="fa fa-edit" style="color: #227093; font-size: 35px; vertical-align: middle;"></i>
           </button>
         </div>
-      </div>
-    </div>
-    <div class="row mt-2">
-      <div class="col-3 pt-3 pl-md-4 pl-2">Phone No.</div>
-      <div class="col-1 pt-3">:</div>
-      <div class="col-6 px-2">
-        <div class="row justify-content-center pt-2">
-          <input type="text" id="input1_3" value="+91 1234567890" class="fo form-control" disabled>
+        <div class="row mt-4">
+          <h6><label>Phone Number :</label></h6>
         </div>
-      </div>
-      <div class="col-2 px-2">
-        <div class="row justify-content-center">
-          <button type="submit" class="btn btn-success"  id="edit1_3" style="border:none; background-color: white;" onclick="enable_input1_3()">
-            <i class="fa fa-pencil-square-o fa-3x" style="color: #227093;-webkit-text-stroke: 1px white;"></i>
+        <div class="row justify-content-between">
+          <input type="text" id="input1_3" value="+91 1234567890" class="fo form-control form-1" disabled>
+          <button type="submit" id="edit1_3" style="border:none; background-color: white;" onclick="enable_input1_3()">
+            <i class="fa fa-edit" style="color: #227093; font-size: 35px; vertical-align: middle;"></i>
           </button>
         </div>
+        <div class="row justify-content-center">
+          <button id="save1" type="submit" class="btn btn-sleefaxs mt-5">Save Changes</button>
+        </div>
       </div>
-    </div>
-    <div class="row justify-content-center">
-      <button type="submit" class="btn btn-sleefax mt-5 mb-3" id ="save1" onclick="disable_input()" >Save Changes</button>
-    </div>
   </div>
 
   <!-- Change Password -->
   <div class="container change_password" id="tab2">
     <div class="row justify-content-center" style="font-size: x-large;">Change Password</div>
-    <div class="row justify-content-left mt-4">
-      <div class="col-5 pt-1">Current Password</div>
-      <div class="col-1 pt-1">:</div>
-      <div class="col-6 px-2">
-        <input type="password" class="fo1 form-control">
+    <div class="container px-4 pb-4">
+        <div class="row justify-content-left mt-4">
+          <h6><label>Current Password</label></h6>
+        </div>
+        <div class="row justify-content-left">
+          <input type="password" class="fo1 form-control">
+        </div>
+        <div class="row justify-content-left mt-4">
+          <h6><label>New Password</label></h6>
+        </div>
+        <div class="row justify-content-left">
+          <input type="password" class="fo1 form-control">
+        </div>
+        <div class="row justify-content-left mt-4">
+          <h6><label>Re-Enter New Password</label></h6>
+        </div>
+        <div class="row justify-content-left">
+          <input type="text" class="fo1 form-control">
+        </div>
+        <div class="row justify-content-center">
+          <button type="submit" class="btn btn-sleefaxs mt-5">Save Changes</button>
+        </div>
       </div>
-    </div>
-
-    <div class="row justify-content-left mt-4">
-      <div class="col-5 pt-1">New Password</div>
-      <div class="col-1 pt-1">:</div>
-      <div class="col-6 px-2">
-        <input type="password" class="fo1 form-control">
-      </div>
-    </div>
-    
-    <div class="row justify-content-left mt-4">
-      <div class="col-5 pt-1">Re-Enter New Password</div>
-      <div class="col-1 pt-1">:</div>
-      <div class="col-6 px-2">
-        <input type="password" class="fo1 form-control">
-      </div>
-    </div>
-    
-    <div class="row justify-content-center">
-      <button type="submit" class="btn btn-sleefaxs mt-5">Save Changes</button>
-    </div>
   </div>
 
   <!-- Feedback -->

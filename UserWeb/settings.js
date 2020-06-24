@@ -111,10 +111,13 @@ $(function() {
 
 $(document).ready(function() {
 
-    $(".fo").change(function(){
+    // Show edit profile SAVE BUTTON only when edit is clicked
+    $('#save1').hide();
+    $(".fa-edit").click(function(){
         $("#save1").show();
     });
 
+    // Multi-select opton for the report issue tab 
     $(".issue-group .issue").click(function() {
         $(this).toggleClass('selected');
     });
