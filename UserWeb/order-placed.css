@@ -213,7 +213,7 @@ a.no-anchor:hover {
 .printer-frame {
   width: 160px;
   height: 160px;
-  border: 4px solid #506D7A;
+  border: 0px solid #506D7A;
   border-radius: 50%;
   padding-top: 18px;
   margin-top: 20px;
