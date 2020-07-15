@@ -3,6 +3,7 @@ html, body {
   background-color: #F9F9F9;
   font-family: 'Poppins', sans-serif;
   padding-right: 0px !important;
+  zoom: 95%;
 }
 
 input {
@@ -284,48 +285,64 @@ body.modal-open .supreme-container{
   -ms-filter: blur(1px);
   filter: blur(1px);
 }
-.modal_card{
-  background-color: #FCFCFC;
-  border-radius: 10px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.514);
-  max-width: 400px;
-  min-width: 250px;
+  .modal_card{
+    background-color: #FCFCFC;
+    border-radius: 10px;
+    border: 1px solid #09F;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.514);
+    width: 600px;
+    padding-bottom: 40px;
+    padding-top: 15px;
+  }
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    margin-top: 80px !important;
+    width: 650px !important;
+  }
 }
-.otp_card{
-  max-width: fit-content;
-  min-width: 190px;
+
+.modal-backdrop.show {
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 153, 250, 0.5);
+  opacity: 0.80;
+  backdrop-filter: blur(8px);
 }
-.otp_input{
-  max-width:35px;
-  max-height: 32px;
-  min-width: 15px;
-  border-radius: 5px;
-}
-.btn-verify-otp {
-  padding: 1px 23px;
-  color: white;
-  background-color: #227093;
-  border-radius: 4px;
-  font-size: small;
-}
-.btn-verify-otp:hover, .btn-verify-otp:focus {
-  color: white;
-  font-weight: bolder;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
-}
-.btn-resend-otp {
-  padding: 4px 8px;
-  background-color: white;
-  border: 1px solid #227093;
-  color: #227093;
-  border-radius: 4px;
-  font-size: small;
-}
-.btn-resend-otp:hover, .btn-resend-otp:focus {
-  color: #227093;
-  font-weight: bolder;
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
-}
+
+  .otp_card{
+    width: 300px;
+  }
+  .otp_input{
+    width:40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .btn-verify-otp {
+    padding: 5px 25px;
+    color: white;
+    background-color: #227093;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .btn-verify-otp:hover, .btn-verify-otp:focus {
+    color: white;
+    font-weight: bold;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+  }
+  .btn-resend-otp {
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #227093;
+    color: #227093;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  .btn-resend-otp:hover, .btn-resend-otp:focus {
+    color: #227093;
+    font-weight: bold;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+  }
 
 /* Hide number arrow*/
 input::-webkit-outer-spin-button,

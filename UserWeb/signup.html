@@ -107,14 +107,14 @@
             </div>
 
             <div class="row justify-content-left mt-3">
-              <button type="button" class="btn btn-get-otp mt-2" data-toggle="modal" data-target="#exampleModalCenter">Get OTP</button>
+              <button id="getOTP" type="button" class="btn btn-get-otp mt-2" data-toggle="modal" data-target="#exampleModalCenter">Get OTP</button>
             </div>
 
             <div class="row justify-content-left">
               <div class="pt-3" style="font-size: small;">
                 Already have an OTP ?
               </div>
-              <button type="button" class="btn btn-enter-otp mt-2 ml-3" data-toggle="modal" data-target="#exampleModalCenter2">Enter OTP</button>
+              <button id="enterOTP" type="button" class="btn btn-enter-otp mt-2 ml-3" data-toggle="modal" data-target="#exampleModalCenter">Enter OTP</button>
             </div>
 
             <div class="row justify-content-left mt-4 custom-control custom-checkbox">
@@ -165,20 +165,20 @@
 
   <!-- Modal get otp -->
   <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog" role="document">
       <div class="modal-content modal_card px-4">
         <div class="modal-body" >
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+              <span style="font-size: 28px;" class="fa fa-times"></span>
             </button>
-            <div class="row justify-content-center mt-4" style="color:#227093; font-size: smaller;">
-              An OTP has been sent to +91 1234567890
+            <div class="row justify-content-center text-center mt-4" style="color:#227093; font-size: 16px;">
+              <p id="otp-message"></p>
             </div>
             <div class="container otp_card">
-              <div class="row justify-content-left mt-3" style="font-size: smaller;">
-                Enter OTP
+              <div class="row px-2 justify-content-left mt-1" style="font-size: 17px;">
+                Enter OTP :
               </div>
-              <div class="row justify-content-left mt-1">
+              <div class="row px-2 justify-content-left mt-1">
                 <input type="number" class="otp_input form-control pl-3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
                 <input type="number" class="otp_input form-control pl-3 ml-2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
                 <input type="number" class="otp_input form-control pl-3 ml-2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
@@ -190,57 +190,16 @@
             <div class="row justify-content-center mt-2">
               <button type="button" class="btn btn-verify-otp mt-2">VERIFY</button>
             </div>
-            <div class="row justify-content-center mt-3" style="font-size: x-small;">
+            <div class="row justify-content-center mt-3" style="font-size: 15px;">
               Please wait for &nbsp;<b> 01:30 </b> &nbsp;before requesting another OTP
             </div>
             <div class="row justify-content-center mt-2">
-              <div class="pt-1 mt-1" style="font-size: small;">
+              <div class="pt-1 mt-1" style="font-size: 16px;">
                 Haven't received OTP ?
               </div>
               <button type="button" class="btn btn-resend-otp ml-3 mt-1">Resend OTP</button>
             </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal get otp -->
-  <div class="modal" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content modal_card px-4">
-        <div class="modal-body" >
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="row justify-content-center mt-4" style="color:#227093; font-size: smaller;">
-            Enter the OTP that you already have
-          </div>
-          <div class="container otp_card">
-            <div class="row justify-content-left mt-3" style="font-size: smaller;">
-              Enter OTP
-            </div>
-            <div class="row justify-content-left mt-1">
-              <input type="number" class="otp_input form-control pl-3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
-              <input type="number" class="otp_input form-control pl-3 ml-2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
-              <input type="number" class="otp_input form-control pl-3 ml-2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
-              <input type="number" class="otp_input form-control pl-3 ml-2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
-              <input type="number" class="otp_input form-control pl-3 ml-2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
-              <input type="number" class="otp_input form-control pl-3 ml-2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1">
-            </div>
-          </div>
-          <div class="row justify-content-center mt-2">
-            <button type="button" class="btn btn-verify-otp mt-2">VERIFY</button>
-          </div>
-          <div class="row justify-content-center mt-3" style="font-size: x-small;">
-            Please wait for &nbsp;<b> 01:30 </b> &nbsp;before requesting another OTP
-          </div>
-          <div class="row justify-content-center mt-2">
-            <div class="pt-1 mt-1" style="font-size: small;">
-              Haven't received OTP ?
-            </div>
-            <button type="button" class="btn btn-resend-otp ml-3 mt-1">Resend OTP</button>
-          </div>
-      </div>
       </div>
     </div>
   </div>
@@ -356,6 +315,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="signup.js"></script>
+
+<script type="text/javascript">
+  $('#getOTP').click(function() {
+    $('#otp-message').html('An OTP has been sent to<br><span class="font-weight-bold">+91 1234567890</span>');
+  });
+
+  $('#enterOTP').click(function() {
+    $('#otp-message').html('');
+  });
+
+</script>
 
 </body>
 </html>

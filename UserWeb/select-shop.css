@@ -1,40 +1,17 @@
-/*@media only screen and (max-width: 500px){
-    .shop_details_card{
-      width: 450px;
-    }
-  }
-  @media only screen and (max-width: 460px){
-    .shop_details_card{
-      width: 400px;
-    }
-  }
-  @media only screen and (max-width: 410px){
-    .shop_details_card{
-      width: 350px;
-    }
-  }
-  @media only screen and (max-width: 360px){
-    .shop_details_card{
-      width: 300px;
-    }
-  }
-  @media only screen and (max-width: 310px){
-    .shop_details_card{
-      width: 280px;
-    }
-  }
-  @media only screen and (max-width: 290px){
-    .shop_details_card{
-      width: 250px;
-    }
-  }*/
+
   html, body {
     overflow-x: hidden;
     background-color: #F9F9F9;
     font-family: 'Poppins', sans-serif;
     padding-right: 0px !important;
+    /*zoom: 95%;*/
   }
   
+.modal-backdrop {
+  width: 100% !important;
+  height: 100% !important;
+}
+
   input {
     border-radius: 6px;
     border: 1px solid gray;
@@ -60,7 +37,7 @@
   .ptr {
     cursor: pointer;
   }
-  
+
 .fa-times-thin:before {
   content: '\00d7';
 }
@@ -700,6 +677,7 @@ input#demo {
 
 @media (min-width: 576px) {
   .modal-dialog {
+    margin-top: 80px !important;
     max-width: 60% !important;
   }
 }

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Section For SEO -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Order Details</title>
+  <!-- Linking Bootstrap and CSS -->
+  <link rel="icon" href="Img/logo0.jpeg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bill-details.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md fixed-top pb-0" id="navbar-id">
+
+    <!-- Navbar Brand -->
+    <a href="new_orders.html" class="navbar-brand">
+        <div class="row">
+            <img src="Img/logo0.jpeg" alt="Sleefax" class="logo mx-2 p-1">
+            <b class="mt-2">Sleefax</b>
+        </div>
+    </a>
+
+    <!-- Toggle Icon -->
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" style="color:#296178">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ml-auto mt-2">
+            <ul class="navbar-nav ml-auto"  id="navbarCollapse">
+                <li class="nav-item ml-md-5">
+                  <a class="nav-link mx-auto" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-auto active" href="live-orders.html">My Orders</a>
+                  <div class="mx-auto" id="smaller-border"></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-auto" href="settings.html">Settings</a>
+                </li>
+                <li class="nav-item text-left mb-1">
+                  <div class="dropdown">
+                    <a class="dropbtn nav-link circle text-dark">JD</a>
+                    <div class="dropdown-content text-left">
+                      <p class="mb-1">John Doe</p>
+                      <small>+91 9876543210</small>
+                      <small>johndoe@abc.xyz</small>
+                      <hr class="mb-0 mt-2" style="background-color: #bbb;">
+                      <a href="help.html" class="nav-link pl-0 pb-1">Help</a>
+                      <a href="logout.html" class="nav-link pl-0 pt-0">Logout</a>
+                    </div>
+                  </div> 
+                </li>
+            </ul> 
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid" id="top-section" style="padding-top: 70px; color: #fff;">
+  <div class="container pt-5 px-2 px-md-4" style="padding-bottom: 40px;">
+    <div class="row justify-content-between px-3">
+      <div class="d-flex pt-3 mx-md-3">
+        <h1 class="text-light mb-0">Order Details</h1>
+      </div>
+      <div class="d-flex mx-md-3">
+        <div class="row px-3">
+          <div class="d-flex flex-column">
+            <h1>3</h1>
+            <a href="#liveOrders"><small>LIVE ORDERS</small></a>
+          </div>
+          <div class="d-flex bg-light mx-4" style="width: 2px;"></div>
+          <div class="d-flex flex-column">
+            <h1>2</h1>
+            <a href="#pendingPickup.html"><small>PENDING FOR PICKUP</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Order Summary Details -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <h5 class="font-weight-bold">ORDER SUMMARY</h5>
+      <div class="file-prop my-3">
+        <div class="file-prop-body" style="border-top-right-radius: 8px; border-top-left-radius: 8px;">
+          <div class="row px-3 justify-content-center">
+            <div class="col-lg-6">
+              <div class="row px-lg-4 justify-content-start py-1">
+                <h6 class="text-muted">CUSTOMER</h6>
+                <h6 class="mr-4">:</h6>
+                <h6 class="font-weight-bold">Rahul Sharma</h6>
+              </div>
+              <div class="row px-lg-4 justify-content-start py-1">
+                <h6 class="text-muted">ORDER ID</h6>
+                <h6 class="mr-4">:</h6>
+                <h6 class="">1215BJA5ER1</h6>
+              </div>
+              <div class="row px-lg-4 justify-content-start py-1">
+                <h6 class="text-muted">TOTAL BILL</h6>
+                <h6 class="mr-4">:</h6>
+                <h6 class=""><span class="rupees-sym">₹</span> 35.00</h6>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row px-lg-4 justify-content-start py-1">
+                <h6 class="text-muted">CONTACT</h6>
+                <h6 class="mr-4">:</h6>
+                <h6 class="font-weight-bold">9987654321</h6>
+              </div>
+              <div class="row px-lg-4 justify-content-start py-1">
+                <h6 class="text-muted">ORDER TIME</h6>
+                <h6 class="mr-4">:</h6>
+                <h6>24 May, 2020 at 23:20</h6>
+              </div>
+              <div class="row px-lg-4 justify-content-start py-1">
+                <h6 class="text-muted">PAYMENT METHOD</h6>
+                <h6 class="mr-4">:</h6>
+                <h6 class="text-success">Pay on Pickup</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Shop Details -->
+<div class="container mt-5">
+  <h5 class="mb-4">Shop Details</h5>
+  <div class="row justify-content-center" style="position: relative; ">
+    <div class="col-12" style="z-index: 2;">
+      <div class="shop-card">
+        <div class="row px-2 px-md-5 mx-1">
+          <div class="img-container mr-2 mr-md-5"><img src="Img/shop-pic.png" height="140px" width="140px"></div>
+          <div class="d-flex flex-column pt-3">
+            <h5 class="text-blue mb-3">Shop Name</h5>
+            <p class="mb-2">Shop No 5, Pinto Mansion, Sitadevi Temple Road, Mahim, Pune - 111111</p>
+            <p class="mb-2">Contact No. : +91 1231231231, +91 1231231231</p>
+          </div>
+        </div>
+
+        <hr class="mt-4 mb-2 mx-0" style="background-color: #ddd;">
+
+        <div class="row px-2 px-md-5 mt-3 text-blue mx-1">
+          <div type="button" id="shop-info" class="col-md-6 mb-0 text-md-left ptr"><u>Display Shop Timing & Pricing</u><span class="fa fa-angle-down ml-2" style="font-size: 20px;"></span></div>
+          <div class="col-md-6 mb-0 text-md-right"><a href=""><u>View in Maps </u><span><img src="Img/nav-arrow.png"></span></a></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="shop-info-card" class="col-12" style="position: absolute; bottom: 0; left: 0; transition: 0.8s;">
+      <div class="info-card">
+        <div class="row px-2 px-md-5">
+          <div class="col-12 col-sm-6 px-4 py-3">
+            <div class="row ml-2">
+              <h5 class="text-blue">Pricing</h5><p class="ml-1 mb-0 text-muted">(per page)</p> 
+            </div>  
+            <hr style="background-color: #ddd;" class="mt-0">
+            <div class="row ml-2 text-sm">
+              <span style="width: 220px;">BW Printout (Single Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+            </div>  
+            <div class="row ml-2 mt-1 text-sm">
+              <span style="width: 220px;">BW Printout (Both Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+            </div>     
+            <div class="row ml-2 mt-1 text-sm">
+              <span style="width: 220px;">Color Printout (Single Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+            </div>     
+            <div class="row ml-2 mt-1 text-sm">
+              <span style="width: 220px;">Color Printout (Both Side)</span> <span class="rupees-sym">₹</span> &nbsp; 1.00
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 px-4 py-3" style="border-left: 1px solid #ddd;">
+            <div class="row ml-2">
+              <h5 style="color:#227093;">Shop Timings</h5>
+            </div>
+            <hr style="background-color: #ddd;" class="mt-0">
+            <div class="row ml-2 text-sm">
+              <div class="col-4 pl-0">Mon - Fri</div> : <div class="col-7">
+                09:15 am  -  01:15 pm<br>03:15 pm  -  09:15 pm
+              </div>
+            </div>  
+            <div class="row ml-2 text-sm">
+              <div class="col-4 pl-0">Saturday</div> : <div class="col-7 text-danger">Closed</div>
+            </div> 
+            <div class="row ml-2 text-sm">
+              <div class="col-4 pl-0">Sunday</div> : <div class="col-7 text-danger">Closed</div>
+            </div>                        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Print properties of all files -->
+<div id="print-details" class="container mt-5" style="transition: 0.8s;">
+    <div class="row justify-content-center">
+      <div class="col-12 mb-0">
+        <h5 class="font-weight-bold">PRINT DETAILS</h5>
+        <div class="file-prop my-3">
+          <div class="file-prop-header">
+            <div class="row justify-content-start px-3 py-3">
+              <h6 class="mb-0 mr-5 ml-2 ml-md-5">filename.pdf</h6>
+              <small class="">125kB</small>
+            </div>
+          </div>
+          <div class="file-prop-body">
+            <div class="row px-3">
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Number of copies :</h6>
+                  <h6>1</h6>
+                </div>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Select page size :</h6>
+                  <h6>A4</h6>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Page orientation :</h6>
+                  <h6>Portrait</h6>
+                </div>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Color format :</h6>
+                  <h6>Color</h6>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Print both sides :</h6>
+                  <h6>ON</h6>
+                </div>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Print pages :</h6>
+                  <h6>1 - 16</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="file-prop my-4">
+          <div class="file-prop-header">
+            <div class="row justify-content-start px-3 py-3">
+              <h6 class="mb-0 mr-5 ml-2 ml-md-5">new-filename.pdf</h6>
+              <small class="">134kB</small>
+            </div>
+          </div>
+          <div class="file-prop-body">
+            <div class="row px-3">
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Number of copies :</h6>
+                  <h6>1</h6>
+                </div>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Select page size :</h6>
+                  <h6>A4</h6>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Page orientation :</h6>
+                  <h6>Portrait</h6>
+                </div>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Color format :</h6>
+                  <h6>Color</h6>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Print both sides :</h6>
+                  <h6>ON</h6>
+                </div>
+                <div class="row px-md-4 justify-content-start py-1">
+                  <h6 class="text-muted">Print pages :</h6>
+                  <h6>1 - 16</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+<!-- Total Bill -->
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-between">
+    <div class="col-12 mb-0">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Sr. No.</th>
+            <th scope="col">Files</th>
+            <th scope="col">Copies</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>filename.pdf</td>
+            <td>1</td>
+            <td><span class="rupees-sym">₹</span> 20.00</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>new_file.pdf</td>
+            <td>1</td>
+            <td><span class="rupees-sym">₹</span> 15.00</td>
+          </tr>
+          <tr style="background-color: #ddd;">
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col" class="text-success text-right">Grand Total :</th>
+            <th scope="col" class="text-success"><span class="font-weight-bold"><span class="rupees-sym">₹</span> 35.00</span></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer pt-4 mt-5">
+    <div class="container-fluid text-center text-md-left pt-2 pb-5">
+      <div class="row px-2 px-lg-5">
+
+        <!-- Contact Details -->
+        <div class="col-12 col-md-3 mt-md-0 mt-3">
+          <h3 class="mb-3 ml-2" style="font-weight: bold; color: #fff;">Sleefax</h3>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-2">
+              <img src="Img/loc-icon.png" height="30px" width="30px">
+            </div>
+            <div class="col-12 col-md-10 text-light" style="font-size: small;">
+              5th floor, MIT TBi,<br>
+              Paud Rd., Kothrud,<br>
+              Pune-411038<br>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-1" >
+              <img src="Img/call-icon.png" height="25px" width="25px">
+            </div>
+            <div class="col-12 col-md-10 text-light" style="font-size: small;">
+              +91 1234567890<br>
+              +91 1234567890
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-2 mt-1" >
+              <img src="Img/mail-icon.png" height="25px" width="25px">
+            </div>
+            <div class="col-12 col-md-10 mt-1 text-light" style="font-size: small;">
+              incsleefax@gmail.com
+            </div>
+          </div>
+        </div>
+    
+      <!-- Company Section -->
+      <div class="col-12 col-md-2 mb-md-0 mb-3 mt-5 mt-md-3">
+          <h5 style="color: #DFDFDF; font-weight: bold;">Company</h5>
+          <ul class="list-unstyled text-light">
+            <li class="mt-3">
+              <a href="about_us.html" style="color: #fff;">About Us</a>
+            </li>
+            <li class="mt-1">
+              <a href="contact_us.html" style="color: #fff;"> Contact Us</a>
+            </li>
+            <li class="mt-1">
+              <a href="#!" style="color: #fff;">Help</a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- Policy Section -->
+        <div class="col-12 col-md-2 mb-3 mt-3">
+          <h5 style="color: #DFDFDF; font-weight: bold;">Policy</h5>
+          <ul class="list-unstyled text-light">
+            <li class="mt-3">
+              <a href="#!" style="color: #fff;">Terms</a>
+            </li>
+            <li class="mt-1">
+              <a href="#!" style="color: #fff;">Privacy Policy</a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- Vertical Line -->
+        <div class="col-12 col-md-1">
+          <div class="mt-3 d-none d-md-block" id="vl"></div>
+        </div>
+
+        <!-- Get our App -->
+        <div class="col-12 col-md-4 mb-md-0 mb-3 mt-3 text-center">
+          <h5 style="color:#DFDFDF; font-weight: bold;">  Get our app</h5>
+          <div class="text-center">
+            <div class="row mt-3 justify-content-center">
+                  <input type="image" class="m-2 mb-1" src="Img/google-play.png" height="44px" width="125px">
+                  <input type="image" class="m-2 mt-1" src="Img/apple-store.png" height="43px" width="125px">
+            </div>
+          </div>
+
+          <!-- Horizontal Line -->
+          <div class="row">
+            <div class ="mt-4 mx-5 mx-md-3" id="rl"></div>
+          </div>
+       
+          <!-- Social Connect -->
+          <h5 class="mt-4" style="color:#DFDFDF; font-weight: bold;">Social</h5>
+          <ul class="list-unstyled">
+            <li class="mt-4 ml-3 social-connect">
+              <img class="mr-3" src="Img/google-icon.png">
+              <img class="mr-3" src="Img/fb-icon.png">
+              <img class="mr-3" src="Img/insta-icon.png">
+              <img class="mr-3" src="Img/linkedin-icon.png">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-1">
+    Copyright &copy;
+  </div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="bill-details.js"></script>
+
+</body>
+</html>
